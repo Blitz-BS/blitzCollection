@@ -1,0 +1,120 @@
+{
+    "collectionCompanyReference": "erivalCabinet",
+    "creditor": [
+        {
+            "reference": "10806",
+            "contracts": [{
+                "reference": "n° de contrat",
+                "folders": [
+                    {
+                        "reference": "123456789",
+                        "debts": [
+                            {
+                                "reference": "123456789",
+                                "label": "facture d'abonnement téléphonique",
+                                "issueDate": "2024-06-30",
+                                "dueDate": "2024-08-31",
+                                "dueAmount": 26.33,
+                                "VAT": 6.33,
+                                "incidentals": [
+                                    {
+                                        "incidentalsType": "Interests",
+                                        "rate": 3.5,
+                                        "startDate": "2024-08-31"
+                                    }
+                                ]
+                            }
+                        ],
+                        "parties": [
+                            {
+                                "name": "PIERRE Jean",
+                                "role": "Debtor",
+                                "partyType": "Natural person",
+                                "contacts": [
+                                    {
+                                        "lastName": "PIERRE",
+                                        "firstName": "Jean",
+                                        "role": "débiteur",
+                                        "phones": [
+                                            "+33XXXXXXXX"
+                                        ],
+                                        "emails": [
+                                            "x.xxxx@erival.fr"
+                                        ],
+                                        "adresses": [
+                                            {
+                                                "street": "la rue de la paix",
+                                                "city": "Paris",
+                                                "postalCode": "75016",
+                                                "countryCode": "FRA"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "bankInfo": {
+                                    "name": "PIERRE Jean",
+                                    "iban": "FR076",
+                                    "bank": "Banque Postale Lyon"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "reference": "987654321",
+                        "debts": [
+                            {
+                                "reference": "987654321",
+                                "label": "facture d'abonnement téléphonique",
+                                "issueDate": "2024-11-30",
+                                "dueDate": "2024-12-31",
+                                "dueAmount": 31.99,
+                                "VAT": 6.4,
+                                "incidentals": [
+                                    {
+                                        "incidentalsType": "Late payment fee",
+                                        "amount": 40
+                                    }
+                                ]
+                            }
+                        ],
+                        "parties": [
+                            {
+                                "name": "La pataterie",
+                                "role": "Debtor",
+                                "partyType": "Legal person",
+                                "companyInfo": {
+                                    "companyRegistrationNumber": "824 458 723 00023"
+                                },
+                                "contacts": [
+                                    {
+                                        "lastName": "PIERRE",
+                                        "firstName": "Jean",
+                                        "role": "débiteur",
+                                        "phones": [
+                                            "+336XXXXXXXX"
+                                        ],
+                                        "emails": [
+                                            "x.xxx@erival.fr"
+                                        ],
+                                        "adresses": [
+                                            {
+                                                "street": "la rue de la paix",
+                                                "city": "Paris",
+                                                "postalCode": "75016"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "bankInfo": {
+                                    "name": "PIERRE Jean",
+                                    "iban": "FR076",
+                                    "bank": "Banque Postale Valence"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }]
+        }
+    ]
+}
