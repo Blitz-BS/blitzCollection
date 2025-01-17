@@ -30,6 +30,12 @@
                     "description" : "date à partir de laquelle les intérêts sont calculés",
                     "type": "string",
                     "format" : "date"
+                },
+                "endDate": {
+                    "title" : "date de fin des intérêts",
+                    "description" : "date à laquelle le calcul des intérêts s'arrête",
+                    "type": "string",
+                    "format" : "date"
                 }
             }
         },

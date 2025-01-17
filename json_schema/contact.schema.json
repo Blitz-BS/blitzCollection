@@ -7,6 +7,11 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "reference" : {
+            "title" : "Référence",
+            "description" : "Référence du contact chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
+        },
         "civility": {
             "title" : "Civilité",
             "description" : "Civilité du contact",
