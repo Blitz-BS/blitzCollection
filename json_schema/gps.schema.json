@@ -9,12 +9,14 @@
     "properties": {
         "latitude": {
           "title" : "Latitude",
+          "Description" : "Latitude en degrés décimaux",
           "type": "number",
           "minimum": -90,
           "maximum": 90
         },
         "longitude": {
           "title" : "Longitude",
+          "Description" : "Longitude en degrés décimaux",
           "type": "number",
           "minimum": -180,
           "maximum": 180

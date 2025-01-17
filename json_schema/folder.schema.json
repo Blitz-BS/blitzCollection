@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json",
+    "title": "Dossier",
+    "description": "Dossier dans le cadre d'un contrat",
+    "required": [ "creditor","debtor","debts"],
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reference" : {
+            "title" : "Référence",
+            "description" : "Référence de la dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
+        },
+        "creditor" : {
+            "title": "Créancier",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
+        },
+        "debtor": {
+            "title" : "Débiteur",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
+        },
+        "debts": {
+            "title": "Créances",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json"
+            }
+        },
+        "parties":{
+            "title": "Tiers",
+            "description": "Tiers impliqués dans le dossier",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"           
+            }
+        },
+        "incidentals" : {
+            "title": "Frais accessoires",
+            "description": "Frais accessoires liés au dossier et non directement aux créances",
+            "type": "array",
+            "items" : {
+                "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json"
+            }
+        },
+        "currencyCode" : {
+            "title" : "Code devise",
+            "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
+            "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/currencyCode.schema.json"
+        }
+    }
+}

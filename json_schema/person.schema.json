@@ -22,6 +22,12 @@
             "description" : "Catégorie de personne",
             "enum" : ["legal person", "natural person", "joint ownership", "household"]
         },
+        "ability" : {
+            "title" : "Compétence",
+            "description" : "Compétence du tiers à agir",
+            "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "none"],
+            "default" : "none"
+        },
         "companyInfo" : {
             "title" : "Informations sur une entreprise",
             "description" : "Informations utiles sur une entreprise",
