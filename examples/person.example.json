@@ -1,4 +1,5 @@
 {
+    "reference" : "123456789",
     "name": "Blitz Business Service",
     "personCategory": "Legal person",
     "companyInfo": {
@@ -22,7 +23,7 @@
     },
     "contacts": [
         {
-            "role": "Président",
+            "role": "commercial",
             "value": {
                 "reference" : "123456789",
                 "civility": "Monsieur",

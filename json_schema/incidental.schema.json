@@ -12,12 +12,12 @@
                 "incidentalCategory": {
                     "title" : "Catégorie d'accessoires",
                     "description": "Type d'accessoires (intérêts, frais)",
-                    "const" : "Interests"
+                    "const" : "interests"
                 },
                 "name": {
                     "title" : "Nom des frais accessoires",
                     "description": "Frais accessoires dans le droit français",
-                    "enum" : ["Intérêt de retard"]
+                    "enum" : ["intérêt de retard"]
                 },
                 "rate": {
                     "title" : "Taux d'intérêt",
@@ -26,14 +26,14 @@
                     "maximum" : 1
                 },
                 "startDate": {
-                    "title" : "date de départ des intérêts",
-                    "description" : "date à partir de laquelle les intérêts sont calculés",
+                    "title" : "Date de départ des intérêts",
+                    "description" : "Date à partir de laquelle les intérêts sont calculés",
                     "type": "string",
                     "format" : "date"
                 },
                 "endDate": {
-                    "title" : "date de fin des intérêts",
-                    "description" : "date à laquelle le calcul des intérêts s'arrête",
+                    "title" : "Date de fin des intérêts",
+                    "description" : "Date à laquelle le calcul des intérêts s'arrête",
                     "type": "string",
                     "format" : "date"
                 }
@@ -46,12 +46,12 @@
                 "incidentalCategory": {
                     "title" : "Catégorie d'accessoires",
                     "description": "Type d'accessoires (intérêts, frais)",
-                    "const" : "Fees"
+                    "const" : "fees"
                 },
                 "name": {
                     "title" : "Nom des frais accessoires",
                     "description": "Frais accessoires dans le droit français",
-                    "enum" : ["Pénalité de retard","Indemnité forfaitaire","Dommages et intérêts","Dépens","Article 700"]
+                    "enum" : ["pénalité de retard","indemnité forfaitaire","dommages et intérêts","dépens","article 700"]
                 },
                 "amount": {
                     "title" : "Montant des frais accessoires",

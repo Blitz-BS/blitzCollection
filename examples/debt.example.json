@@ -1,0 +1,20 @@
+{
+    "reference": "REF123456",
+    "label": "2023-001",
+    "debtCategory": "invoice",
+    "issueDate": "2023-01-15",
+    "dueDate": "2023-02-15",
+    "amount": 1500.00,
+    "vatAmount": 300.00,
+    "balanceDate": "2023-02-15",
+    "balance": 1500.00,
+    "balanceVatAmount": 300.00,
+    "currencyCode": "EUR",
+    "incidentals": [
+        {
+            "incidentalCategory": "fees",
+            "name": "pénalité de retard",
+            "amount": 40.00
+        }
+    ]
+}

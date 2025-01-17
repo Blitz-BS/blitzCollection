@@ -7,6 +7,11 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "reference" : {
+            "title" : "Référence",
+            "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
+        },
         "name" : {
             "title" : "Nom",
             "description" : "Exemple : Jean Dupont ou Dupont & Cie",
@@ -15,7 +20,7 @@
         "personCategory" : {
             "title" : "Catégorie de personne",
             "description" : "Catégorie de personne",
-            "enum" : ["Legal person", "Natural person", "Joint ownership", "Household"]
+            "enum" : ["legal person", "natural person", "joint ownership", "household"]
         },
         "companyInfo" : {
             "title" : "Informations sur une entreprise",

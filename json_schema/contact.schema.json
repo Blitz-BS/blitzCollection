@@ -15,7 +15,7 @@
         "civility": {
             "title" : "Civilité",
             "description" : "Civilité du contact",
-            "enum": ["Monsieur", "Madame"]
+            "enum": ["monsieur", "madame"]
         },
         "lastName": {
             "title" : "Nom de famille",
