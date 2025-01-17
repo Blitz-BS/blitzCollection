@@ -4,9 +4,9 @@
     "title": "Frais accessoires",
     "description": "Frais accessoires d'une dette",
     "type": "object",
-    "additionalProperties": false,
     "oneOf": [
         {
+            "additionalProperties": false,
             "required": ["incidentalCategory","name","rate","startDate"],
             "properties": {
                 "incidentalCategory": {
@@ -41,6 +41,7 @@
         },
         {
             "required" : ["incidentalCategory","name","amount"],
+            "additionalProperties": false,
             "properties": {
                 "incidentalCategory": {
                     "title" : "Catégorie d'accessoires",

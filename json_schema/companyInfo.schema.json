@@ -40,6 +40,12 @@
             "title" : "Adresse email de l'entreprise",
             "description" : "Adresse email de l'entreprise",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json"
+        },
+        "repository" : {
+            "title" : "Registre des sociétés",
+            "description" : "Page de registre des sociétés. Exemple : https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989",
+            "type": "string",
+            "format": "uri"
         }
     }
 }

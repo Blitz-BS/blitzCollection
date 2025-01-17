@@ -1,0 +1,9 @@
+{
+    "name": "John Doe",
+    "iban": "FR7630006000011234567890189",
+    "bank": "Banque de France",
+    "bankCode": "30006",
+    "sortCode": "00123",
+    "accountNumber": "12345678901",
+    "key": "89"
+}
