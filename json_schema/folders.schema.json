@@ -1,8 +1,8 @@
 {
-    "$schema": "https://github.com/Blitz-BS/blitzCollection/schema_files_stream.json",
-    "$id": "https://github.com/Blitz-BS/blitzCollection/schema_files_stream",
-    "title": "CollectionStream",
-    "description": "Import dossiers MyDOSManager",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/folders.schema.json",
+    "title": "Folders",
+    "description": "Import de dossiers",
     "type": "object",
     "properties": {
         "collectionCompanyReference": {

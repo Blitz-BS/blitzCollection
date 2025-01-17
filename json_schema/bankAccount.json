@@ -1,0 +1,54 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/bankAccount.schema.json",
+    "title": "Compte bancaire",
+    "description": "Compte bancaire",
+    "required": ["name"],
+    "anyOf": [
+        {"required": ["iban"]},
+        {"required": ["swiftCode", "accountNumber"]}
+    ],
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "iban": {
+            "title": "IBAN",
+            "type": "string"
+        },
+        "swiftCode": {
+            "title": "Code SWIFT",
+            "type": "string",
+            "maxLength": 15
+        },
+        "bank": {
+            "title": "Banque",
+            "type": "string",
+            "maxLength": 40
+        },
+        "name": {
+            "title": "Nom du titulaire",
+            "type": "string",
+            "maxLength": 50
+        },
+        "bankCode": {
+            "title": "Code banque",
+            "type": "string",
+            "maxLength": 5
+        },
+        "sortCode": {
+            "title": "Code guichet",
+            "type": "string",
+            "maxLength": 10
+        },
+        "accountNumber": {
+            "title": "Numéro de compte",
+            "type": "string",
+            "maxLength": 11
+        },
+        "key": {
+            "title": "Clé RIB/contrôle de l'IBAN",
+            "type": "string",
+            "maxLength": 2
+        }
+    }
+}

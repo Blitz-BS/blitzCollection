@@ -1,0 +1,50 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/person.schema.json",
+    "title": "Personne",
+    "description": "Personne physique ou morale ou groupement",
+    "required": ["name"],
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "name" : {
+            "title" : "Nom",
+            "description" : "Exemple : Jean Dupont ou Dupont & Cie",
+            "type": "string"
+        },
+        "personCategory" : {
+            "title" : "Catégorie de personne",
+            "description" : "Catégorie de personne",
+            "enum" : ["Legal person", "Natural person", "Joint ownership", "Household"]
+        },
+        "companyInfo" : {
+            "title" : "Informations sur une entreprise",
+            "description" : "Informations utiles sur une entreprise",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/companyInfo.schema.json"
+        },
+        "contacts" : {
+            "title" : "Contacts",
+            "description" : "Contacts de la personne",
+            "type": "array",
+            "items": {
+                "type" : "object",
+                "properties": {
+                    "role" : {
+                        "title" : "Rôle du contact pour la personne physique ou morale",
+                        "description" : "Exemple : commercial, responsable administratif, épouse, époux",
+                        "type": "string",
+                        "maxLength": 20
+                    },
+                    "value" : {
+                        "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/contact.schema.json"
+                    }
+                }  
+            }
+        },
+        "bankAccount" : {
+            "title" : "Compte bancaire",
+            "description" : "Compte bancaire",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/bankAccount.schema.json"
+        }
+    }
+}

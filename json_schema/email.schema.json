@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/email.schema.json",
+    "title": "Email",
+    "description": "Adresse email",
+    "required": [ "value" ],
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "value": {
+            "title" : "Adresse email",
+            "description": "Exemple : jdupont@monmail.fr",
+            "type": "string",
+            "format": "email"
+        },
+        "description": {
+            "title" : "Description libre de l'adresse email",
+            "description": "Exemple : email général de l'entreprise",
+            "type": "string",
+            "maxLength": 255
+        },
+        "qualification" : {
+            "title" : "Qualification de l'adresse email",
+            "enum": ["personal", "professional", "deprecated"]
+        }
+    }
+}

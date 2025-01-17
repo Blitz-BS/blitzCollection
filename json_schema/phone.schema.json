@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/phone.schema.json",
+    "title": "Numéro de téléphone",
+    "description": "Numéro de téléphone",
+    "required": [ "value" ],
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "value": {
+            "title" : "Numéro de téléphone",
+            "description": "Exemple : +33 6 12 34 56 78",
+            "type": "string"
+        },
+        "description": {
+            "title" : "Description libre du numéro de téléphone",
+            "description": "Exemple : Ligne fixe du bureau",
+            "type": "string",
+            "maxLength": 255
+        },
+        "qualification" : {
+            "title" : "Qualification du numéro de téléphone",
+            "enum": ["personal", "professional", "deprecated"]
+        }
+    }
+}

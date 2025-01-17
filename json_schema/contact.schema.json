@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/contact.schema.json",
+    "title": "Contact",
+    "description": "Coordonnées d'une personne physique",
+    "required": ["lastName", "firstName"],
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "lastName": {
+            "title" : "Nom de famille",
+            "description" : "Exemple : Dupont",
+            "type": "string",
+            "maxLength": 70
+        },
+        "firstName": {
+            "title" : "Prénom",
+            "description" : "Exemple : Jean",
+            "type": "string",
+            "maxLength": 70
+        },
+        "phones": {
+            "title" : "Numéros de téléphone",
+            "description" : "Numéros de téléphone par ordre décroissant de qualification",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/phone.schema.json"
+            }
+        },
+        "emails": {
+            "title" : "Adresses emails",
+            "description" : "Adresses emails par ordre décroissant de qualification",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/email.schema.json"
+            }
+        },
+        "adresses": {
+            "title" : "Adresses",
+            "description" : "Adresses par ordre décroissant de qualification",
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/address.schema.json"
+            }
+        },
+        "languageCode": {
+            "title" : "Code langue",
+            "description" : "Code langue du contact (ISO 639-3)",
+            "type": "string",
+            "default": "fra",
+            "minLength": 3,
+            "maxLength": 3
+        }
+    }
+}

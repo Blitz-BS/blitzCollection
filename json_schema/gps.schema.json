@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/gps.schema.json",
+    "title": "GPS",
+    "description": "Coordonnées GPS",
+    "required": [ "latitude", "longitude" ],
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "latitude": {
+          "title" : "Latitude",
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "title" : "Longitude",
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+    }
+}
