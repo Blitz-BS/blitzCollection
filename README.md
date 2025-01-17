@@ -4,3 +4,5 @@ Blitz Collection permet l'intégration de dossiers selon un format pivot répond
 
 Des formats d'échange `csv` permettent des intégrations de fichier à plat. Ces formats sont d'abord transformés dans le format pivot avant d'être intégrés en base.
 
+
+

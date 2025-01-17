@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/companyInfo.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json",
     "title": "Informations sur une entreprise",
     "description": "Informations utiles sur une entreprise",
     "anyOf": [
@@ -19,27 +19,27 @@
         "mainAddress" : {
             "title" : "Adresse principale",
             "description" : "Adresse principale de l'entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/address.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json"
         },
         "billingAddress" : {
             "title" : "Adresse de facturation",
             "description" : "Adresse de facturation de l'entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/address.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json"
         },
         "headOfficeAddress" : {
             "title" : "Adresse du siège social",
             "description" : "Adresse du siège social de l'entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/address.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json"
         },
         "entreprisePhone" : {
             "title" : "Numéro de téléphone de l'entreprise",
             "description" : "Numéro de téléphone de l'entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/phone.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json"
         },
         "entrepriseEmail" : {
             "title" : "Adresse email de l'entreprise",
             "description" : "Adresse email de l'entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/main/json_schema/email.schema.json"
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json"
         }
     }
 }
