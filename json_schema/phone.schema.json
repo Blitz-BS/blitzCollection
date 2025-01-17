@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json",
     "title": "Numéro de téléphone",
     "description": "Numéro de téléphone",
-    "required": [ "value" ],
+    "required": [ "value", "isMobile" ],
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -11,6 +11,11 @@
             "title" : "Numéro de téléphone",
             "description": "Exemple : +33 6 12 34 56 78",
             "type": "string"
+        },
+        "isMobile": {
+            "title" : "Est un numéro de téléphone mobile",
+            "type": "boolean",
+            "default": false
         },
         "description": {
             "title" : "Description libre du numéro de téléphone",

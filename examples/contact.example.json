@@ -1,0 +1,39 @@
+{
+    "civility": "Monsieur",
+    "lastName": "Dupont",
+    "firstName": "Jean",
+    "phones": [
+        {
+            "value": "01 02 03 04 05",
+            "isMobile": false,
+            "description": "Ligne fixe du bureau",
+            "qualification": "professional"
+        },
+        {
+            "value": "06 07 08 09 10",
+            "isMobile": true,
+            "description": "Mobile personnel",
+            "qualification": "personal"
+        }
+    ],
+    "emails": [
+        {
+            "value": "jean.dupont@monmail.fr",
+            "description": "Adresse peu utilisée",
+            "qualification": "personal"
+        }
+    ],
+    "adresses": [
+        {
+            "street": "Rue de la paix",
+            "city": "Paris",
+            "postalCode": "75000",
+            "countryCode": "FR",
+            "gps" : {
+                "latitude": 48.8566,
+                "longitude": 2.3522
+            }
+        }
+    ],
+    "languageCode": "fra"
+}
