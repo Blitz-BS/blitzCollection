@@ -1,7 +1,7 @@
 {
     "reference" : "123456789",
     "name": "Blitz Business Service",
-    "personCategory": "Legal person",
+    "personCategory": "legal person",
     "companyInfo": {
         "companyRegistrationNumber": "401694989",
         "mainAddress": {
@@ -26,7 +26,7 @@
             "role": "commercial",
             "value": {
                 "reference" : "123456789",
-                "civility": "Monsieur",
+                "civility": "monsieur",
                 "lastName": "Dupont",
                 "firstName": "Jean",
                 "phones": [

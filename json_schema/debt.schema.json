@@ -4,85 +4,81 @@
     "title": "Créance",
     "description": "Créance dans un dossier",
     "required": ["reference", "label", "debtCategory", "issueDate", "dueDate", "amount","vatAmount","balance", "balanceDate", "balanceVatAmount"],
-    "type": "object",
     "additionalProperties": false,
+    "type": "object",
     "properties": {
-        "type": "object",
-        "properties": {
-            "reference" : {
-                "title" : "Référence",
-                "description" : "Référence de la créance chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
-                "type": "string"
-            },
-            "label": {
-                "title": "Libellé",
-                "description": "Libellé de la pièce. Par exemple le numéro de la facture",
-                "type": "string",
-                "maxLength": 100
-            },
-            "debtCategory": {
-                "title": "Catégorie de créance",
-                "enum": ["invoice"]
-            },
-            "issueDate" : {
-                "title" : "Date de la pièce",
-                "description" : "Par exemple la date de la facture",
-                "type": "string",
-                "format" : "date"
-            },
-            "dueDate": {
-                "title": "Date d'échéance",
-                "description": "Date d'échéance de la créance",
-                "type": "string",
-                "format" : "date"
-            },
-            "amount": {
-                "title": "Montant de la pièce",
-                "description": "Montant de la créance en TTC à l'échéance",
-                "minimum": -999999999999.99,
-                "maximum": 999999999999.99
-            },
-            "vatAmount": {
-                "title" : "Montant de TVA",
-                "description" : "Montant de TVA de la créance à l'échéance",
-                "type": "number",
-                "minimum": -999999999999.99,
-                "maximum": 999999999999.99
-            },   
-            "balanceDate": {
-                "title": "Date de constatation du solde",
-                "description": "Date à laquelle le solde `balance` a été constaté",
-                "type": "string",
-                "format" : "date"
-            },
-            "balance": {
-                "title": "Solde",
-                "description": "Solde restant dû en TTC à la date `balanceDate`",
-                "minimum": -999999999999.99,
-                "maximum": 999999999999.99
-            },
-            "balanceVatAmount": {
-                "title" : "Solde de la TVA",
-                "description" : "Solde de la TVA restant dû à la date `balanceDate`",
-                "type": "number",
-                "minimum": -999999999999.99,
-                "maximum": 999999999999.99
-            },                                 
-            "currencyCode": {
-                "title": "Code devise",
-                "description": "Code devise de la créance (ISO 4217)",
-                "type": "string",
-                "default": "EUR",
-                "minLength": 3,
-                "maxLength": 3
-            },
-            "incidentals": {
-                "title" : "Frais accessoires",
-                "description" : "Frais accessoires attachés à la créance",
-                "type": "array",
-                "items": {
-                    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json"
-                }
+        "reference" : {
+            "title" : "Référence",
+            "description" : "Référence de la créance chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
+        },
+        "label": {
+            "title": "Libellé",
+            "description": "Libellé de la pièce. Par exemple le numéro de la facture",
+            "type": "string",
+            "maxLength": 100
+        },
+        "debtCategory": {
+            "title": "Catégorie de créance",
+            "enum": ["invoice"]
+        },
+        "issueDate" : {
+            "title" : "Date de la pièce",
+            "description" : "Par exemple la date de la facture",
+            "type": "string",
+            "format" : "date"
+        },
+        "dueDate": {
+            "title": "Date d'échéance",
+            "description": "Date d'échéance de la créance",
+            "type": "string",
+            "format" : "date"
+        },
+        "amount": {
+            "title": "Montant de la pièce",
+            "description": "Montant de la créance en TTC à l'échéance",
+            "minimum": -999999999999.99,
+            "maximum": 999999999999.99
+        },
+        "vatAmount": {
+            "title" : "Montant de TVA",
+            "description" : "Montant de TVA de la créance à l'échéance",
+            "type": "number",
+            "minimum": -999999999999.99,
+            "maximum": 999999999999.99
+        },   
+        "balanceDate": {
+            "title": "Date de constatation du solde",
+            "description": "Date à laquelle le solde `balance` a été constaté",
+            "type": "string",
+            "format" : "date"
+        },
+        "balance": {
+            "title": "Solde",
+            "description": "Solde restant dû en TTC à la date `balanceDate`",
+            "minimum": -999999999999.99,
+            "maximum": 999999999999.99
+        },
+        "balanceVatAmount": {
+            "title" : "Solde de la TVA",
+            "description" : "Solde de la TVA restant dû à la date `balanceDate`",
+            "type": "number",
+            "minimum": -999999999999.99,
+            "maximum": 999999999999.99
+        },                                 
+        "currencyCode": {
+            "title": "Code devise",
+            "description": "Code devise de la créance (ISO 4217)",
+            "type": "string",
+            "default": "EUR",
+            "enum" : ["ADP","AED","AFA","AFN","ALK","ALL","AMD","ANG","AOA","AOK","AON","AOR","ARA","ARP","ARS","ARY","ATS","AUD","AWG","AYM","AZM","AZN","BAD","BAM","BBD","BDT","BEC","BEF","BEL","BGJ","BGK","BGL","BGN","BHD","BIF","BMD","BND","BOB","BOP","BOV","BRB","BRC","BRE","BRL","BRN","BRR","BSD","BTN","BUK","BWP","BYB","BYN","BYR","BZD","CAD","CDF","CHC","CHE","CHF","CHW","CLF","CLP","CNY","COP","COU","CRC","CSD","CSJ","CSK","CUC","CUP","CVE","CYP","CZK","DDM","DEM","DJF","DKK","DOP","DZD","ECS","ECV","EEK","EGP","ERN","ESA","ESB","ESP","ETB","EUR","FIM","FJD","FKP","FRF","GBP","GEK","GEL","GHC","GHP","GHS","GIP","GMD","GNE","GNF","GNS","GQE","GRD","GTQ","GWE","GWP","GYD","HKD","HNL","HRD","HRK","HTG","HUF","IDR","IEP","ILP","ILR","ILS","INR","IQD","IRR","ISJ","ISK","ITL","JMD","JOD","JPY","KES","KGS","KHR","KMF","KPW","KRW","KWD","KYD","KZT","LAJ","LAK","LBP","LKR","LRD","LSL","LSM","LTL","LTT","LUC","LUF","LUL","LVL","LVR","LYD","MAD","MDL","MGA","MGF","MKD","MLF","MMK","MNT","MOP","MRO","MRU","MTL","MTP","MUR","MVQ","MVR","MWK","MXN","MXP","MXV","MYR","MZE","MZM","MZN","NAD","NGN","NIC","NIO","NLG","NOK","NPR","NZD","OMR","PAB","PEH","PEI","PEN","PES","PGK","PHP","PKR","PLN","PLZ","PTE","PYG","QAR","RHD","ROK","ROL","RON","RSD","RUB","RUR","RWF","SAR","SBD","SCR","SDD","SDG","SDP","SEK","SGD","SIT","SKK","SLE","SLL","SOS","SRD","SRG","SSP","STD","STN","SUR","SVC","SYP","SZL","THB","TJR","TJS","TMM","TMT","TND","TOP","TPE","TRL","TRY","TTD","TWD","UAH","UAK","UGS","UGW","UGX","USD","USN","USS","UYI","UYN","UYP","UYU","UYW","UZS","VEB","VED","VEF","VES","VNC","VND","VUV","WST","XAF","XAG","XAU","XBA","XBB","XBC","XBD","XCD","XDR","XEU","XFO","XFU","XOF","XPD","XPF","XPT","XRE","XSU","XTS","XUA","YER","YUD","YUM","YUN","ZAL","ZAR","ZMK","ZMW","ZRN","ZRZ","ZWC","ZWD","ZWG","ZWL","ZWN","ZWR"]
+        },
+        "incidentals": {
+            "title" : "Frais accessoires",
+            "description" : "Frais accessoires attachés à la créance",
+            "type": "array",
+            "items": {
+                "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json"
             }
         }
     }

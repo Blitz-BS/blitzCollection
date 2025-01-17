@@ -1,6 +1,6 @@
 {
     "reference" : "123456789",
-    "civility": "Monsieur",
+    "civility": "monsieur",
     "lastName": "Dupont",
     "firstName": "Jean",
     "phones": [
