@@ -7,6 +7,12 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
         "street": {
             "title" : "Rue",
             "description" : "Exemple : 3 avenue Saint Martin",
