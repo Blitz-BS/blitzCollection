@@ -9,6 +9,12 @@
             "additionalProperties": false,
             "required": ["incidentalCategory","name","rate","startDate"],
             "properties": {
+                "$schema": {
+                    "title" : "Schéma JSON",
+                    "description" : "URL du schéma",
+                    "type": "string",
+                    "format": "uri"
+                },
                 "incidentalCategory": {
                     "title" : "Catégorie d'accessoires",
                     "description": "Type d'accessoires (intérêts, frais)",

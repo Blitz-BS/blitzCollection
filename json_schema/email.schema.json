@@ -7,6 +7,12 @@
     "type": "object",
     "additionalProperties": false,
     "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
         "value": {
             "title" : "Adresse email",
             "description": "Exemple : jdupont@monmail.fr",

@@ -1,22 +1,18 @@
 """
-Ce script vérifie si les fichiers `example.json` du répertoire `examples` sont valides par rapport aux fichiers `schema.json` du répertoire `json_schema`.
+Ce script valide des fichiers JSON dans le répertoire "examples" en utilisant les schémas JSON spécifiés dans chaque fichier.
 """
-
 from jsonschema import validate
 import json
 from os import listdir
+import requests
 
 for file in listdir('examples'):
-    if "example.json" in file:
-        object_name = file.split('.example.json')[0]
-        
-        with open(f'examples/{object_name}.example.json') as f:
-            example = json.load(f)
-
-        with open(f'json_schema/{object_name}.schema.json') as f:
-            schema = json.load(f)
-
+    with open(f'examples/{file}') as f:
+        example = json.load(f)
+    if '$schema' in example:
+        resp = requests.get(url=example['$schema'])
+        schema = resp.json()
         validate(instance=example, schema=schema)
         print(f"le fichier {file} est valide")
     else:
-        raise Exception(f"ce fichier {file} n'est pas un fichier example.json") 
+        raise Exception(f"le fichier {file} ne précise pas de schéma") 

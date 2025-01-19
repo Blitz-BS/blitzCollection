@@ -11,6 +11,12 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
         "iban": {
             "title": "IBAN",
             "type": "string"

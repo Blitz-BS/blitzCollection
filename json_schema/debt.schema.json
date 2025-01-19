@@ -7,6 +7,12 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
         "reference" : {
             "title" : "Référence",
             "description" : "Référence de la créance chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",

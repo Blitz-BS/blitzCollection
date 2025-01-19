@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json",
     "incidentalCategory": "interests",
     "name": "intérêt de retard",
     "rate": 0.05,

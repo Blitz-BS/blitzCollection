@@ -10,6 +10,12 @@
     "additionalProperties": false,
     "type": "object",
     "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
         "companyRegistrationNumber" : {
             "title" : "Numéro d'immatriculation",
             "description" : "Numéro d'immatriculation de l'entreprise",
