@@ -60,7 +60,7 @@
                 "incidentalCategory": {"const": "interests"},
                 "name": {"const": "intérêt de retard"}       
             },
-            "required": ["incidentalCategory","name", "rate","startDate"]            
+            "required": ["incidentalCategory","name", "rate","startDate"]
         },
         {
             "properties": {
