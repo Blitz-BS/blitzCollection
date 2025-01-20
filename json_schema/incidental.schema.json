@@ -23,7 +23,7 @@
                 "name": {
                     "title" : "Nom des frais accessoires",
                     "description": "Frais accessoires dans le droit français",
-                    "enum" : ["intérêt de retard"]
+                    "enum" : ["intérêts de retard"]
                 },
                 "rate": {
                     "title" : "Taux d'intérêt",
