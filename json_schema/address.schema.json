@@ -13,6 +13,11 @@
             "type": "string",
             "format": "uri"
         },
+        "id": {
+            "title": "Identifiant adresse",
+            "description": "Identifiant unique de l'adresse, renseigner pour mettre à jour l'adresse en question",
+            "type": "string"
+        },
         "street": {
             "title" : "Rue",
             "description" : "Exemple : 3 avenue Saint Martin",

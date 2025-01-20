@@ -13,6 +13,11 @@
             "type": "string",
             "format": "uri"
         },
+        "id": {
+            "title": "Identifiant email",
+            "description": "Identifiant unique de l'adresse email dans BlitzCollection",
+            "type": "number"
+        },
         "value": {
             "title" : "Adresse email",
             "description": "Exemple : jdupont@monmail.fr",

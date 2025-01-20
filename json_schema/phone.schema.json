@@ -13,6 +13,11 @@
             "type": "string",
             "format": "uri"
         },
+        "id": {
+            "title": "Identifiant numéro de téléphone",
+            "description": "Identifiant unique du numéro de téléphone pour mettre à jour les données",
+            "type": "string"
+        },
         "value": {
             "title" : "Numéro de téléphone",
             "description": "Exemple : +33 6 12 34 56 78",

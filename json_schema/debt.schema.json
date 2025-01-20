@@ -13,6 +13,11 @@
             "type": "string",
             "format": "uri"
         },
+        "id": {
+            "title": "Identifiant créance",
+            "description": "Identifiant unique de la créance pour mettre à jour les informations",
+            "type": "string"
+        },
         "reference" : {
             "title" : "Référence",
             "description" : "Référence de la créance chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",

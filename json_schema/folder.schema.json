@@ -13,12 +13,17 @@
             "type": "string",
             "format": "uri"
         },
-        "reference" : {
-            "title" : "Référence",
-            "description" : "Référence de la dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+        "id": {
+            "title": "Identifiant dossier",
+            "description": "Identifiant unique du dossier dans BlitzCollection",
             "type": "string"
         },
-        "creditor" : {
+        "reference": {
+            "title": "Référence",
+            "description": "Référence de la dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
+        },
+        "creditor": {
             "title": "Créancier",
             "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
         },

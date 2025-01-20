@@ -17,6 +17,11 @@
             "type": "string",
             "format": "uri"
         },
+        "id": {
+            "title": "Identifiant coordonnées bancaires",
+            "description": "Identifiant unique des coordonnées bancaires, renseigner pour mettre à jour des informations",
+            "type": "string"
+        },
         "iban": {
             "title": "IBAN",
             "type": "string"
@@ -28,6 +33,7 @@
         },
         "bank": {
             "title": "Banque",
+            "description": "Domiciliation bancaire",
             "type": "string",
             "maxLength": 40
         },

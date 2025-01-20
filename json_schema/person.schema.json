@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json",
     "title": "Personne",
     "description": "Personne physique ou morale ou groupement",
-    "required": ["name"],
+    "required": ["name", "personCategory"],
     "additionalProperties": false,
     "type": "object",
     "properties": {
@@ -12,6 +12,11 @@
             "description" : "URL du schéma",
             "type": "string",
             "format": "uri"
+        },
+        "id": {
+            "title": "Identifiant personne",
+            "description": "Identifiant unique de la personne, met à jour les données de la personne existante s'il est précisé",
+            "type": "string"
         },
         "reference" : {
             "title" : "Référence",
