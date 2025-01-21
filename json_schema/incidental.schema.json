@@ -7,7 +7,7 @@
     "additionalProperties": true,
     "oneOf": [
         {
-            "required": ["incidentalCategory","name", "rate","startDate"],
+            "required": ["category","name", "rate","startDate"],
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
@@ -15,7 +15,7 @@
                     "type": "string",
                     "format": "uri"
                 },
-                "incidentalCategory": {
+                "category": {
                     "title" : "Catégorie d'accessoires",
                     "description": "Type d'accessoires (intérêts, frais)",
                     "const": "interests"
@@ -47,7 +47,7 @@
             }
         },
         {
-            "required" : ["incidentalCategory","name","amount"],
+            "required" : ["category","name","amount"],
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
@@ -55,7 +55,7 @@
                     "type": "string",
                     "format": "uri"
                 },
-                "incidentalCategory" : {
+                "category" : {
                     "title" : "Catégorie d'accessoires",
                     "description": "Type d'accessoires (intérêts, frais)",
                     "const": "fees"

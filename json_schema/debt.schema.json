@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
     "title": "Créance",
     "description": "Créance dans un dossier",
-    "required": ["reference", "label", "debtCategory", "issueDate", "dueDate", "amount","vatAmount","balance", "balanceDate", "balanceVatAmount"],
+    "required": ["reference", "label", "debtCategory", "issueDate", "dueDate", "amount","vatAmount","balance", "balanceDate", "vatBalance"],
     "additionalProperties": false,
     "type": "object",
     "properties": {
@@ -65,7 +65,7 @@
             "minimum": -999999999999.99,
             "maximum": 999999999999.99
         },
-        "balanceVatAmount": {
+        "vatBalance": {
             "title" : "Solde de la TVA",
             "description" : "Solde de la TVA restant dû à la date `balanceDate`",
             "type": "number",

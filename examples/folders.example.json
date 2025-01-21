@@ -123,11 +123,11 @@
                     "vatAmount": 300.00,
                     "balanceDate": "2023-03-15",
                     "balance": 1500.00,
-                    "balanceVatAmount": 300.00,
+                    "vatBalance": 300.00,
                     "currencyCode": "EUR",
                     "incidentals": [
                         {
-                            "incidentalCategory": "fees",
+                            "category": "fees",
                             "name": "pénalité de retard",
                             "amount": 40.00
                         }
@@ -143,11 +143,11 @@
                     "vatAmount": 50.00,
                     "balanceDate": "2023-03-15",
                     "balance": 250.00,
-                    "balanceVatAmount": 50.00,
+                    "vatBalance": 50.00,
                     "currencyCode": "EUR",
                     "incidentals": [
                         {
-                            "incidentalCategory": "fees",
+                            "category": "fees",
                             "name": "pénalité de retard",
                             "amount": 40.00
                         }
@@ -269,11 +269,11 @@
                     "vatAmount": 300.00,
                     "balanceDate": "2023-03-15",
                     "balance": 1500.00,
-                    "balanceVatAmount": 300.00,
+                    "vatBalance": 300.00,
                     "currencyCode": "EUR",
                     "incidentals": [
                         {
-                            "incidentalCategory": "fees",
+                            "category": "fees",
                             "name": "pénalité de retard",
                             "amount": 40.00
                         }
@@ -289,11 +289,11 @@
                     "vatAmount": 50.00,
                     "balanceDate": "2023-03-30",
                     "balance": 200.00,
-                    "balanceVatAmount": 50.00,
+                    "vatBalance": 50.00,
                     "currencyCode": "EUR",
                     "incidentals": [
                         {
-                            "incidentalCategory": "fees",
+                            "category": "fees",
                             "name": "pénalité de retard",
                             "amount": 40.00
                         }
