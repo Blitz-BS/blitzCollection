@@ -13,11 +13,6 @@
             "type": "string",
             "format": "uri"
         },
-        "id": {
-            "title": "Identifiant dossier",
-            "description": "Identifiant unique du dossier dans BlitzCollection",
-            "type": "string"
-        },
         "contractId" : {
             "title" : "Identifiant du contrat",
             "description" : "Identifiant du contrat entre la société de recouvrement et son client. Il s'agit de l'identifiant unique dans Blitz Collection",

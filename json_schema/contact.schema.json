@@ -13,11 +13,6 @@
             "type": "string",
             "format": "uri"
         },
-        "id": {
-            "title": "Identifiant contact",
-            "description": "Identifiant unique du contact, renseigner pour mettre à jour des informations",
-            "type": "string"
-        },
         "reference" : {
             "title" : "Référence",
             "description" : "Référence du contact chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",

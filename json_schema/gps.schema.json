@@ -13,11 +13,6 @@
             "type": "string",
             "format": "uri"
         },
-        "id": {
-            "title": "Identifiant GPS",
-            "description": "Identifiant unique des coordonnées GPS, pour mettre à jour les informations",
-            "type": "string"
-        },
         "latitude": {
             "title" : "Latitude",
             "Description" : "Latitude en degrés décimaux",

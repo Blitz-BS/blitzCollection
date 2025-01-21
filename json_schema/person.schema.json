@@ -13,11 +13,6 @@
             "type": "string",
             "format": "uri"
         },
-        "id": {
-            "title": "Identifiant personne",
-            "description": "Identifiant unique de la personne, met à jour les données de la personne existante s'il est précisé",
-            "type": "string"
-        },
         "reference" : {
             "title" : "Référence",
             "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
