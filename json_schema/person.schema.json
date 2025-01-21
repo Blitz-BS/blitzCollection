@@ -3,65 +3,86 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json",
     "title": "Personne",
     "description": "Personne physique ou morale ou groupement",
-    "required": ["reference", "name", "personCategory"],
-    "additionalProperties": false,
-    "type": "object",
-    "properties": {
-        "$schema": {
-            "title" : "Schéma JSON",
-            "description" : "URL du schéma",
-            "type": "string",
-            "format": "uri"
-        },
-        "reference" : {
-            "title" : "Référence",
-            "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
-            "type": "string"
-        },
-        "name" : {
-            "title" : "Nom",
-            "description" : "Exemple : Jean Dupont ou Dupont & Cie",
-            "type": "string"
-        },
-        "personCategory" : {
-            "title" : "Catégorie de personne",
-            "description" : "Catégorie de personne",
-            "enum" : ["legal person", "natural person", "joint ownership", "household", "administration"]
-        },
-        "ability" : {
-            "title" : "Compétence",
-            "description" : "Compétence du tiers à agir",
-            "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "none"],
-            "default" : "none"
-        },
-        "companyInfo" : {
-            "title" : "Informations sur une entreprise",
-            "description" : "Informations utiles sur une entreprise",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json"
-        },
-        "contacts" : {
-            "title" : "Contacts",
-            "description" : "Contacts de la personne",
-            "type": "array",
-            "items": {
-                "type" : "object",
-                "properties": {
-                    "role" : {
-                        "title" : "Rôle du contact pour la personne physique ou morale",
-                        "description" : "Exemple : commercial, responsable administratif, épouse, époux",
-                        "type": "string",
-                        "maxLength": 20
-                    },
-                    "value" : {
-                        "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json"
-                    }
-                }  
+    "oneof" : [
+        {
+            "required": ["reference"],
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "$schema": {
+                    "title" : "Schéma JSON",
+                    "description" : "URL du schéma",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "reference" : {
+                    "title" : "Référence",
+                    "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné. Ce schéma est utilisé quand la référence à une personne déjà connue en base suffit.",
+                    "type": "string"
+                }
             }
-        },
-        "bankAccount" : {
-            "title" : "Compte bancaire",
-            "description" : "Compte bancaire",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json"
+        },{
+            "required": ["reference", "name", "personCategory"],
+            "additionalProperties": false,
+            "type": "object",
+            "properties": {
+                "$schema": {
+                    "title" : "Schéma JSON",
+                    "description" : "URL du schéma",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "reference" : {
+                    "title" : "Référence",
+                    "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+                    "type": "string"
+                },
+                "name" : {
+                    "title" : "Nom",
+                    "description" : "Exemple : Jean Dupont ou Dupont & Cie",
+                    "type": "string"
+                },
+                "personCategory" : {
+                    "title" : "Catégorie de personne",
+                    "description" : "Catégorie de personne",
+                    "enum" : ["legal person", "natural person", "joint ownership", "household", "administration"]
+                },
+                "ability" : {
+                    "title" : "Compétence",
+                    "description" : "Compétence du tiers à agir",
+                    "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "none"],
+                    "default" : "none"
+                },
+                "companyInfo" : {
+                    "title" : "Informations sur une entreprise",
+                    "description" : "Informations utiles sur une entreprise",
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json"
+                },
+                "contacts" : {
+                    "title" : "Contacts",
+                    "description" : "Contacts de la personne",
+                    "type": "array",
+                    "items": {
+                        "type" : "object",
+                        "properties": {
+                            "role" : {
+                                "title" : "Rôle du contact pour la personne physique ou morale",
+                                "description" : "Exemple : commercial, responsable administratif, épouse, époux",
+                                "type": "string",
+                                "maxLength": 20
+                            },
+                            "value" : {
+                                "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json"
+                            }
+                        }  
+                    }
+                },
+                "bankAccount" : {
+                    "title" : "Compte bancaire",
+                    "description" : "Compte bancaire",
+                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json"
+                }
+            }
         }
-    }
+    ]
 }

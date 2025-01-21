@@ -2,8 +2,8 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
     "title": "Dossiers",
-    "description": "Dossiers dans le cadre d'un contrat",
-    "required": ["folders"],
+    "description": "Dossiers regroupés par contrat et par créancier",
+    "required": ["contractId", "creditor","folders"],
     "additionalProperties": false,
     "type": "object",
     "properties": {
@@ -27,7 +27,7 @@
             "additionalProperties": false,
             "items": {
                 "minItems": 1,
-                "required": [ "contractId", "reference","creditor","debtor","debts"],
+                "required": [ "reference","debtor","debts"],
                 "type": "object",
                 "properties": {
                     "reference" : {
