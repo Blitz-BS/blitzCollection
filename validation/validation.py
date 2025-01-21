@@ -7,11 +7,11 @@ from os import listdir
 import requests
 
 for file in listdir('examples'):
-    with open(f'examples/{file}') as f:
+    with open(f'examples/{file}', encoding='utf-8') as f:
         example = json.load(f)
     if '$schema' in example:
         resp = requests.get(url=example['$schema'])
-        schema = resp.json()
+        schema = resp.json()        
         validate(instance=example, schema=schema)
         print(f"le fichier {file} est valide")
     else:
