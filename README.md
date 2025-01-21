@@ -48,6 +48,8 @@ Le dossier est créé dans le cadre d'un contrat (`contractId`) entre la sociét
 
 Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json)) sont envoyés en masse, ils sont regroupés par contrat puis par créancier. 
 
+# Exemples
 
+Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier `invoices.folders.exemple.json` est un exemple de création de dossiers de factures.
 
 

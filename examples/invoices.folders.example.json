@@ -1,0 +1,94 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
+    "contractId" : 123456,
+    "creditor" : {
+        "reference" : "123456789"
+    },
+    "folders": [
+        {
+            "reference": "123456789",
+            "debtor" : {
+                "reference" : "B123456789",
+                "name": "Electricité de France",
+                "personCategory": "legal person",
+                "companyInfo": {
+                    "companyRegistrationNumber": "552081317",
+                    "mainAddress": {
+                        "street": "22-30 22 AVENUE DE WAGRAM",
+                        "city": "Paris",
+                        "postalCode": "75008",
+                        "countryCode": "FR"
+                    }
+                },
+                "contacts": [
+                    {
+                        "role" : "acheteur",
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "monsieur",
+                            "lastName": "Dupont",
+                            "firstName": "Jean",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "isMobile": false,
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@edf.fr",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ]
+            },
+            "debts" : [
+                {
+                    "reference": "REF123456",
+                    "label": "2023-001",
+                    "debtCategory": "invoice",
+                    "issueDate": "2023-01-15",
+                    "dueDate": "2023-02-15",
+                    "amount": 1500.00,
+                    "vatAmount": 300.00,
+                    "balanceDate": "2023-03-15",
+                    "balance": 1500.00,
+                    "vatBalance": 300.00,
+                    "currencyCode": "EUR",
+                    "incidentals": [
+                        {
+                            "category": "fees",
+                            "name": "pénalité de retard",
+                            "amount": 40.00
+                        }
+                    ]
+                },
+                {
+                    "reference": "REF78910",
+                    "label": "2023-002",
+                    "debtCategory": "invoice",
+                    "issueDate": "2023-02-15",
+                    "dueDate": "2023-03-15",
+                    "amount": 250.00,
+                    "vatAmount": 50.00,
+                    "balanceDate": "2023-03-15",
+                    "balance": 250.00,
+                    "vatBalance": 50.00,
+                    "currencyCode": "EUR",
+                    "incidentals": [
+                        {
+                            "category": "fees",
+                            "name": "pénalité de retard",
+                            "amount": 40.00
+                        }
+                    ]
+                }
+            ],
+            "currencyCode": "EUR"
+        }
+    ]
+}
