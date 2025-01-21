@@ -8,6 +8,7 @@
                     "reference": "789456123",
                     "folders": [
                         {
+                            "contractId": 123456,
                             "reference": "123456789",
                             "creditor" : {
                                 "reference" : "123456789",
