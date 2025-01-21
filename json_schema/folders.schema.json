@@ -13,6 +13,15 @@
             "type": "string",
             "format": "uri"
         },
+        "contractId" : {
+            "title" : "Identifiant du contrat",
+            "description" : "Identifiant du contrat entre la société de recouvrement et son client. Il s'agit de l'identifiant unique dans Blitz Collection",
+            "type" : "integer"
+        },
+        "creditor": {
+            "title": "Créancier",
+            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
+        },
         "folders": {
             "type": "array",
             "additionalProperties": false,
@@ -21,38 +30,10 @@
                 "required": [ "contractId", "reference","creditor","debtor","debts"],
                 "type": "object",
                 "properties": {
-                    "contractId" : {
-                        "title" : "Identifiant du contrat",
-                        "description" : "Identifiant du contrat entre la société de recouvrement et son client. Il s'agit de l'identifiant unique dans Blitz Collection",
-                        "type" : "integer"
-                    },
                     "reference" : {
                         "title" : "Référence",
                         "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
                         "type": "string"
-                    },
-                    "creditor": {
-                        "oneOf": [
-                            {
-                                "title": "Créancier",
-                                "description": "Créancier du dossier, si la reference n'existe pas le créancier est créé avec les informations données sinon uniquement la reference est nécessaire car les informations ne sont pas intégrées.",
-                                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
-                            },
-                            {
-                                "title": "Créancier",
-                                "description": "Créancier du dossier, si la reference n'existe pas le créancier est créé avec les informations données sinon uniquement la reference est nécessaire car les informations ne sont pas intégrées.",
-                                "required": ["reference"],
-                                "type": "object",
-                                "properties": {
-                                    "reference": {
-                                        "title" : "Référence",
-                                        "description" : "Référence du créancier/client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
-                                        "type": "string"
-                                    }
-                                },
-                                "additionalProperties": false
-                            }
-                        ]                
                     },
                     "debtor": {
                         "title" : "Débiteur",

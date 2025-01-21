@@ -31,7 +31,7 @@
         "ability" : {
             "title" : "Compétence",
             "description" : "Compétence du tiers à agir",
-            "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "none"],
+            "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "none"],
             "default" : "none"
         },
         "companyInfo" : {

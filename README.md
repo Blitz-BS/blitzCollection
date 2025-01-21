@@ -30,7 +30,7 @@ Comme pour les personnes et les contacts, une créance dispose d'une référence
 
 Des frais accessoires ([`ìncidental`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json)) peuvent être attachés à la créance.
 
-## Frais accessoires ([`incidental`])
+## Frais accessoires ([`incidental`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json))
 
 Les frais accessoires sont soit de type frais fixe (`fees`) soit de type intérêts (`interests`). Les frais peuvent être de différentes catégories (`category`) exprimées dans la langue du droit dans lequel s'applique ces frais accessoires. Pour l'instant seuls les frais accessoires français existent à savoir les intérêts de retard, les pénalités de retard, les indemnités forfaitaires, les dommages et intérêts", les dépens, l'article 700. On remarque que certains frais accessoires s'appliquent à la créance ([`debt`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json)) alors que d'autres d'appliquent au dossier ([`folder`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json))
 
@@ -38,11 +38,16 @@ Dans le cas des frais fixe, ils comprennent uniquement un montant (`amount`) ain
 
 Dans le cas des intérêts, ils comprennent un taux d'intérêt, une date de démarrage des intérêts et éventuellement une date de fin des intérêts. 
 
-## Dossier ([`folder`])
+## Dossier ([`folder`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json))
 
 Les dossiers regroupent un ensemble de créances ([`debt`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json)) avec un créancier et un débiteur ainsi que des tiers qui sont tous des personnes ([`person`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json)). Les tiers regroupent les intervenants périphériques au dossier comme les commissaires de justice, les avocats ou les tribunaux. 
 
-Des frais accessoires ([`ìncidental`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json)) peuvent être attachés au dossier. Il s'agit des frais accessoires 
+Des frais accessoires ([`incidental`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json)) peuvent être attachés au dossier. Il s'agit des frais accessoires judiciaires qui sont les seuls qui peuvent être attaché au dossier. Le dossier précise également la monnaie dans laquelle les frais accessoires sont libellés. 
+
+Le dossier est créé dans le cadre d'un contrat (`contractId`) entre la société de recouvrement et son client. Le client peut être le créancier mais peut être également une autre personne. 
+
+Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json)) sont envoyés en masse, ils sont regroupés par contrat puis par créancier. 
+
 
 
 
