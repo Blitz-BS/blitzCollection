@@ -56,7 +56,7 @@
                 "companyInfo" : {
                     "title" : "Informations sur une entreprise",
                     "description" : "Informations utiles sur une entreprise",
-                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json"
+                    "$ref": "./companyInfo.schema.json"
                 },
                 "contacts" : {
                     "title" : "Contacts",
@@ -72,7 +72,7 @@
                                 "maxLength": 20
                             },
                             "value" : {
-                                "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json"
+                                "$ref" : "./contact.schema.json"
                             }
                         }  
                     }
@@ -80,7 +80,7 @@
                 "bankAccount" : {
                     "title" : "Compte bancaire",
                     "description" : "Compte bancaire",
-                    "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json"
+                    "$ref": "./bankAccount.schema.json"
                 }
             }
         }

@@ -60,55 +60,112 @@
             "key": "89"
         }
     },
-    "debtor" : {
-        "reference" : "B123456789",
-        "name": "Monsieur Jean Dupont",
-        "personCategory": "natural person",
-        "contacts": [
-            {
-                "value": {
-                    "reference" : "C123456789",
-                    "civility": "monsieur",
-                    "lastName": "Dupont",
-                    "firstName": "Jean",
-                    "phones": [
-                        {
-                            "value": "02 03 04 05 06",
-                            "isMobile": false,
-                            "description": "Ligne fixe du bureau",
-                            "qualification": "professional"
-                        },
-                        {
-                            "value": "06 01 02 03 04",
-                            "isMobile" :true,
-                            "description": "Mobile personnel",
-                            "qualification": "personal"
+    "debtors" : [
+        {
+            "value": {
+                "reference" : "B123456789",
+                "name": "Monsieur Jean Dupont",
+                "personCategory": "natural person",
+                "contacts": [
+                    {
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "monsieur",
+                            "lastName": "Dupont",
+                            "firstName": "Jean",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "isMobile": false,
+                                    "description": "Ligne fixe du bureau",
+                                    "qualification": "professional"
+                                },
+                                {
+                                    "value": "06 01 02 03 04",
+                                    "isMobile" :true,
+                                    "description": "Mobile personnel",
+                                    "qualification": "personal"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@monmail.com",
+                                    "description": "Adresse peu utilisée",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "adresses": [
+                                {
+                                    "street": "Rue de la paix",
+                                    "city": "Paris",
+                                    "postalCode": "75000",
+                                    "countryCode": "FR",
+                                    "gps" : {
+                                        "latitude": 48.8566,
+                                        "longitude": 2.3522
+                                    }
+                                }
+                            ],
+                            "languageCode": "fra"
                         }
-                    ],
-                    "emails": [
-                        {
-                            "value": "jdupont@monmail.com",
-                            "description": "Adresse peu utilisée",
-                            "qualification": "professional"
-                        }
-                    ],
-                    "adresses": [
-                        {
-                            "street": "Rue de la paix",
-                            "city": "Paris",
-                            "postalCode": "75000",
-                            "countryCode": "FR",
-                            "gps" : {
-                                "latitude": 48.8566,
-                                "longitude": 2.3522
-                            }
-                        }
-                    ],
-                    "languageCode": "fra"
-                }
+                    }
+                ]
             }
-        ]
-    },
+        }
+    ],
+    "guarantors": [
+        {
+            "value": {
+                "reference" : "B123456789",
+                "name": "Jeanne Dupont",
+                "personCategory": "natural person",
+                "contacts": [
+                    {
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "madame",
+                            "lastName": "Dupont",
+                            "firstName": "Jeanne",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "isMobile": false,
+                                    "description": "Ligne fixe du bureau",
+                                    "qualification": "professional"
+                                },
+                                {
+                                    "value": "06 01 02 03 04",
+                                    "isMobile" :true,
+                                    "description": "Mobile personnel",
+                                    "qualification": "personal"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@monmail.com",
+                                    "description": "Adresse peu utilisée",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "adresses": [
+                                {
+                                    "street": "Rue de la paix",
+                                    "city": "Paris",
+                                    "postalCode": "75000",
+                                    "countryCode": "FR",
+                                    "gps" : {
+                                        "latitude": 48.8566,
+                                        "longitude": 2.3522
+                                    }
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
     "debts" : [{
         "reference": "REF123456",
         "label": "2023-001",

@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json",
     "title": "Contact",
     "description": "Coordonnées d'une personne physique",
-    "oneof" : [
+    "oneOf" : [
         {
             "required": ["reference"],
             "additionalProperties": false,
@@ -59,7 +59,7 @@
                     "description" : "Numéros de téléphone par ordre décroissant de qualification",
                     "type": "array",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json"
+                        "$ref": "./phone.schema.json"
                     }
                 },
                 "emails": {
@@ -67,7 +67,7 @@
                     "description" : "Adresses emails par ordre décroissant de qualification",
                     "type": "array",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json"
+                        "$ref": "./email.schema.json"
                     }
                 },
                 "adresses": {
@@ -75,7 +75,7 @@
                     "description" : "Adresses par ordre décroissant de qualification",
                     "type": "array",
                     "items": {
-                        "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json"
+                        "$ref": "./address.schema.json"
                     }
                 },
                 "languageCode": {

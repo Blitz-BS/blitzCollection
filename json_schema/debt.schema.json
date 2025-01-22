@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
     "title": "Créance",
     "description": "Créance dans un dossier",
-    "oneof" : [
+    "oneOf" : [
         {
             "required": ["reference"],
             "additionalProperties": false,
@@ -92,14 +92,14 @@
                     "maximum": 999999999999.99
                 },                                 
                 "currencyCode": {
-                    "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/currencyCode.schema.json"
+                    "$ref" : "./currencyCode.schema.json"
                 },
                 "incidentals": {
                     "title" : "Frais accessoires",
                     "description" : "Frais accessoires attachés à la créance",
                     "type": "array",
                     "items": {
-                        "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json"
+                        "$ref": "./incidental.schema.json"
                     }
                 }
             }

@@ -25,25 +25,38 @@
         },
         "creditor": {
             "title": "Créancier",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
+            "$ref": "./person.schema.json"
         },
-        "debtor": {
-            "title" : "Débiteur",
-            "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"
+        "debtors": {
+            "title" : "Débiteurs",
+            "description": "Débiteur ou co-débiteurs et leurs engagements respectifs. Si l'engagement n'est pas rempli, la situation est solidaire",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "./debtor.schema.json"
+            }
+        },
+        "guarantors": {
+            "title": "Cautions",
+            "description": "Cautions du dossier et leurs engagements respectifs. Si l'engagement n'est pas rempli, la caution est solidaire",
+            "type": "array",
+            "items": {
+                "$ref": "./debtor.schema.json"
+            }
         },
         "debts": {
             "title": "Créances",
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json"
+                "$ref": "./debt.schema.json"
             }
         },
         "parties":{
             "title": "Tiers",
             "description": "Tiers impliqués dans le dossier",
             "items": {
-                "$ref": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json"           
+                "$ref": "./person.schema.json"           
             }
         },
         "incidentals" : {
@@ -51,13 +64,13 @@
             "description": "Frais accessoires liés au dossier et non directement aux créances",
             "type": "array",
             "items" : {
-                "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json"
+                "$ref" : "./incidental.schema.json"
             }
         },
         "currencyCode" : {
             "title" : "Code devise",
             "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
-            "$ref" : "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/currencyCode.schema.json"
+            "$ref" : "./currencyCode.schema.json"
         }
     }
 }
