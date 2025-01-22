@@ -27,7 +27,7 @@
             "additionalProperties": false,
             "items": {
                 "minItems": 1,
-                "required": [ "reference","debtor","debts"],
+                "required": [ "reference","debtors","debts"],
                 "type": "object",
                 "properties": {
                     "reference" : {
