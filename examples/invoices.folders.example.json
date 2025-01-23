@@ -7,45 +7,49 @@
     "folders": [
         {
             "reference": "123456789",
-            "debtor" : {
-                "reference" : "B123456789",
-                "name": "Electricité de France",
-                "personCategory": "legal person",
-                "companyInfo": {
-                    "companyRegistrationNumber": "552081317",
-                    "mainAddress": {
-                        "street": "22-30 22 AVENUE DE WAGRAM",
-                        "city": "Paris",
-                        "postalCode": "75008",
-                        "countryCode": "FR"
-                    }
-                },
-                "contacts": [
-                    {
-                        "role" : "acheteur",
-                        "value": {
-                            "reference" : "C123456789",
-                            "civility": "monsieur",
-                            "lastName": "Dupont",
-                            "firstName": "Jean",
-                            "phones": [
-                                {
-                                    "value": "02 03 04 05 06",
-                                    "isMobile": false,
-                                    "qualification": "professional"
+            "debtors" : [
+                {
+                    "value": {
+                        "reference" : "B123456789",
+                        "name": "Electricité de France",
+                        "personCategory": "legal person",
+                        "companyInfo": {
+                            "companyRegistrationNumber": "552081317",
+                            "mainAddress": {
+                                "street": "22-30 22 AVENUE DE WAGRAM",
+                                "city": "Paris",
+                                "postalCode": "75008",
+                                "countryCode": "FR"
+                            }
+                        },
+                        "contacts": [
+                            {
+                                "role" : "acheteur",
+                                "value": {
+                                    "reference" : "C123456789",
+                                    "civility": "monsieur",
+                                    "lastName": "Dupont",
+                                    "firstName": "Jean",
+                                    "phones": [
+                                        {
+                                            "value": "02 03 04 05 06",
+                                            "isMobile": false,
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "jdupont@edf.fr",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
                                 }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "jdupont@edf.fr",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "languageCode": "fra"
-                        }
+                            }
+                        ]
                     }
-                ]
-            },
+                }
+            ],
             "debts" : [
                 {
                     "reference": "REF123456",

@@ -218,49 +218,147 @@
             "creditor" : {
                 "reference" : "123456789"
             },
-            "debtor" : {
-                "reference" : "B123456789",
-                "name": "Monsieur Pierre Rocher",
-                "personCategory": "natural person",
-                "contacts": [
-                    {
-                        "value": {
-                            "reference" : "C123456789",
-                            "civility": "monsieur",
-                            "lastName": "Rocher",
-                            "firstName": "Pierre",
-                            "phones": [
-                                {
-                                    "value": "06 10 20 30 40",
-                                    "isMobile" :true,
-                                    "description": "Mobile personnel",
-                                    "qualification": "personal"
+            "debtors" : [
+                {
+                    "undertaking": 1230,
+                    "value": {
+                        "reference" : "B123456789",
+                        "name": "Monsieur Pierre Rocher",
+                        "personCategory": "natural person",
+                        "contacts": [
+                            {
+                                "value": {
+                                    "reference" : "C123456789",
+                                    "civility": "monsieur",
+                                    "lastName": "Rocher",
+                                    "firstName": "Pierre",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "isMobile" :true,
+                                            "description": "Mobile personnel",
+                                            "qualification": "personal"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "pete.rock@gmail.com",
+                                            "description": "Adresse peu utilisée",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "adresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "FR",
+                                            "gps" : {
+                                                "latitude": 48.8566,
+                                                "longitude": 2.3522
+                                            }
+                                        }
+                                    ],
+                                    "languageCode": "fra"
                                 }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "pete.rock@gmail.com",
-                                    "description": "Adresse peu utilisée",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "adresses": [
-                                {
-                                    "street": "Rue de la paix",
-                                    "city": "Paris",
-                                    "postalCode": "75000",
-                                    "countryCode": "FR",
-                                    "gps" : {
-                                        "latitude": 48.8566,
-                                        "longitude": 2.3522
-                                    }
-                                }
-                            ],
-                            "languageCode": "fra"
-                        }
+                            }
+                        ]
                     }
-                ]
-            },
+                },
+                {
+                    "undertaking": 470,
+                    "value": {
+                        "reference" : "B123456789",
+                        "name": "Monsieur Philippe Roucher",
+                        "personCategory": "natural person",
+                        "contacts": [
+                            {
+                                "value": {
+                                    "reference" : "C123654987",
+                                    "civility": "monsieur",
+                                    "lastName": "Roucher",
+                                    "firstName": "Philippe",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "isMobile" :true,
+                                            "description": "Mobile personnel",
+                                            "qualification": "personal"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "philgoodroucherk@gmail.com",
+                                            "description": "Adresse peu utilisée",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "adresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "FR",
+                                            "gps" : {
+                                                "latitude": 48.8566,
+                                                "longitude": 2.3522
+                                            }
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "guarantors": [
+                {
+                    "value": {
+                        "reference" : "C18",
+                        "name": "Madame Philippine Roucher",
+                        "personCategory": "natural person",
+                        "contacts": [
+                            {
+                                "value": {
+                                    "reference" : "C123456789",
+                                    "civility": "monsieur",
+                                    "lastName": "Roucher",
+                                    "firstName": "Philippine",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "isMobile" :true,
+                                            "description": "Mobile personnel",
+                                            "qualification": "personal"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "philippine.roucherk@gmail.com",
+                                            "description": "Adresse peu utilisée",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "adresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "FR",
+                                            "gps" : {
+                                                "latitude": 48.8566,
+                                                "longitude": 2.3522
+                                            }
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
             "debts" : [
                 {
                     "reference": "REF1236",
