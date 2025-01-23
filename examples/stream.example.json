@@ -1,0 +1,509 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/stream.schema.json",
+    "stream": [
+        {
+            "contractId" : 123456,
+            "creditor" : {
+                "reference" : "123456789"
+            },
+            "folders": [
+                {
+                    "reference": "123456789",
+                    "debtors" : [
+                        {
+                            "value": {
+                                "reference" : "B123456789",
+                                "name": "Electricité de France",
+                                "personCategory": "legal person",
+                                "companyInfo": {
+                                    "companyRegistrationNumber": "552081317",
+                                    "mainAddress": {
+                                        "street": "22-30 22 AVENUE DE WAGRAM",
+                                        "city": "Paris",
+                                        "postalCode": "75008",
+                                        "countryCode": "FR"
+                                    }
+                                },
+                                "contacts": [
+                                    {
+                                        "role" : "acheteur",
+                                        "value": {
+                                            "reference" : "C123456789",
+                                            "civility": "monsieur",
+                                            "lastName": "Dupont",
+                                            "firstName": "Jean",
+                                            "phones": [
+                                                {
+                                                    "value": "02 03 04 05 06",
+                                                    "isMobile": false,
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "emails": [
+                                                {
+                                                    "value": "jdupont@edf.fr",
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "languageCode": "fra"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "debts" : [
+                        {
+                            "reference": "REF123456",
+                            "label": "2023-001",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-01-15",
+                            "dueDate": "2023-02-15",
+                            "amount": 1500.00,
+                            "vatAmount": 300.00,
+                            "balanceDate": "2023-03-15",
+                            "balance": 1500.00,
+                            "vatBalance": 300.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        },
+                        {
+                            "reference": "REF78910",
+                            "label": "2023-002",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-02-15",
+                            "dueDate": "2023-03-15",
+                            "amount": 250.00,
+                            "vatAmount": 50.00,
+                            "balanceDate": "2023-03-15",
+                            "balance": 250.00,
+                            "vatBalance": 50.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        }
+                    ],
+                    "currencyCode": "EUR"
+                }
+            ]
+        },
+        {
+            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
+            "contractId" : 123456,
+            "creditor" : {
+                "reference" : "123456789",
+                "name": "Blitz Business Service",
+                "personCategory": "legal person",
+                "companyInfo": {
+                    "companyRegistrationNumber": "401694989",
+                    "mainAddress": {
+                        "street": "265 rue Denis Papin",
+                        "city": "Villefontaine",
+                        "postalCode": "38090",
+                        "countryCode": "FR"
+                    },
+                    "entreprisePhone": {
+                        "value": "04 74 96 27 34",
+                        "isMobile": false,
+                        "qualification": "professional"
+                    },
+                    "entrepriseEmail": {
+                        "value": "contact@blitzbs.com",
+                        "qualification": "professional"
+                    },
+                    "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
+                },
+                "contacts": [
+                    {
+                        "role": "commercial",
+                        "value": {
+                            "reference" : "A123456789",
+                            "civility": "monsieur",
+                            "lastName": "Durant",
+                            "firstName": "Paul",
+                            "phones": [
+                                {
+                                    "value": "01 02 03 04 05",
+                                    "isMobile": false,
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "pdurant@blitzbs.com",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ],
+                "bankAccount": {
+                    "name": "Compte de l'entreprise",
+                    "iban": "FR7630006000011234567890189",
+                    "bank": "Banque de France",
+                    "bankCode": "30006",
+                    "sortCode": "00123",
+                    "accountNumber": "12345678901",
+                    "key": "89"
+                }
+            },
+            "folders": [
+                {
+                    "reference": "123456789",
+                    "debtors" : [
+                        {
+                            "value": {
+                                "reference" : "B123456789",
+                                "name": "Monsieur Jean Dupont",
+                                "personCategory": "natural person",
+                                "contacts": [
+                                    {
+                                        "value": {
+                                            "reference" : "C123456789",
+                                            "civility": "monsieur",
+                                            "lastName": "Dupont",
+                                            "firstName": "Jean",
+                                            "phones": [
+                                                {
+                                                    "value": "02 03 04 05 06",
+                                                    "isMobile": false,
+                                                    "description": "Ligne fixe du bureau",
+                                                    "qualification": "professional"
+                                                },
+                                                {
+                                                    "value": "06 01 02 03 04",
+                                                    "isMobile" :true,
+                                                    "description": "Mobile personnel",
+                                                    "qualification": "personal"
+                                                }
+                                            ],
+                                            "emails": [
+                                                {
+                                                    "value": "jdupont@monmail.com",
+                                                    "description": "Adresse peu utilisée",
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "adresses": [
+                                                {
+                                                    "street": "Rue de la paix",
+                                                    "city": "Paris",
+                                                    "postalCode": "75000",
+                                                    "countryCode": "FR",
+                                                    "gps" : {
+                                                        "latitude": 48.8566,
+                                                        "longitude": 2.3522
+                                                    }
+                                                }
+                                            ],
+                                            "languageCode": "fra"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "debts" : [
+                        {
+                            "reference": "REF123456",
+                            "label": "2023-001",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-01-15",
+                            "dueDate": "2023-02-15",
+                            "amount": 1500.00,
+                            "vatAmount": 300.00,
+                            "balanceDate": "2023-03-15",
+                            "balance": 1500.00,
+                            "vatBalance": 300.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        },
+                        {
+                            "reference": "REF78910",
+                            "label": "2023-002",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-02-15",
+                            "dueDate": "2023-03-15",
+                            "amount": 250.00,
+                            "vatAmount": 50.00,
+                            "balanceDate": "2023-03-15",
+                            "balance": 250.00,
+                            "vatBalance": 50.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        }
+                    ],
+                    "parties" : [
+                        {
+                            "reference" : "C123456789",
+                            "name": "GBA Avocats",
+                            "personCategory": "legal person",
+                            "ability" : "attorney",
+                            "companyInfo": {
+                                "companyRegistrationNumber": "493675904",
+                                "mainAddress": {
+                                    "street": "24 MAIL FRANCOIS MITTERRAND",
+                                    "city": "RENNES",
+                                    "postalCode": "35000",
+                                    "countryCode": "FR"
+                                },
+                                "entreprisePhone": {
+                                    "value": "02 99 35 12 12",
+                                    "isMobile": false,
+                                    "qualification": "professional"
+                                },
+                                "entrepriseEmail": {
+                                    "value": "gba@gba-avocats.com",
+                                    "qualification": "professional"
+                                },
+                                "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/493675904"
+                            },
+                            "contacts": [
+                                {
+                                    "role": "avocat fiscaliste",
+                                    "value": {
+                                        "reference" : "D123456789",
+                                        "civility": "madame",
+                                        "lastName": "Duplessis",
+                                        "firstName": "Marie",
+                                        "phones": [
+                                            {
+                                                "value": "02 02 03 04 05",
+                                                "isMobile": false,
+                                                "description": "Ligne fixe du bureau",
+                                                "qualification": "professional"
+                                            }
+                                        ],
+                                        "emails": [
+                                            {
+                                                "value": "mduplessis@gba-avocats.com",
+                                                "qualification": "professional"
+                                            }
+                                        ],
+                                        "languageCode": "fra"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "currencyCode": "EUR"
+                },
+                {
+                    "contractId" : 123459,
+                    "reference": "1225",
+                    "creditor" : {
+                        "reference" : "123456789"
+                    },
+                    "debtors" : [
+                        {
+                            "undertaking": 1230,
+                            "value": {
+                                "reference" : "B123456789",
+                                "name": "Monsieur Pierre Rocher",
+                                "personCategory": "natural person",
+                                "contacts": [
+                                    {
+                                        "value": {
+                                            "reference" : "C123456789",
+                                            "civility": "monsieur",
+                                            "lastName": "Rocher",
+                                            "firstName": "Pierre",
+                                            "phones": [
+                                                {
+                                                    "value": "06 10 20 30 40",
+                                                    "isMobile" :true,
+                                                    "description": "Mobile personnel",
+                                                    "qualification": "personal"
+                                                }
+                                            ],
+                                            "emails": [
+                                                {
+                                                    "value": "pete.rock@gmail.com",
+                                                    "description": "Adresse peu utilisée",
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "adresses": [
+                                                {
+                                                    "street": "Rue de la paix",
+                                                    "city": "Paris",
+                                                    "postalCode": "75000",
+                                                    "countryCode": "FR",
+                                                    "gps" : {
+                                                        "latitude": 48.8566,
+                                                        "longitude": 2.3522
+                                                    }
+                                                }
+                                            ],
+                                            "languageCode": "fra"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "undertaking": 470,
+                            "value": {
+                                "reference" : "B123456789",
+                                "name": "Monsieur Philippe Roucher",
+                                "personCategory": "natural person",
+                                "contacts": [
+                                    {
+                                        "value": {
+                                            "reference" : "C123654987",
+                                            "civility": "monsieur",
+                                            "lastName": "Roucher",
+                                            "firstName": "Philippe",
+                                            "phones": [
+                                                {
+                                                    "value": "06 10 20 30 40",
+                                                    "isMobile" :true,
+                                                    "description": "Mobile personnel",
+                                                    "qualification": "personal"
+                                                }
+                                            ],
+                                            "emails": [
+                                                {
+                                                    "value": "philgoodroucherk@gmail.com",
+                                                    "description": "Adresse peu utilisée",
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "adresses": [
+                                                {
+                                                    "street": "Rue de la paix",
+                                                    "city": "Paris",
+                                                    "postalCode": "75000",
+                                                    "countryCode": "FR",
+                                                    "gps" : {
+                                                        "latitude": 48.8566,
+                                                        "longitude": 2.3522
+                                                    }
+                                                }
+                                            ],
+                                            "languageCode": "fra"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "guarantors": [
+                        {
+                            "value": {
+                                "reference" : "C18",
+                                "name": "Madame Philippine Roucher",
+                                "personCategory": "natural person",
+                                "contacts": [
+                                    {
+                                        "value": {
+                                            "reference" : "C123456789",
+                                            "civility": "monsieur",
+                                            "lastName": "Roucher",
+                                            "firstName": "Philippine",
+                                            "phones": [
+                                                {
+                                                    "value": "06 10 20 30 40",
+                                                    "isMobile" :true,
+                                                    "description": "Mobile personnel",
+                                                    "qualification": "personal"
+                                                }
+                                            ],
+                                            "emails": [
+                                                {
+                                                    "value": "philippine.roucherk@gmail.com",
+                                                    "description": "Adresse peu utilisée",
+                                                    "qualification": "professional"
+                                                }
+                                            ],
+                                            "adresses": [
+                                                {
+                                                    "street": "Rue de la paix",
+                                                    "city": "Paris",
+                                                    "postalCode": "75000",
+                                                    "countryCode": "FR",
+                                                    "gps" : {
+                                                        "latitude": 48.8566,
+                                                        "longitude": 2.3522
+                                                    }
+                                                }
+                                            ],
+                                            "languageCode": "fra"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "debts" : [
+                        {
+                            "reference": "REF1236",
+                            "label": "2023-001",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-01-15",
+                            "dueDate": "2023-02-15",
+                            "amount": 1500.00,
+                            "vatAmount": 300.00,
+                            "balanceDate": "2023-03-15",
+                            "balance": 1500.00,
+                            "vatBalance": 300.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        },
+                        {
+                            "reference": "REF78910",
+                            "label": "2023-002",
+                            "debtCategory": "invoice",
+                            "issueDate": "2023-02-15",
+                            "dueDate": "2023-03-15",
+                            "amount": 250.00,
+                            "vatAmount": 50.00,
+                            "balanceDate": "2023-03-30",
+                            "balance": 200.00,
+                            "vatBalance": 50.00,
+                            "currencyCode": "EUR",
+                            "incidentals": [
+                                {
+                                    "category": "fees",
+                                    "name": "pénalité de retard",
+                                    "amount": 40.00
+                                }
+                            ]
+                        }
+                    ],
+                    "currencyCode": "EUR"
+                }
+            ]
+        }
+    ]
+}
