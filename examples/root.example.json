@@ -99,7 +99,6 @@
             ]
         },
         {
-            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
             "contractId" : 123456,
             "creditor" : {
                 "reference" : "123456789",
@@ -313,11 +312,7 @@
                     "currencyCode": "EUR"
                 },
                 {
-                    "contractId" : 123459,
                     "reference": "1225",
-                    "creditor" : {
-                        "reference" : "123456789"
-                    },
                     "debtors" : [
                         {
                             "undertaking": 1230,

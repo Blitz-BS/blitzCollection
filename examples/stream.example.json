@@ -213,11 +213,7 @@
             "currencyCode": "EUR"
         },
         {
-            "contractId" : 123459,
             "reference": "1225",
-            "creditor" : {
-                "reference" : "123456789"
-            },
             "debtors" : [
                 {
                     "undertaking": 1230,

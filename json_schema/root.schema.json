@@ -4,7 +4,7 @@
     "title": "Flux de dossiers",
     "description": "Flux de dossiers, regroupés par contrat et par créancier",
     "additionalProperties": false,
-    "required": ["stream"],
+    "required": ["foldersStreams"],
     "type": "object",
     "properties": {
         "$schema": {
