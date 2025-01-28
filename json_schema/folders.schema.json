@@ -1,10 +1,10 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
-    "title": "Dossiers",
-    "description": "Dossiers regroupés par contrat et par créancier",
-    "required": ["contractId", "creditor","folders"],
+    "title": "Dossier d'un flux",
+    "description": "Dossier dans le cadre d'un flux de dossier",
     "additionalProperties": false,
+    "required": [ "reference","debtors","debts"],
     "type": "object",
     "properties": {
         "$schema": {
@@ -13,75 +13,55 @@
             "type": "string",
             "format": "uri"
         },
-        "contractId" : {
-            "title" : "Identifiant du contrat",
-            "description" : "Identifiant du contrat entre la société de recouvrement et son client. Il s'agit de l'identifiant unique dans Blitz Collection",
-            "type" : "integer"
+        "reference" : {
+            "title" : "Référence",
+            "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "type": "string"
         },
-        "creditor": {
-            "title": "Créancier",
-            "$ref": "./person.schema.json"
-        },
-        "folders": {
+        "debtors": {
+            "title" : "Débiteurs",
+            "description": "Débiteur ou co-débiteurs et leurs engagements respectifs. Si l'engagement n'est pas rempli, la situation est solidaire",
             "type": "array",
-            "additionalProperties": false,
+            "minItems": 1,
             "items": {
-                "minItems": 1,
-                "required": [ "reference","debtors","debts"],
-                "type": "object",
-                "properties": {
-                    "reference" : {
-                        "title" : "Référence",
-                        "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
-                        "type": "string"
-                    },
-                    "debtors": {
-                        "title" : "Débiteurs",
-                        "description": "Débiteur ou co-débiteurs et leurs engagements respectifs. Si l'engagement n'est pas rempli, la situation est solidaire",
-                        "type": "array",
-                        "minItems": 1,
-                        "items": {
-                            "$ref": "./debtor.schema.json"
-                        }                        
-                    },
-                    "guarantors": {
-                        "title" : "Cautions",
-                        "description": "Cautions du dossier et leurs engagements respectifs. Si l'engagement n'est pas rempli, la caution est solidaire",
-                        "type": "array",
-                        "items": {
-                            "$ref": "./debtor.schema.json"
-                        }                        
-                    },
-                    "debts": {
-                        "title": "Créances",
-                        "type": "array",
-                        "minItems": 1,
-                        "items": {
-                            "$ref": "./debt.schema.json"
-                        }
-                    },
-                    "parties":{
-                        "title": "Tiers",
-                        "description": "Tiers impliqués dans le dossier",
-                        "items": {
-                            "$ref": "./person.schema.json"           
-                        }
-                    },
-                    "incidentals" : {
-                        "title": "Frais accessoires",
-                        "description": "Frais accessoires liés au dossier et non directement aux créances",
-                        "type": "array",
-                        "items" : {
-                            "$ref" : "./incidental.schema.json"
-                        }
-                    },
-                    "currencyCode" : {
-                        "title" : "Code devise",
-                        "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
-                        "$ref" : "./currencyCode.schema.json"
-                    }
-                }
+                "$ref": "./debtor.schema.json"
+            }                        
+        },
+        "guarantors": {
+            "title" : "Cautions",
+            "description": "Cautions du dossier et leurs engagements respectifs. Si l'engagement n'est pas rempli, la caution est solidaire",
+            "type": "array",
+            "items": {
+                "$ref": "./debtor.schema.json"
+            }               
+        },
+        "debts": {
+            "title": "Créances",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "$ref": "./debt.schema.json"
             }
+        },
+        "parties":{
+            "title": "Tiers",
+            "description": "Tiers impliqués dans le dossier",
+            "items": {
+                "$ref": "./person.schema.json"           
+            }
+        },
+        "incidentals" : {
+            "title": "Frais accessoires",
+            "description": "Frais accessoires liés au dossier et non directement aux créances",
+            "type": "array",
+            "items" : {
+                "$ref" : "./incidental.schema.json"
+            }
+        },
+        "currencyCode" : {
+            "title" : "Code devise",
+            "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
+            "$ref" : "./currencyCode.schema.json"
         }
-    }    
+    }
 }

@@ -1,10 +1,10 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/stream.schema.json",
-    "title": "Flux de dossiers",
-    "description": "Flux de dossiers, regroupés par contrat et par créancier",
+    "title": "Dossiers",
+    "description": "Dossiers regroupés par contrat et par créancier",
+    "required": ["contractId", "creditor","folders"],
     "additionalProperties": false,
-    "required": ["stream"],
     "type": "object",
     "properties": {
         "$schema": {
@@ -13,12 +13,21 @@
             "type": "string",
             "format": "uri"
         },
-        "stream": {
+        "contractId" : {
+            "title" : "Identifiant du contrat",
+            "description" : "Identifiant du contrat entre la société de recouvrement et son client. Il s'agit de l'identifiant unique dans Blitz Collection",
+            "type" : "integer"
+        },
+        "creditor": {
+            "title": "Créancier",
+            "$ref": "./person.schema.json"
+        },
+        "folders": {
             "type": "array",
             "minItems": 1,
             "items": {
                 "$ref": "./folders.schema.json"
             }
         }
-    }
+    }    
 }
