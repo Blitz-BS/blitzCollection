@@ -27,26 +27,24 @@
                                 "contacts": [
                                     {
                                         "role" : "acheteur",
-                                        "value": {
-                                            "reference" : "C123456789",
-                                            "civility": "monsieur",
-                                            "lastName": "Dupont",
-                                            "firstName": "Jean",
-                                            "phones": [
-                                                {
-                                                    "value": "02 03 04 05 06",
-                                                    "isMobile": false,
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "emails": [
-                                                {
-                                                    "value": "jdupont@edf.fr",
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "languageCode": "fra"
-                                        }
+                                        "reference" : "C123456789",
+                                        "civility": "monsieur",
+                                        "lastName": "Dupont",
+                                        "firstName": "Jean",
+                                        "phones": [
+                                            {
+                                                "value": "02 03 04 05 06",
+                                                "isMobile": false,
+                                                "qualification": "professional"
+                                            }
+                                        ],
+                                        "emails": [
+                                            {
+                                                "value": "jdupont@edf.fr",
+                                                "qualification": "professional"
+                                            }
+                                        ],
+                                        "languageCode": "fra"
                                     }
                                 ]
                             }
@@ -122,26 +120,24 @@
                 "contacts": [
                     {
                         "role": "commercial",
-                        "value": {
-                            "reference" : "A123456789",
-                            "civility": "monsieur",
-                            "lastName": "Durant",
-                            "firstName": "Paul",
-                            "phones": [
-                                {
-                                    "value": "01 02 03 04 05",
-                                    "isMobile": false,
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "pdurant@blitzbs.com",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "languageCode": "fra"
-                        }
+                        "reference" : "A123456789",
+                        "civility": "monsieur",
+                        "lastName": "Durant",
+                        "firstName": "Paul",
+                        "phones": [
+                            {
+                                "value": "01 02 03 04 05",
+                                "isMobile": false,
+                                "qualification": "professional"
+                            }
+                        ],
+                        "emails": [
+                            {
+                                "value": "pdurant@blitzbs.com",
+                                "qualification": "professional"
+                            }
+                        ],
+                        "languageCode": "fra"
                     }
                 ],
                 "bankAccount": {
@@ -272,27 +268,25 @@
                             "contacts": [
                                 {
                                     "role": "avocat fiscaliste",
-                                    "value": {
-                                        "reference" : "D123456789",
-                                        "civility": "madame",
-                                        "lastName": "Duplessis",
-                                        "firstName": "Marie",
-                                        "phones": [
-                                            {
-                                                "value": "02 02 03 04 05",
-                                                "isMobile": false,
-                                                "description": "Ligne fixe du bureau",
-                                                "qualification": "professional"
-                                            }
-                                        ],
-                                        "emails": [
-                                            {
-                                                "value": "mduplessis@gba-avocats.com",
-                                                "qualification": "professional"
-                                            }
-                                        ],
-                                        "languageCode": "fra"
-                                    }
+                                    "reference" : "D123456789",
+                                    "civility": "madame",
+                                    "lastName": "Duplessis",
+                                    "firstName": "Marie",
+                                    "phones": [
+                                        {
+                                            "value": "02 02 03 04 05",
+                                            "isMobile": false,
+                                            "description": "Ligne fixe du bureau",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "mduplessis@gba-avocats.com",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "languageCode": "fra"   
                                 }
                             ]
                         }

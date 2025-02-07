@@ -116,27 +116,25 @@
             "contacts": [
                 {
                     "role": "avocat fiscaliste",
-                    "value": {
-                        "reference" : "D123456789",
-                        "civility": "madame",
-                        "lastName": "Duplessis",
-                        "firstName": "Marie",
-                        "phones": [
-                            {
-                                "value": "02 02 03 04 05",
-                                "isMobile": false,
-                                "description": "Ligne fixe du bureau",
-                                "qualification": "professional"
-                            }
-                        ],
-                        "emails": [
-                            {
-                                "value": "mduplessis@gba-avocats.com",
-                                "qualification": "professional"
-                            }
-                        ],
-                        "languageCode": "fra"
-                    }
+                    "reference" : "D123456789",
+                    "civility": "madame",
+                    "lastName": "Duplessis",
+                    "firstName": "Marie",
+                    "phones": [
+                        {
+                            "value": "02 02 03 04 05",
+                            "isMobile": false,
+                            "description": "Ligne fixe du bureau",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "emails": [
+                        {
+                            "value": "mduplessis@gba-avocats.com",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "languageCode": "fra"
                 }
             ]
         }
