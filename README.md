@@ -3,18 +3,18 @@ Blitz Collection permet l'intégration de dossiers selon un format pivot répond
 # Test de JSON contre un schéma
 Le script `validation.py` permet de tester l'ensemble des JSON du dossier `examples` contre le schéma préciser dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
 # Description des principaux objets
-## Téléphone
+## Téléphone ([phone](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json))
 Un téléphone comprend
 * Une valeur qui est le numéro de téléphone lui même
 * Un booléen qui indique s'il s'agit d'un mobile. Cette information peut être utile pour l'émission de SMS par exemple
 * Une description libre du numéro de téléphone
 * Une qualification : personnel, professionnel, déprécié (mauvais numéro)
-### Email
+## Email ([email](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json))
 Les emails suivent la même logique avec
 * Une valeur qui est l'email lui même
 * Une description libre
 * Une qualification : personnel, profession, déprécié
-### Adresse
+## Adresse ([address](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json))
 Une adresse comprend
 * Une rue
 * Une ville
@@ -31,7 +31,7 @@ Un contact peut disposer de plusieurs
 * email ([`email`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json))
 * numéro de téléphone ([`phone`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json)).
 Un contact dispose d'une référence (`reference`) qui est son identifiant unique dans le référentiel de client et du créancier de la société de recouvrement.
-## Compte bancaire
+## Compte bancaire ([bankAccount](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json))
 Un compte bancaire comprend
 * un IBAN
 * un code Swift
@@ -49,7 +49,7 @@ Dans le cas le plus simple où une personne est une personne physique celle-ci a
 Une personne peut disposer d'un compte bancaire
 Dans le cas où une personne est une entreprise celle-ci dispose d'informations qui sont regroupées dans [`companyInfo`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json)
 Comme pour les contacts, une personne dispose d'une référence (`reference`) qui est sont identifiant unique dans le référentiel de client de la société de recouvrement.
-## Informations entreprise
+## Informations entreprise ([companyInfo](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json))
 Les informations d'entreprise comprennent
 * Un numéro d'immatriculation
 * Une adresse principale
@@ -81,34 +81,34 @@ Il existe différents types d'écriture
 * Accessoires
 * Paiements : paiements, rejets, remboursement
 * Opérations diverses (OD) : erreur, ajustement de change
-### Créance
+### Créance ([debt](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json))
 Les créances comprennent
 * Un sous type : facture, avis d'échéance de loyer, avis d'échéance de crédit
 * Une date d'échéance
 * Un montant de TVA
 * Un taux d'intérêt en cas de retard de paiement
 * Des dates de démarrage et d'arrêt du calcul des intérêts
-### Avoir
+### Avoir ([creditNote](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/creditNote.schema.json))
 Les avoirs ne comprennent aucun champ spécifique
-### Accessoire
+### Accessoire ([incidental](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json))
 Les frais accessoires comprennent
 * Une législation : par défaut il s'agit de la législation française
 * Un sous type : le sous type est dans la langue de la législation. intérêts de retard, pénalité de retard, indemnité forfaitaire, dommages et intérêts, dépens, article 700, frais répétibles.
-### Paiement
+### Paiement ([payment](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json))
 Les paiements comprennent
 * Un sous type : paiement, rejet, remboursement
 * Un date de paiement
 * Un mode de paiement : chèque, cash, carte de crédit, prélèvement, virement
 * La référence de la personne émettrice
 * La référence de la personne bénéficiaire
-### Opération diverse
+### Opération diverse ([adjustment](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/adjustment.schema.json))
 Les opérations diverses comprennent
 * Un sous type : erreur, ajustement de change
 ## Dossier ([`folder`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json))
 Un dossier correspond à un extrait de compte client dans la comptabilité du créancier. Le dossier comprend
 * Un identifiant du contrat entre la société de recouvrement et son client
 * Une référence unique du dossier. Cette référence est unique pour un client et un créancier donné.
-* Un créancier. Le créancier est une personne (`person`)
+* Un créancier. Le créancier est une personne ([`person`](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/examples/person.example.json))
 * Des débiteurs.
 * Des cautions.
 * Des écritures comptables qui peuvent être des créances, des avoirs, des paiements, des accessoires et des opérations diverses.
@@ -117,4 +117,4 @@ Un dossier correspond à un extrait de compte client dans la comptabilité du cr
 Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json)) sont envoyés en masse, ils sont regroupés par contrat puis par créancier.
 # Exemples
 
-Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier `invoices.folders.exemple.json` est un exemple de création de dossiers de factures.
+Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.folders.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/examples/invoices.folders.example.json) est un exemple de création de dossiers de factures.
