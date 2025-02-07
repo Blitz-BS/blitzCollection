@@ -34,7 +34,7 @@
                 },
                 "reference" : {
                     "title" : "Référence",
-                    "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+                    "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
                     "type": "string"
                 },
                 "name" : {
@@ -64,15 +64,13 @@
                     "type": "array",
                     "items": {
                         "type" : "object",
+                        "$ref" : "./contact.schema.json",
                         "properties": {
                             "role" : {
                                 "title" : "Rôle du contact pour la personne physique ou morale",
                                 "description" : "Exemple : commercial, responsable administratif, épouse, époux",
                                 "type": "string",
                                 "maxLength": 20
-                            },
-                            "value" : {
-                                "$ref" : "./contact.schema.json"
                             }
                         }  
                     }

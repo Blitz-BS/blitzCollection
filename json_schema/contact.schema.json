@@ -6,7 +6,6 @@
     "oneOf" : [
         {
             "required": ["reference"],
-            "additionalProperties": false,
             "type": "object",
             "properties": {
                 "$schema": {
@@ -23,7 +22,6 @@
             }
         },{
             "required": ["reference", "civility", "lastName", "firstName"],
-            "additionalProperties": false,
             "type": "object",
             "properties": {
                 "$schema": {
@@ -34,13 +32,13 @@
                 },
                 "reference" : {
                     "title" : "Référence",
-                    "description" : "Référence du contact chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+                    "description" : "Référence du contact chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
                     "type": "string"
                 },
                 "civility": {
                     "title" : "Civilité",
                     "description" : "Civilité du contact",
-                    "enum": ["monsieur", "madame"]
+                    "enum": ["mister", "misses"]
                 },
                 "lastName": {
                     "title" : "Nom de famille",

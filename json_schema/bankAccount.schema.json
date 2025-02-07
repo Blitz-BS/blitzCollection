@@ -34,6 +34,7 @@
         },
         "name": {
             "title": "Nom du titulaire",
+            "description": "Par défaut il s'agit du nom de la personne",
             "type": "string",
             "maxLength": 50
         },

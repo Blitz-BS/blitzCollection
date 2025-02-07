@@ -54,7 +54,7 @@
         },
         "repository" : {
             "title" : "Registre des sociétés",
-            "description" : "Page de registre des sociétés. Exemple : https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989",
+            "description" : "Page de registre des sociétés. Exemple : https://annuaire-entreprises.data.gouv.fr/entreprise/401694989",
             "type": "string",
             "format": "uri"
         }

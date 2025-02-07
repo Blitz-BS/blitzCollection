@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json",
     "title": "Dossier",
     "description": "Dossier dans le cadre d'un contrat",
-    "required": [ "contractId", "reference","creditor","debtors","debts"],
+    "required": [ "contractId", "reference","creditor","debtors","entries"],
     "type": "object",
     "additionalProperties": false,
     "properties": {
@@ -20,7 +20,7 @@
         },
         "reference" : {
             "title" : "Référence",
-            "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client donné.",
+            "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
             "type": "string"
         },
         "creditor": {
@@ -44,12 +44,32 @@
                 "$ref": "./debtor.schema.json"
             }
         },
-        "debts": {
-            "title": "Créances",
+        "entries": {
+            "title": "Écritures",
+            "description": "Écriture comptables du dossier",
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "./debt.schema.json"
+                "oneOf" : [
+                    {
+                        "$ref": "./debt.schema.json"
+                    },
+                    {
+                        "$ref": "./payment.schema.json"
+                    },
+                    {
+                        "$ref": "./creditNote.schema.json"
+                    },
+                    {
+                        "$ref": "./incidental.schema.json"
+                    },
+                    {
+                        "$ref": "./adjustment.schema.json"
+                    },
+                    {
+                        "$ref": "./closing.schema.json"
+                    }
+                ]
             }
         },
         "parties":{
@@ -59,17 +79,9 @@
                 "$ref": "./person.schema.json"           
             }
         },
-        "incidentals" : {
-            "title": "Frais accessoires",
-            "description": "Frais accessoires liés au dossier et non directement aux créances",
-            "type": "array",
-            "items" : {
-                "$ref" : "./incidental.schema.json"
-            }
-        },
         "currencyCode" : {
             "title" : "Code devise",
-            "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
+            "description" : "Code devise du dossier. Ce code est la devise par défaut du dossier",
             "$ref" : "./currencyCode.schema.json"
         }
     }
