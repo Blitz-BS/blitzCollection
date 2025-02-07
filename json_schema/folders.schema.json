@@ -4,7 +4,7 @@
     "title": "Dossier d'un flux",
     "description": "Dossier dans le cadre d'un flux de dossier",
     "additionalProperties": false,
-    "required": [ "reference","debtors","debts"],
+    "required": [ "reference","debtors","entries"],
     "type": "object",
     "properties": {
         "$schema": {
