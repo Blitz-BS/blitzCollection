@@ -48,7 +48,7 @@
             "minItems": 1,
             "items" : {
                 "type" : "object",
-                "required" : ["debtReference","amount"],
+                "required" : ["entryReference","amount"],
                 "properties" : {
                     "entryReference" : {
                         "title" : "Référence de l'écriture",
