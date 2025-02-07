@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
     "type" : "debt",
     "subtype": "invoice",
-    "reference" : "123456789",
+    "reference" : "F123456789",
     "label" : "Facture 2021-01",
     "entryDate": "2021-01-01",
     "dueDate": "2021-01-31",
@@ -12,7 +12,7 @@
     "currencyCode": "EUR",
     "lettering": [
         {
-            "entryReference" : "123456789",
+            "entryReference" : "F123456789",
             "amount" : 1000
         }
     ]
