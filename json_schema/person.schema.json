@@ -64,7 +64,7 @@
                     "type": "array",
                     "items": {
                         "type" : "object",
-                        "additionalProperties" : false,
+                        "unevaluatedProperties": false,
                         "$ref" : "./contact.schema.json",
                         "properties": {
                             "role" : {

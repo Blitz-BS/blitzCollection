@@ -24,6 +24,7 @@
     },
     "contacts": [
         {
+            "test" : "Hello",
             "role": "commercial",
             "reference" : "123456789",
             "civility": "monsieur",
