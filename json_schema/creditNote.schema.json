@@ -8,12 +8,6 @@
     "$ref": "./entry.schema.json",
     "type": "object",
     "properties": {
-        "$schema": {
-            "title" : "Schéma JSON",
-            "description" : "URL du schéma",
-            "type": "string",
-            "format": "uri"
-        },
         "type": {
             "title" : "Type d'écriture comptable",
             "const" : "credit note"
