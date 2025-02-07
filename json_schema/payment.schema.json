@@ -33,7 +33,7 @@
             "description" : "Référence de la personne émettrice du paiement. La référence est celle de l'objet `person`",
             "type": "string"
         },   
-        "receivingPersonReference": {
+        "recipientPersonReference": {
             "title" : "Personne bénéficiaire",
             "description" : "Référence de la personne bénéficiaire du paiement. La référence est celle de l'objet `person`",
             "type": "string"

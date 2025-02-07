@@ -1,8 +1,0 @@
-{
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json",
-    "category": "interests",
-    "name": "intérêts de retard",
-    "rate": 0.05,
-    "startDate": "2023-01-01",
-    "endDate": "2023-12-31"
-}
