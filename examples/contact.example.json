@@ -30,11 +30,7 @@
             "street": "Rue de la paix",
             "city": "Paris",
             "postalCode": "75000",
-            "countryCode": "FR",
-            "gps" : {
-                "latitude": 48.8566,
-                "longitude": 2.3522
-            }
+            "countryCode": "FR"
         }
     ],
     "languageCode": "fra"
