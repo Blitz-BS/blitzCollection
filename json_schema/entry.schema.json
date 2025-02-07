@@ -6,12 +6,6 @@
     "required": ["reference","label","entryDate","amount"],
     "type": "object",
     "properties" : {
-        "$schema": {
-            "title" : "Schéma JSON",
-            "description" : "URL du schéma",
-            "type": "string",
-            "format": "uri"
-        },
         "reference" : {
             "title" : "Référence",
             "description" : "Référence de l'écriture chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",

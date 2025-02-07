@@ -6,7 +6,6 @@ import requests
 from jsonschema import validate
 from os import listdir  
 
-
 for file in listdir('examples'):
     with open(f'examples/{file}', encoding='utf-8') as f:
         example = json.load(f)
