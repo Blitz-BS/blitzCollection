@@ -59,7 +59,7 @@
                     "amount" : 1000,
                     "vatAmount": 200,
                     "interestRate" : 0.05,
-                    "lettering": [
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : 1000
@@ -78,7 +78,7 @@
                     "method" : "creditCard",
                     "issuingPersonReference" : "123456789",
                     "recipientPersonReference" : "0011223344",
-                    "lettering": [
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : -50

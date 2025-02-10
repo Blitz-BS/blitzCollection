@@ -5,7 +5,7 @@
     "entryDate": "2021-01-01",
     "amount" : 1000,
     "currencyCode": "EUR",
-    "lettering": [
+    "letterings": [
         {
             "entryReference" : "123456789",
             "amount" : 1000
