@@ -8,17 +8,16 @@
     "properties": {
         "undertakingAmount": {
             "title": "Montant de l'engagement",
-            "description" : "Montant maximal de l'engagement du débiteur/co-débiteur",
+            "description": "Montant maximal de l'engagement du débiteur/co-débiteur",
             "type": "number",
             "minimum": -999999999999.99,
             "maximum": 999999999999.99
         },
-        "undertakingRate" : {
-            "title": "Taux de l'engagement",
-            "description" : "Part maximale de la dette qu'est susceptible de payer le débiteur/co-débiteur",
+        "undertakingDuration": {
+            "title": "Durée de l'engagement",
+            "description": "durée de l'engagement en nombre de jours",
             "type": "number",
-            "minimum": 0,
-            "maximum": 1         
+            "minimum": 0
         }
     }
 }

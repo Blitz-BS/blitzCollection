@@ -3,16 +3,16 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/adjustment.schema.json",
     "title": "Opérations diverses",
     "description": "Opérations diverses (OD)",
-    "required": ["type", "subtype"],
+    "required": ["category", "subcategory"],
     "unevaluatedProperties": false,
     "$ref": "./entry.schema.json",
     "type": "object",
     "properties": {
-        "type": {
+        "category": {
             "title" : "Type d'écriture comptable",
             "const" : "adjustment"
         },
-        "subtype": {
+        "subcategory": {
             "title": "Sous type d'opération diverse",
             "description" : "facture, ajustement de change",
             "enum": ["error", "exchange rate adjustment"]

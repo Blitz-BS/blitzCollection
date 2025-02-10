@@ -19,15 +19,9 @@
             "type": "string",
             "format": "email"
         },
-        "description": {
-            "title" : "Description libre de l'adresse email",
-            "description": "Exemple : email général de l'entreprise",
-            "type": "string",
-            "maxLength": 255
-        },
         "qualification" : {
             "title" : "Qualification de l'adresse email",
-            "enum": ["personal", "professional", "deprecated"]
+            "enum": ["third party", "personal", "professional", "deprecated"]
         }
     }
 }

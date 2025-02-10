@@ -41,7 +41,7 @@
             "description" : "Devise dans laquelle est Libellée l'écriture. Par défaut il s'agit de la devise du dossier.",
             "$ref" : "./currencyCode.schema.json"
         },
-        "lettering" : {
+        "letterings" : {
             "title" : "Lettrage",
             "description" : "Le lettrage permet d'associer des écritures entre elles (par exemple des créances et des paiements). Le lettre permet de savoir si une créance est payée ou de calculer les intérêts. Si le champ n'est pas renseigné, le lettrage sera automatique",
             "type" : "array",

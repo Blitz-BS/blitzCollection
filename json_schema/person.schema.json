@@ -44,13 +44,13 @@
                 },
                 "personCategory" : {
                     "title" : "Catégorie de personne",
-                    "description" : "Catégorie de personne",
-                    "enum" : ["legal person", "natural person", "joint ownership", "household", "administration"]
+                    "description" : "Catégorie de personne : personne morale, personne physique ou administration",
+                    "enum" : ["legal person", "natural person", "administration"]
                 },
                 "ability" : {
                     "title" : "Compétence",
                     "description" : "Compétence du tiers à agir",
-                    "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "none"],
+                    "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "curator", "association", "none"],
                     "default" : "none"
                 },
                 "companyInfo" : {

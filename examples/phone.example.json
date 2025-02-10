@@ -1,7 +1,5 @@
 {
     "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/phone.schema.json",
     "value": "01 02 03 04 05",
-    "isMobile": false,
-    "description": "Ligne fixe du bureau",
     "qualification": "professional"
 }

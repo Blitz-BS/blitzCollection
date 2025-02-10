@@ -47,6 +47,11 @@
             "description" : "Adresse email de l'entreprise",
             "$ref": "./email.schema.json"
         },
+        "companyForm" : {
+            "title": "Forme juridique de l'entresprise",
+            "description": "Forme jurique de l'entreprise (uniquement les formes françaises)",
+            "enum": ["EI", "Micro-entreprise", "EURL", "SASU", "SARL", "SAS", "SA", "SNC", "SCS", "SCA",  "SCI", "SCM", "SCP", "SCEA", "GAEC", "EARL", "SICA", "SELARL", "SELAS", "SELCA", "SELAFA", "GIE", "GEIE", "SCOP", "SCIC", "SEP", "Société de fait"]
+        },
         "parentCompany" : {
             "title" : "Maison mère",
             "description" : "Maison mère de l'entreprise",
