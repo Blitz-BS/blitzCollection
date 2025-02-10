@@ -50,8 +50,8 @@
             ],
             "entries" : [
                 {
-                    "type" : "debt",
-                    "subtype": "invoice",
+                    "category" : "debt",
+                    "subcategory": "invoice",
                     "reference" : "F123456789",
                     "label" : "Facture 2021-01",
                     "entryDate": "2021-01-01",
@@ -68,8 +68,8 @@
                 },
                 {
                     "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
-                    "type" : "payment",
-                    "subtype": "payment",
+                    "category" : "payment",
+                    "subcategory": "payment",
                     "reference" : "P1258",
                     "label" : "paiement partiel de la facture F123456789",
                     "entryDate": "2021-03-02",

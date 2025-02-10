@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json",
-    "type" : "incidental",
-    "subtype": "intérêts de retard",
+    "category" : "incidental",
+    "subcategory": "intérêts de retard",
     "legislation": "FR",
     "reference" : "I1258",
     "label" : "Intérêt de retard facture F123456789",
