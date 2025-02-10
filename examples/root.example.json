@@ -34,7 +34,6 @@
                                         "phones": [
                                             {
                                                 "value": "02 03 04 05 06",
-                                                "isMobile": false,
                                                 "qualification": "professional"
                                             }
                                         ],
@@ -52,8 +51,8 @@
                     ],
                     "entries" : [
                         {
-                            "type" : "debt",
-                            "subtype": "invoice",
+                            "category" : "debt",
+                            "subcategory": "invoice",
                             "reference" : "F123456789",
                             "label" : "Facture 2021-01",
                             "entryDate": "2021-01-01",
@@ -61,7 +60,7 @@
                             "amount" : 1000,
                             "vatAmount": 200,
                             "interestRate" : 0.05,
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : 1000
@@ -70,8 +69,8 @@
                         },
                         {
                             "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
-                            "type" : "payment",
-                            "subtype": "payment",
+                            "category" : "payment",
+                            "subcategory": "payment",
                             "reference" : "P1258",
                             "label" : "paiement partiel de la facture F123456789",
                             "entryDate": "2021-03-02",
@@ -80,7 +79,7 @@
                             "method" : "creditCard",
                             "issuingPersonReference" : "123456789",
                             "recipientPersonReference" : "0011223344",
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : -50
@@ -108,13 +107,13 @@
                     },
                     "entreprisePhone": {
                         "value": "04 74 96 27 34",
-                        "isMobile": false,
                         "qualification": "professional"
                     },
                     "entrepriseEmail": {
                         "value": "contact@blitzbs.com",
                         "qualification": "professional"
                     },
+                    "companyInfo": "GAEC",
                     "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
                 },
                 "contacts": [
@@ -127,7 +126,6 @@
                         "phones": [
                             {
                                 "value": "01 02 03 04 05",
-                                "isMobile": false,
                                 "qualification": "professional"
                             }
                         ],
@@ -169,21 +167,16 @@
                                             "phones": [
                                                 {
                                                     "value": "02 03 04 05 06",
-                                                    "isMobile": false,
-                                                    "description": "Ligne fixe du bureau",
                                                     "qualification": "professional"
                                                 },
                                                 {
                                                     "value": "06 01 02 03 04",
-                                                    "isMobile" :true,
-                                                    "description": "Mobile personnel",
                                                     "qualification": "personal"
                                                 }
                                             ],
                                             "emails": [
                                                 {
                                                     "value": "jdupont@monmail.com",
-                                                    "description": "Adresse peu utilisée",
                                                     "qualification": "professional"
                                                 }
                                             ],
@@ -204,8 +197,8 @@
                     ],
                     "entries" : [
                         {
-                            "type" : "debt",
-                            "subtype": "invoice",
+                            "category" : "debt",
+                            "subcategory": "invoice",
                             "reference" : "F123456789",
                             "label" : "Facture 2021-01",
                             "entryDate": "2021-01-01",
@@ -213,7 +206,7 @@
                             "amount" : 1000,
                             "vatAmount": 200,
                             "interestRate" : 0.05,
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : 1000
@@ -222,8 +215,8 @@
                         },
                         {
                             "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
-                            "type" : "payment",
-                            "subtype": "payment",
+                            "category" : "payment",
+                            "subcategory": "payment",
                             "reference" : "P1258",
                             "label" : "paiement partiel de la facture F123456789",
                             "entryDate": "2021-03-02",
@@ -232,7 +225,7 @@
                             "method" : "creditCard",
                             "issuingPersonReference" : "123456789",
                             "recipientPersonReference" : "0011223344",
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : -50
@@ -275,8 +268,6 @@
                                     "phones": [
                                         {
                                             "value": "02 02 03 04 05",
-                                            "isMobile": false,
-                                            "description": "Ligne fixe du bureau",
                                             "qualification": "professional"
                                         }
                                     ],
@@ -312,15 +303,12 @@
                                             "phones": [
                                                 {
                                                     "value": "06 10 20 30 40",
-                                                    "isMobile" :true,
-                                                    "description": "Mobile personnel",
                                                     "qualification": "personal"
                                                 }
                                             ],
                                             "emails": [
                                                 {
                                                     "value": "pete.rock@gmail.com",
-                                                    "description": "Adresse peu utilisée",
                                                     "qualification": "professional"
                                                 }
                                             ],
@@ -354,15 +342,12 @@
                                             "phones": [
                                                 {
                                                     "value": "06 10 20 30 40",
-                                                    "isMobile" :true,
-                                                    "description": "Mobile personnel",
                                                     "qualification": "personal"
                                                 }
                                             ],
                                             "emails": [
                                                 {
                                                     "value": "philgoodroucherk@gmail.com",
-                                                    "description": "Adresse peu utilisée",
                                                     "qualification": "professional"
                                                 }
                                             ],
@@ -397,15 +382,12 @@
                                             "phones": [
                                                 {
                                                     "value": "06 10 20 30 40",
-                                                    "isMobile" :true,
-                                                    "description": "Mobile personnel",
                                                     "qualification": "personal"
                                                 }
                                             ],
                                             "emails": [
                                                 {
                                                     "value": "philippine.roucherk@gmail.com",
-                                                    "description": "Adresse peu utilisée",
                                                     "qualification": "professional"
                                                 }
                                             ],
@@ -426,8 +408,8 @@
                     ],
                     "entries" : [
                         {
-                            "type" : "debt",
-                            "subtype": "invoice",
+                            "category" : "debt",
+                            "subcategory": "invoice",
                             "reference" : "F123456789",
                             "label" : "Facture 2021-01",
                             "entryDate": "2021-01-01",
@@ -435,7 +417,7 @@
                             "amount" : 1000,
                             "vatAmount": 200,
                             "interestRate" : 0.05,
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : 1000
@@ -444,8 +426,8 @@
                         },
                         {
                             "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
-                            "type" : "payment",
-                            "subtype": "payment",
+                            "category" : "payment",
+                            "subcategory": "payment",
                             "reference" : "P1258",
                             "label" : "paiement partiel de la facture F123456789",
                             "entryDate": "2021-03-02",
@@ -454,7 +436,7 @@
                             "method" : "creditCard",
                             "issuingPersonReference" : "123456789",
                             "recipientPersonReference" : "0011223344",
-                            "lettering": [
+                            "letterings": [
                                 {
                                     "entryReference" : "F123456789",
                                     "amount" : -50

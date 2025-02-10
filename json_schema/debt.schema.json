@@ -9,12 +9,12 @@
     "type": "object",
     "properties": {
         "category": {
-            "title" : "Type d'écriture comptable",
-            "const" : "debt"
+            "title": "Type d'écriture comptable",
+            "const": "debt"
         },
         "subcategory": {
             "title": "Sous type de créance",
-            "description" : "facture, avis d'échéance de loyer, avis d'échéance de crédit",
+            "description": "facture, avis d'échéance de loyer, avis d'échéance de crédit",
             "enum": ["invoice", "rent due notice", "credit due notice"]
         },
         "dueDate": {
@@ -24,18 +24,26 @@
             "format" : "date"
         },
         "vatAmount": {
-            "title" : "Montant de TVA",
-            "description" : "Montant de TVA de la créance dans la devise de la créance",
+            "title": "Montant de TVA",
+            "description": "Montant de TVA de la créance dans la devise de la créance",
             "type": "number",
             "minimum": 0,
             "maximum": 999999999999.99
         },   
         "interestRate" : {
-            "title" : "Taux d'intérêt",
-            "description" : "Taux d'intérêt appliqué en cas de retard de paiement. Les intérêts légaux seront appliqués par défaut",
-            "type" : "number",
-            "minimum" : 0,
-            "maximum" : 1
+            "title": "Taux d'intérêt",
+            "description": "Taux d'intérêt appliqué en cas de retard de paiement. Les intérêts légaux seront appliqués par défaut",
+            "oneOf": [
+                {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                {
+                    "enum": ["legal rate", "legal rate x3", "ECB rate"]
+                }
+            ]
+            
         },
         "startDate": {
             "title" : "Date de départ des intérêts",
