@@ -3,16 +3,16 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
     "title": "Créance",
     "description": "Créance dans un dossier",
-    "required": ["type", "subtype", "dueDate", "vatAmount"],
+    "required": ["category", "subcategory", "dueDate", "vatAmount"],
     "unevaluatedProperties": false,
     "$ref": "./entry.schema.json",
     "type": "object",
     "properties": {
-        "type": {
+        "category": {
             "title" : "Type d'écriture comptable",
             "const" : "debt"
         },
-        "subtype": {
+        "subcategory": {
             "title": "Sous type de créance",
             "description" : "facture, avis d'échéance de loyer, avis d'échéance de crédit",
             "enum": ["invoice", "rent due notice", "credit due notice"]
