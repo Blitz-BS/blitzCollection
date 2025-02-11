@@ -1,0 +1,140 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
+    "reference": "123456789",
+    "debtors" : [
+        {
+            "value": {
+                "reference" : "B123456789",
+                "name": "Monsieur Jean Dupont",
+                "personCategory": "natural person",
+                "contacts": [
+                    {
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "monsieur",
+                            "lastName": "Dupont",
+                            "firstName": "Jean",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "isMobile": false,
+                                    "description": "Ligne fixe du bureau",
+                                    "qualification": "professional"
+                                },
+                                {
+                                    "value": "06 01 02 03 04",
+                                    "isMobile" :true,
+                                    "description": "Mobile personnel",
+                                    "qualification": "personal"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@monmail.com",
+                                    "description": "Adresse peu utilisée",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "adresses": [
+                                {
+                                    "street": "Rue de la paix",
+                                    "city": "Paris",
+                                    "postalCode": "75000",
+                                    "countryCode": "FR"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "entries" : [
+        {
+            "category" : "debt",
+            "subcategory": "invoice",
+            "reference" : "F123456789",
+            "label" : "Facture 2021-01",
+            "entryDate": "2021-01-01",
+            "dueDate": "2021-01-31",
+            "amount" : 1000,
+            "vatAmount": 200,
+            "interestRate" : "ECB rate",
+            "letterings": [
+                {
+                    "entryReference" : "F123456789",
+                    "amount" : 1000
+                }
+            ]
+        },
+        {
+            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
+            "category" : "payment",
+            "subcategory": "payment",
+            "reference" : "P1258",
+            "label" : "paiement partiel de la facture F123456789",
+            "entryDate": "2021-03-02",
+            "paymentDate" : "2021-03-01",
+            "amount" : -50,
+            "method" : "creditCard",
+            "issuingPersonReference" : "123456789",
+            "recipientPersonReference" : "0011223344",
+            "letterings": [
+                {
+                    "entryReference" : "F123456789",
+                    "amount" : -50
+                }
+            ]
+        }
+    ],
+    "parties" : [
+        {
+            "reference" : "C123456789",
+            "name": "GBA Avocats",
+            "personCategory": "legal person",
+            "ability" : "attorney",
+            "companyInfo": {
+                "companyRegistrationNumber": "493675904",
+                "mainAddress": {
+                    "street": "24 MAIL FRANCOIS MITTERRAND",
+                    "city": "RENNES",
+                    "postalCode": "35000",
+                    "countryCode": "FR"
+                },
+                "entreprisePhone": {
+                    "value": "02 99 35 12 12",
+                    "qualification": "professional"
+                },
+                "entrepriseEmail": {
+                    "value": "gba@gba-avocats.com",
+                    "qualification": "professional"
+                },
+                "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/493675904"
+            },
+            "contacts": [
+                {
+                    "role": "avocat fiscaliste",
+                    "reference" : "D123456789",
+                    "civility": "madame",
+                    "lastName": "Duplessis",
+                    "firstName": "Marie",
+                    "phones": [
+                        {
+                            "value": "02 02 03 04 05",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "emails": [
+                        {
+                            "value": "mduplessis@gba-avocats.com",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "languageCode": "fra"
+                }
+            ]
+        }
+    ],
+    "currencyCode": "EUR"
+}

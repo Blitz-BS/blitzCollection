@@ -1,0 +1,61 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
+    "title": "Créance",
+    "description": "Créance dans un dossier",
+    "required": ["category", "subcategory", "dueDate", "vatAmount"],
+    "unevaluatedProperties": false,
+    "$ref": "./entry.schema.json",
+    "type": "object",
+    "properties": {
+        "category": {
+            "title": "Type d'écriture comptable",
+            "const": "debt"
+        },
+        "subcategory": {
+            "title": "Sous type de créance",
+            "description": "facture, avis d'échéance de loyer, avis d'échéance de crédit",
+            "enum": ["invoice", "rent due notice", "credit due notice"]
+        },
+        "dueDate": {
+            "title": "Date d'échéance",
+            "description": "Date d'échéance de la créance",
+            "type": "string",
+            "format" : "date"
+        },
+        "vatAmount": {
+            "title": "Montant de TVA",
+            "description": "Montant de TVA de la créance dans la devise de la créance",
+            "type": "number",
+            "minimum": 0,
+            "maximum": 999999999999.99
+        },   
+        "interestRate" : {
+            "title": "Taux d'intérêt",
+            "description": "Taux d'intérêt appliqué en cas de retard de paiement. Les intérêts légaux seront appliqués par défaut",
+            "oneOf": [
+                {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                },
+                {
+                    "enum": ["legal rate", "legal rate x3", "ECB rate"]
+                }
+            ]
+            
+        },
+        "startDate": {
+            "title" : "Date de départ des intérêts",
+            "description" : "Date à partir de laquelle les intérêts sont calculés. Par défaut il s'agit de la date d'échéance `dueDate`",
+            "type": "string",
+            "format" : "date"
+        },
+        "endDate": {
+            "title" : "Date de fin des intérêts",
+            "description" : "Date à laquelle le calcul des intérêts s'arrête",
+            "type": "string",
+            "format" : "date"
+        }
+    }
+}

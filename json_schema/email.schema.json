@@ -1,0 +1,27 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json",
+    "title": "Email",
+    "description": "Adresse email",
+    "required": [ "value" ],
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
+        "value": {
+            "title" : "Adresse email",
+            "description": "Exemple : jdupont@monmail.fr",
+            "type": "string",
+            "format": "email"
+        },
+        "qualification" : {
+            "title" : "Qualification de l'adresse email",
+            "enum": ["personal", "professional", "deprecated"]
+        }
+    }
+}

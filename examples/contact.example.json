@@ -1,0 +1,32 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json",
+    "reference" : "123456789",
+    "civility": "monsieur",
+    "firstName": "Jean",
+    "lastName": "Dupont",
+    "phones": [
+        {
+            "value": "01 02 03 04 05",
+            "qualification": "professional"
+        },
+        {
+            "value": "06 07 08 09 10",
+            "qualification": "personal"
+        }
+    ],
+    "emails": [
+        {
+            "value": "jean.dupont@monmail.fr",
+            "qualification": "personal"
+        }
+    ],
+    "adresses": [
+        {
+            "street": "Rue de la paix",
+            "city": "Paris",
+            "postalCode": "75000",
+            "countryCode": "FR"
+        }
+    ],
+    "languageCode": "fra"
+}

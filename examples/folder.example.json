@@ -1,0 +1,234 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json",
+    "contractId" : 123456,
+    "reference": "123456789",
+    "creditor" : {
+        "reference" : "123456789",
+        "name": "Blitz Business Service",
+        "personCategory": "legal person",
+        "companyInfo": {
+            "companyRegistrationNumber": "401694989",
+            "mainAddress": {
+                "street": "265 rue Denis Papin",
+                "city": "Villefontaine",
+                "postalCode": "38090",
+                "countryCode": "FR"
+            },
+            "entreprisePhone": {
+                "value": "04 74 96 27 34",
+                "qualification": "professional"
+            },
+            "entrepriseEmail": {
+                "value": "contact@blitzbs.com",
+                "qualification": "professional"
+            },
+            "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
+        },
+        "contacts": [
+            {
+                "role": "commercial",
+                "reference" : "A123456789",
+                "civility": "monsieur",
+                "lastName": "Durant",
+                "firstName": "Paul",
+                "phones": [
+                    {
+                        "value": "01 02 03 04 05",
+                        "qualification": "professional"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "pdurant@blitzbs.com",
+                        "qualification": "professional"
+                    }
+                ],
+                "languageCode": "fra"
+            }
+        ],
+        "bankAccount": {
+            "name": "Compte de l'entreprise",
+            "iban": "FR7630006000011234567890189",
+            "bank": "Banque de France",
+            "bankCode": "30006",
+            "sortCode": "00123",
+            "accountNumber": "12345678901",
+            "key": "89"
+        }
+    },
+    "debtors" : [
+        {
+            "value": {
+                "reference" : "B123456789",
+                "name": "Monsieur Jean Dupont",
+                "personCategory": "natural person",
+                "contacts": [
+                    {
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "monsieur",
+                            "lastName": "Dupont",
+                            "firstName": "Jean",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "qualification": "professional"
+                                },
+                                {
+                                    "value": "06 01 02 03 04",
+                                    "qualification": "personal"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@monmail.com",
+                                    "description": "Adresse peu utilisée",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "adresses": [
+                                {
+                                    "street": "Rue de la paix",
+                                    "city": "Paris",
+                                    "postalCode": "75000",
+                                    "countryCode": "FR"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "guarantors": [
+        {
+            "value": {
+                "reference" : "B123456789",
+                "name": "Jeanne Dupont",
+                "personCategory": "natural person",
+                "contacts": [
+                    {
+                        "value": {
+                            "reference" : "C123456789",
+                            "civility": "madame",
+                            "lastName": "Dupont",
+                            "firstName": "Jeanne",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "qualification": "professional"
+                                },
+                                {
+                                    "value": "06 01 02 03 04",
+                                    "qualification": "personal"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@monmail.com",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "adresses": [
+                                {
+                                    "street": "Rue de la paix",
+                                    "city": "Paris",
+                                    "postalCode": "75000",
+                                    "countryCode": "FR"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "entries" : [
+        {
+            "category" : "debt",
+            "subcategory": "invoice",
+            "reference" : "F123456789",
+            "label" : "Facture 2021-01",
+            "entryDate": "2021-01-01",
+            "dueDate": "2021-01-31",
+            "amount" : 1000,
+            "vatAmount": 200,
+            "interestRate" : 0.05,
+            "letterings": [
+                {
+                    "entryReference" : "F123456789",
+                    "amount" : 1000
+                }
+            ]
+        },
+        {
+            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
+            "category" : "payment",
+            "subcategory": "payment",
+            "reference" : "P1258",
+            "label" : "paiement partiel de la facture F123456789",
+            "entryDate": "2021-03-02",
+            "paymentDate" : "2021-03-01",
+            "amount" : -50,
+            "method" : "creditCard",
+            "issuingPersonReference" : "123456789",
+            "recipientPersonReference" : "0011223344",
+            "letterings": [
+                {
+                    "entryReference" : "F123456789",
+                    "amount" : -50
+                }
+            ]
+        }
+    ],
+    "parties" : [{
+        "reference" : "C123456789",
+        "name": "GBA Avocats",
+        "personCategory": "legal person",
+        "ability" : "attorney",
+        "companyInfo": {
+            "companyRegistrationNumber": "493675904",
+            "mainAddress": {
+                "street": "24 MAIL FRANCOIS MITTERRAND",
+                "city": "RENNES",
+                "postalCode": "35000",
+                "countryCode": "FR"
+            },
+            "entreprisePhone": {
+                "value": "02 99 35 12 12",
+                "qualification": "professional"
+            },
+            "entrepriseEmail": {
+                "value": "gba@gba-avocats.com",
+                "qualification": "professional"
+            },
+            "companyForm": "SA",
+            "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/493675904"
+        },
+        "contacts": [
+            {
+                "role": "avocat fiscaliste",
+                "reference" : "D123456789",
+                "civility": "madame",
+                "lastName": "Duplessis",
+                "firstName": "Marie",
+                "phones": [
+                    {
+                        "value": "02 02 03 04 05",
+                        "qualification": "professional"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "mduplessis@gba-avocats.com",
+                        "qualification": "professional"
+                    }
+                ],
+                "languageCode": "fra"
+            }
+        ]
+    }],
+    "currencyCode": "EUR"
+}

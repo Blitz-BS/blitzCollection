@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/creditNote.schema.json",
+    "title": "Avoir",
+    "description": "Avoir sur facture",
+    "required": ["category"],
+    "unevaluatedProperties": false,
+    "$ref": "./entry.schema.json",
+    "type": "object",
+    "properties": {
+        "category": {
+            "title" : "Type d'écriture comptable",
+            "const" : "credit note"
+        }
+    }
+}

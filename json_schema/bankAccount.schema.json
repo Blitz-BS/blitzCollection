@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json",
+    "title": "Compte bancaire",
+    "description": "Compte bancaire",
+    "required": ["name"],
+    "anyOf": [
+        {"required": ["iban"]},
+        {"required": ["swiftCode", "accountNumber"]}
+    ],
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "$schema": {
+            "title" : "Schéma JSON",
+            "description" : "URL du schéma",
+            "type": "string",
+            "format": "uri"
+        },
+        "iban": {
+            "title": "IBAN",
+            "type": "string"
+        },
+        "swiftCode": {
+            "title": "Code SWIFT",
+            "type": "string",
+            "maxLength": 15
+        },
+        "bank": {
+            "title": "Banque",
+            "description": "Domiciliation bancaire",
+            "type": "string",
+            "maxLength": 40
+        },
+        "name": {
+            "title": "Nom du titulaire",
+            "description": "Par défaut il s'agit du nom de la personne",
+            "type": "string",
+            "maxLength": 50
+        },
+        "bankCode": {
+            "title": "Code banque",
+            "type": "string",
+            "maxLength": 5
+        },
+        "sortCode": {
+            "title": "Code guichet",
+            "type": "string",
+            "maxLength": 10
+        },
+        "accountNumber": {
+            "title": "Numéro de compte",
+            "type": "string",
+            "maxLength": 11
+        },
+        "key": {
+            "title": "Clé RIB/contrôle de l'IBAN",
+            "type": "string",
+            "maxLength": 2
+        }
+    }
+}

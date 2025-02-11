@@ -1,0 +1,21 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/incidental.schema.json",
+    "title": "Accessoire",
+    "description": "Frais acccessoires",
+    "required": ["category", "subcategory"],
+    "unevaluatedProperties": false,
+    "$ref": "./entry.schema.json",
+    "type": "object",
+    "properties": {
+        "category": {
+            "title" : "Type d'écriture comptable",
+            "const" : "incidental"
+        },
+        "subcategory": {
+            "title": "Sous type d'accessoire'",
+            "description" : "Il s'agit de frais accessoires définis dans le droit applicable de la législation",
+            "enum": ["intérêts de retard", "pénalité de retard", "indemnité forfaitaire", "dommages et intérêts", "dépens", "article 700", "frais répétibles"]
+        }
+    }
+}
