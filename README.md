@@ -12,7 +12,7 @@ Le script `validation.py` permet de tester l'ensemble des JSON du dossier `examp
 
 Un téléphone comprend :
 * Une valeur qui est le numéro de téléphone lui même
-* Une qualification : personnel, professionnel, déprécié (mauvais numéro) ou tiers (tuteur, association, ...)
+* Une qualification : personnel, professionnel, déprécié (mauvais numéro)
 
 ## Email ([email](https://github.com/Blitz-BS/blitzCollection/blob/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/email.schema.json))
 

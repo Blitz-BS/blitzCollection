@@ -20,7 +20,7 @@
         },
         "qualification" : {
             "title" : "Qualification du numéro de téléphone",
-            "enum": ["third party", "personal", "professional", "deprecated"]
+            "enum": ["personal", "professional", "deprecated"]
         }
     }
 }

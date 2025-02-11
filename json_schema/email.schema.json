@@ -21,7 +21,7 @@
         },
         "qualification" : {
             "title" : "Qualification de l'adresse email",
-            "enum": ["third party", "personal", "professional", "deprecated"]
+            "enum": ["personal", "professional", "deprecated"]
         }
     }
 }
