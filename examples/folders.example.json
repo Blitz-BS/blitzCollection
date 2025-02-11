@@ -60,7 +60,7 @@
             "dueDate": "2021-01-31",
             "amount" : 1000,
             "vatAmount": 200,
-            "interestRate" : 0.05,
+            "interestRate" : "ECB rate",
             "letterings": [
                 {
                     "entryReference" : "F123456789",

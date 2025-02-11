@@ -15,7 +15,7 @@
         },
         "undertakingDuration": {
             "title": "Durée de l'engagement",
-            "description": "durée de l'engagement en nombre de jours",
+            "description": "durée de l'engagement en nombre de jours pour les cautions",
             "type": "number",
             "minimum": 0
         }
