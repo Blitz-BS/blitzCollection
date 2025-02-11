@@ -91,8 +91,10 @@ Les informations d'entreprise comprennent :
 
 Le débiteur est une personne ([`person`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json)) débiteur, codébiteur ou caution de la créance.
 
-En fonction de la situation de la dette, les codébiteurs/cautions peuvent avoir un engagement (`undertaking`) c'est à dire un montant maximal qu'il est susceptible de payer.
+En fonction de la situation de la dette, les codébiteurs/cautions peuvent avoir un engagement (`undertakingAmount`) c'est à dire un montant maximal qu'il est susceptible de payer.
 Si la dette est conjointe alors tous les codébiteurs doivent avoir un engagement dont la somme est égale à la dette initiale. Sinon, si aucun engagement n'est précisé, les codébiteurs/cautions sont dans une situation de dette solidaire.
+
+Pour les cautions, il est également possible d'ajouter une durée d'engagement (`undertakingDuration`).
 
 ## Écriture ([`entry`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/entry.schema.json))
 
