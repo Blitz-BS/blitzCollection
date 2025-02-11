@@ -113,7 +113,7 @@
                     "amount" : 1000,
                     "vatAmount": 200,
                     "interestRate" : 0.05,
-                    "lettering": [
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : 1000
@@ -121,7 +121,6 @@
                     ]
                 },
                 {
-                    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
                     "category" : "payment",
                     "subcategory": "payment",
                     "reference" : "P1258",
@@ -132,7 +131,7 @@
                     "method" : "creditCard",
                     "issuingPersonReference" : "123456789",
                     "recipientPersonReference" : "0011223344",
-                    "lettering": [
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : -50
@@ -322,8 +321,8 @@
                     "dueDate": "2021-01-31",
                     "amount" : 1000,
                     "vatAmount": 200,
-                    "interestRate" : 0.05,
-                    "lettering": [
+                    "interestRate" : "ECB rate",
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : 1000
@@ -342,7 +341,7 @@
                     "method" : "creditCard",
                     "issuingPersonReference" : "123456789",
                     "recipientPersonReference" : "0011223344",
-                    "lettering": [
+                    "letterings": [
                         {
                             "entryReference" : "F123456789",
                             "amount" : -50
