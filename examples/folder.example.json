@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folder.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/folder.schema.json",
     "contractId" : 123456,
     "reference": "123456789",
     "creditor" : {
@@ -164,7 +164,7 @@
             ]
         },
         {
-            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
+            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/payment.schema.json",
             "category" : "payment",
             "subcategory": "payment",
             "reference" : "P1258",
