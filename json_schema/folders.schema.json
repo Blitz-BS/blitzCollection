@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/folders.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/folders.schema.json",
     "title": "Dossier d'un flux",
     "description": "Dossier dans le cadre d'un flux de dossier",
     "additionalProperties": false,
@@ -13,13 +13,18 @@
             "type": "string",
             "format": "uri"
         },
-        "reference" : {
-            "title" : "Référence",
-            "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
+        "reference": {
+            "title": "Référence",
+            "description": "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
+            "type": "string"
+        },
+        "internalReference": {
+            "title": "Référence interne",
+            "descritption": "Référence du dossier interne au système. Cette référence doit être au minimum unique pour un client et un créancier donné.",
             "type": "string"
         },
         "debtors": {
-            "title" : "Débiteurs",
+            "title": "Débiteurs",
             "description": "Débiteur ou co-débiteurs et leurs engagements respectifs. Si l'engagement n'est pas rempli, la situation est solidaire",
             "type": "array",
             "minItems": 1,
@@ -28,7 +33,7 @@
             }                        
         },
         "guarantors": {
-            "title" : "Cautions",
+            "title": "Cautions",
             "description": "Cautions du dossier et leurs engagements respectifs. Si l'engagement n'est pas rempli, la caution est solidaire",
             "type": "array",
             "items": {

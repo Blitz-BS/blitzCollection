@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/address.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/address.schema.json",
     "street": "Rue de la paix",
     "city": "Paris",
     "postalCode": "75000",
