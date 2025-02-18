@@ -23,6 +23,11 @@
             "description" : "Référence du dossier chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
             "type": "string"
         },
+        "internalReference": {
+            "title": "Référence interne",
+            "descritption": "Référence du dossier interne au système. Cette référence doit être au minimum unique pour un client et un créancier donné.",
+            "type": "string"
+        },
         "creditor": {
             "title": "Créancier",
             "$ref": "./person.schema.json"

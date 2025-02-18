@@ -37,12 +37,12 @@
             "description" : "Adresse du siège social de l'entreprise",
             "$ref": "./address.schema.json"
         },
-        "entreprisePhone" : {
+        "companyPhone" : {
             "title" : "Numéro de téléphone de l'entreprise",
             "description" : "Numéro de téléphone de l'entreprise",
             "$ref": "./phone.schema.json"
         },
-        "entrepriseEmail" : {
+        "companyEmail" : {
             "title" : "Adresse email de l'entreprise",
             "description" : "Adresse email de l'entreprise",
             "$ref": "./email.schema.json"

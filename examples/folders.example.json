@@ -102,11 +102,11 @@
                     "postalCode": "35000",
                     "countryCode": "FR"
                 },
-                "entreprisePhone": {
+                "companyPhone": {
                     "value": "02 99 35 12 12",
                     "qualification": "professional"
                 },
-                "entrepriseEmail": {
+                "companyEmail": {
                     "value": "gba@gba-avocats.com",
                     "qualification": "professional"
                 },
