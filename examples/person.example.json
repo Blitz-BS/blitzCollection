@@ -11,11 +11,11 @@
             "postalCode": "38090",
             "countryCode": "FR"
         },
-        "entreprisePhone": {
+        "companyPhone": {
             "value": "04 74 96 27 34",
             "qualification": "professional"
         },
-        "entrepriseEmail": {
+        "companyEmail": {
             "value": "contact@blitzbs.com",
             "qualification": "professional"
         },
@@ -46,7 +46,7 @@
                     "qualification": "professional"
                 }
             ],
-            "adresses": [
+            "addresses": [
                 {
                     "street": "Rue de la paix",
                     "city": "Paris",

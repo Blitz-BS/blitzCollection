@@ -10,7 +10,7 @@
     "properties": {
         "category": {
             "title" : "Type d'écriture comptable",
-            "const" : "credit note"
+            "const" : "closing"
         },
         "subcategory": {
             "title": "Sous type de clôture",

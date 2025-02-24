@@ -14,11 +14,11 @@
                 "postalCode": "38090",
                 "countryCode": "FR"
             },
-            "entreprisePhone": {
+            "companyPhone": {
                 "value": "04 74 96 27 34",
                 "qualification": "professional"
             },
-            "entrepriseEmail": {
+            "companyEmail": {
                 "value": "contact@blitzbs.com",
                 "qualification": "professional"
             },
@@ -86,7 +86,7 @@
                                     "qualification": "professional"
                                 }
                             ],
-                            "adresses": [
+                            "addresses": [
                                 {
                                     "street": "Rue de la paix",
                                     "city": "Paris",
@@ -130,7 +130,7 @@
                                     "qualification": "professional"
                                 }
                             ],
-                            "adresses": [
+                            "addresses": [
                                 {
                                     "street": "Rue de la paix",
                                     "city": "Paris",
@@ -196,11 +196,11 @@
                 "postalCode": "35000",
                 "countryCode": "FR"
             },
-            "entreprisePhone": {
+            "companyPhone": {
                 "value": "02 99 35 12 12",
                 "qualification": "professional"
             },
-            "entrepriseEmail": {
+            "companyEmail": {
                 "value": "gba@gba-avocats.com",
                 "qualification": "professional"
             },

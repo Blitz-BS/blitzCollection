@@ -52,6 +52,12 @@
                     "type": "string",
                     "maxLength": 70
                 },
+                "birthDate": {
+                    "title" : "Date de naissance",
+                    "description" : "Date de naissance du contact",
+                    "type": "string",
+                    "format": "date"
+                },
                 "phones": {
                     "title" : "Numéros de téléphone",
                     "description" : "Numéros de téléphone par ordre décroissant de qualification",
@@ -68,7 +74,7 @@
                         "$ref": "./email.schema.json"
                     }
                 },
-                "adresses": {
+                "addresses": {
                     "title" : "Adresses",
                     "description" : "Adresses par ordre décroissant de qualification",
                     "type": "array",
