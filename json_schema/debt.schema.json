@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/feat/BCC-479-Faire-évoluer-le-schema/json_schema/debt.schema.json",
     "title": "Créance",
     "description": "Créance dans un dossier",
     "required": ["category", "subcategory", "dueDate", "vatAmount"],

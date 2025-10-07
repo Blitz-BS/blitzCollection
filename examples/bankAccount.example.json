@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/bankAccount.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/feat/BCC-479-Faire-évoluer-le-schema/json_schema/bankAccount.schema.json",
     "name": "John Doe",
     "iban": "FR7630006000011234567890189",
     "bank": "Banque de France",
