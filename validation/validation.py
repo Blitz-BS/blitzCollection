@@ -11,6 +11,7 @@ for file in listdir('examples'):
     with open(f'examples/{file}', encoding='utf-8') as f:
         example = json.load(f)
     if '$schema' in example:
+        print(example['$schema'])
         resp = requests.get(url=example['$schema'])
         schema = resp.json()
         validate(instance=example, schema=schema)
