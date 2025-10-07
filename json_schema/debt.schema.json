@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/debt.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/debt.schema.json",
     "title": "Créance",
     "description": "Créance dans un dossier",
     "required": ["category", "subcategory", "dueDate", "vatAmount"],
@@ -15,7 +15,7 @@
         "subcategory": {
             "title": "Sous type de créance",
             "description": "facture, avis d'échéance de loyer, avis d'échéance de crédit",
-            "enum": ["invoice", "rent due notice", "credit due notice"]
+            "enum": ["invoice", "rentDueNotice", "creditDueNotice"]
         },
         "dueDate": {
             "title": "Date d'échéance",
@@ -40,7 +40,7 @@
                     "maximum": 1
                 },
                 {
-                    "enum": ["legal rate", "legal rate x3", "ECB rate"]
+                    "enum": ["legalRate", "legalRateX3", "ecbRate"]
                 }
             ]
             

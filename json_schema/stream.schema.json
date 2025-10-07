@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/stream.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/stream.schema.json",
     "title": "Dossiers",
     "description": "Dossiers regroupés par contrat et par créancier",
-    "required": ["contractId", "creditor","folders"],
+    "required": ["contractId", "creditor","cases"],
     "additionalProperties": false,
     "type": "object",
     "properties": {
@@ -22,11 +22,11 @@
             "title": "Créancier",
             "$ref": "./person.schema.json"
         },
-        "folders": {
+        "cases": {
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "./folders.schema.json"
+                "$ref": "./cases.schema.json"
             }
         }
     }    

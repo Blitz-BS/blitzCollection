@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/person.schema.json",
     "title": "Personne",
     "description": "Personne physique ou morale ou groupement",
     "oneof" : [
@@ -45,12 +45,12 @@
                 "personCategory" : {
                     "title" : "Catégorie de personne",
                     "description" : "Catégorie de personne : personne morale, personne physique ou administration",
-                    "enum" : ["legal person", "natural person", "administration"]
+                    "enum" : ["legalPerson", "naturalPerson", "administration"]
                 },
                 "ability" : {
                     "title" : "Compétence",
                     "description" : "Compétence du tiers à agir",
-                    "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "curator", "association", "none"],
+                    "enum" : ["bailiff", "administrator", "attorney", "investigator", "court", "collectionCompany", "agent", "clientAgency", "none"],
                     "default" : "none"
                 },
                 "companyInfo" : {

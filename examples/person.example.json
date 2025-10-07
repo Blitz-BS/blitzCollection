@@ -1,15 +1,15 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/person.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/person.schema.json",
     "reference" : "123456789",
     "name": "Blitz Business Service",
-    "personCategory": "legal person",
+    "personCategory": "legalPerson",
     "companyInfo": {
         "companyRegistrationNumber": "401694989",
         "mainAddress": {
             "street": "265 rue Denis Papin",
             "city": "Villefontaine",
             "postalCode": "38090",
-            "countryCode": "FR"
+            "countryCode": "fr"
         },
         "companyPhone": {
             "value": "04 74 96 27 34",
@@ -19,14 +19,14 @@
             "value": "contact@blitzbs.com",
             "qualification": "professional"
         },
-        "companyForm": "SASU",
+        "companyForm": "sasu",
         "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
     },
     "contacts": [
         {
             "role": "commercial",
             "reference" : "123456789",
-            "civility": "monsieur",
+            "civility": "mister",
             "lastName": "Dupont",
             "firstName": "Jean",
             "phones": [
@@ -51,7 +51,7 @@
                     "street": "Rue de la paix",
                     "city": "Paris",
                     "postalCode": "75000",
-                    "countryCode": "FR"
+                    "countryCode": "fr"
                 }
             ],
             "languageCode": "fra"

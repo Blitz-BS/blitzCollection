@@ -1,12 +1,12 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/root.schema.json",
-    "foldersStreams": [
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json",
+    "casesStreams": [
         {
             "contractId" : 123456,
             "creditor" : {
                 "reference" : "123456789"
             },
-            "folders": [
+            "cases": [
                 {
                     "reference": "123456789",
                     "debtors" : [
@@ -14,14 +14,14 @@
                             "value": {
                                 "reference" : "B123456789",
                                 "name": "Electricité de France",
-                                "personCategory": "legal person",
+                                "personCategory": "legalPerson",
                                 "companyInfo": {
                                     "companyRegistrationNumber": "552081317",
                                     "mainAddress": {
                                         "street": "22-30 22 AVENUE DE WAGRAM",
                                         "city": "Paris",
                                         "postalCode": "75008",
-                                        "countryCode": "FR"
+                                        "countryCode": "fr"
                                     }
                                 },
                                 "contacts": [
@@ -68,7 +68,6 @@
                             ]
                         },
                         {
-                            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
                             "category" : "payment",
                             "subcategory": "payment",
                             "reference" : "P1258",
@@ -87,7 +86,7 @@
                             ]
                         }
                     ],
-                    "currencyCode": "EUR"
+                    "currencyCode": "eur"
                 }
             ]
         },
@@ -103,7 +102,7 @@
                         "street": "265 rue Denis Papin",
                         "city": "Villefontaine",
                         "postalCode": "38090",
-                        "countryCode": "FR"
+                        "countryCode": "fr"
                     },
                     "companyPhone": {
                         "value": "04 74 96 27 34",
@@ -113,7 +112,7 @@
                         "value": "contact@blitzbs.com",
                         "qualification": "professional"
                     },
-                    "companyInfo": "GAEC",
+                    "companyInfo": "gaec",
                     "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
                 },
                 "contacts": [
@@ -148,7 +147,7 @@
                     "key": "89"
                 }
             },
-            "folders": [
+            "cases": [
                 {
                     "reference": "123456789",
                     "debtors" : [
@@ -156,7 +155,7 @@
                             "value": {
                                 "reference" : "B123456789",
                                 "name": "Monsieur Jean Dupont",
-                                "personCategory": "natural person",
+                                "personCategory": "naturalPerson",
                                 "contacts": [
                                     {
                                         "value": {
@@ -185,7 +184,7 @@
                                                     "street": "Rue de la paix",
                                                     "city": "Paris",
                                                     "postalCode": "75000",
-                                                    "countryCode": "FR"
+                                                    "countryCode": "fr"
                                                 }
                                             ],
                                             "languageCode": "fra"
@@ -214,7 +213,6 @@
                             ]
                         },
                         {
-                            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
                             "category" : "payment",
                             "subcategory": "payment",
                             "reference" : "P1258",
@@ -245,7 +243,7 @@
                                     "street": "24 MAIL FRANCOIS MITTERRAND",
                                     "city": "RENNES",
                                     "postalCode": "35000",
-                                    "countryCode": "FR"
+                                    "countryCode": "fr"
                                 },
                                 "companyPhone": {
                                     "value": "02 99 35 12 12",
@@ -262,7 +260,7 @@
                                 {
                                     "role": "avocat fiscaliste",
                                     "reference" : "D123456789",
-                                    "civility": "madame",
+                                    "civility": "misses",
                                     "lastName": "Duplessis",
                                     "firstName": "Marie",
                                     "phones": [
@@ -282,7 +280,7 @@
                             ]
                         }
                     ],
-                    "currencyCode": "EUR"
+                    "currencyCode": "eur"
                 },
                 {
                     "reference": "1225",
@@ -292,12 +290,12 @@
                             "value": {
                                 "reference" : "B123456789",
                                 "name": "Monsieur Pierre Rocher",
-                                "personCategory": "natural person",
+                                "personCategory": "naturalPerson",
                                 "contacts": [
                                     {
                                         "value": {
                                             "reference" : "C123456789",
-                                            "civility": "monsieur",
+                                            "civility": "mister",
                                             "lastName": "Rocher",
                                             "firstName": "Pierre",
                                             "phones": [
@@ -317,7 +315,7 @@
                                                     "street": "Rue de la paix",
                                                     "city": "Paris",
                                                     "postalCode": "75000",
-                                                    "countryCode": "FR"
+                                                    "countryCode": "fr"
                                                 }
                                             ],
                                             "languageCode": "fra"
@@ -331,7 +329,7 @@
                             "value": {
                                 "reference" : "B123456789",
                                 "name": "Monsieur Philippe Roucher",
-                                "personCategory": "natural person",
+                                "personCategory": "naturalPerson",
                                 "contacts": [
                                     {
                                         "value": {
@@ -356,7 +354,7 @@
                                                     "street": "Rue de la paix",
                                                     "city": "Paris",
                                                     "postalCode": "75000",
-                                                    "countryCode": "FR"
+                                                    "countryCode": "fr"
                                                 }
                                             ],
                                             "languageCode": "fra"
@@ -371,12 +369,12 @@
                             "value": {
                                 "reference" : "C18",
                                 "name": "Madame Philippine Roucher",
-                                "personCategory": "natural person",
+                                "personCategory": "naturalPerson",
                                 "contacts": [
                                     {
                                         "value": {
                                             "reference" : "C123456789",
-                                            "civility": "monsieur",
+                                            "civility": "mister",
                                             "lastName": "Roucher",
                                             "firstName": "Philippine",
                                             "phones": [
@@ -396,7 +394,7 @@
                                                     "street": "Rue de la paix",
                                                     "city": "Paris",
                                                     "postalCode": "75000",
-                                                    "countryCode": "FR"
+                                                    "countryCode": "fr"
                                                 }
                                             ],
                                             "languageCode": "fra"
@@ -425,7 +423,6 @@
                             ]
                         },
                         {
-                            "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/payment.schema.json",
                             "category" : "payment",
                             "subcategory": "payment",
                             "reference" : "P1258",
@@ -444,7 +441,7 @@
                             ]
                         }
                     ],
-                    "currencyCode": "EUR"
+                    "currencyCode": "eur"
                 }
             ]
         }

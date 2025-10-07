@@ -4,7 +4,7 @@ Ce script valide des fichiers JSON dans le répertoire "examples" en utilisant l
 import json
 import requests
 from jsonschema import validate
-from os import listdir  
+from os import listdir
 
 for file in listdir('examples'):
     with open(f'examples/{file}', encoding='utf-8') as f:

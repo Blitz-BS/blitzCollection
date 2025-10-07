@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/contact.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/contact.schema.json",
     "title": "Contact",
     "description": "Coordonnées d'une personne physique",
     "oneOf" : [
@@ -21,7 +21,7 @@
                 }
             }
         },{
-            "required": ["reference", "civility", "lastName", "firstName"],
+            "required": ["civility", "lastName"],
             "type": "object",
             "properties": {
                 "$schema": {

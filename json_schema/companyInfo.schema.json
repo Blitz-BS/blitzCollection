@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/companyInfo.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/companyInfo.schema.json",
     "title": "Informations sur une entreprise",
     "description": "Informations utiles sur une entreprise",
     "anyOf": [
@@ -50,7 +50,7 @@
         "companyForm" : {
             "title": "Forme juridique de l'entresprise",
             "description": "Forme jurique de l'entreprise (uniquement les formes françaises)",
-            "enum": ["EI", "Micro-entreprise", "EURL", "SASU", "SARL", "SAS", "SA", "SNC", "SCS", "SCA",  "SCI", "SCM", "SCP", "SCEA", "GAEC", "EARL", "SICA", "SELARL", "SELAS", "SELCA", "SELAFA", "GIE", "GEIE", "SCOP", "SCIC", "SEP", "Société de fait"]
+            "enum": ["ei", "microEntreprise", "eurl", "sasu", "sarl", "sas", "sa", "snc", "scs", "sca",  "sci", "scm", "scp", "scea", "gaec", "earl", "sica", "selarl", "selas", "selca", "selafa", "gie", "geie", "scop", "scic", "sep", "societeDeFait"]
         },
         "parentCompany" : {
             "title" : "Maison mère",
