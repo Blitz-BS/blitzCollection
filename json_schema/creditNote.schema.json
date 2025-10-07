@@ -10,7 +10,7 @@
     "properties": {
         "category": {
             "title" : "Type d'écriture comptable",
-            "const" : "credit note"
+            "const" : "creditNote"
         }
     }
 }

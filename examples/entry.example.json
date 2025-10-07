@@ -4,7 +4,7 @@
     "label" : "Facture 2021-01",
     "entryDate": "2021-01-01",
     "amount" : 1000,
-    "currencyCode": "EUR",
+    "currencyCode": "eur",
     "letterings": [
         {
             "entryReference" : "123456789",

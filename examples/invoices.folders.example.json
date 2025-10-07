@@ -4,7 +4,7 @@
     "creditor" : {
         "reference" : "123456789"
     },
-    "folders": [
+    "cases": [
         {
             "reference": "123456789",
             "debtors" : [
@@ -12,14 +12,14 @@
                     "value": {
                         "reference" : "B123456789",
                         "name": "Electricité de France",
-                        "personCategory": "legal person",
+                        "personCategory": "legalPerson",
                         "companyInfo": {
                             "companyRegistrationNumber": "552081317",
                             "mainAddress": {
                                 "street": "22-30 22 AVENUE DE WAGRAM",
                                 "city": "Paris",
                                 "postalCode": "75008",
-                                "countryCode": "FR"
+                                "countryCode": "fr"
                             }
                         },
                         "contacts": [
@@ -86,7 +86,7 @@
                     ]
                 }
             ],
-            "currencyCode": "EUR"
+            "currencyCode": "eur"
         }
     ]
 }

@@ -5,14 +5,14 @@
     "creditor" : {
         "reference" : "123456789",
         "name": "Blitz Business Service",
-        "personCategory": "legal person",
+        "personCategory": "legalPerson",
         "companyInfo": {
             "companyRegistrationNumber": "401694989",
             "mainAddress": {
                 "street": "265 rue Denis Papin",
                 "city": "Villefontaine",
                 "postalCode": "38090",
-                "countryCode": "FR"
+                "countryCode": "fr"
             },
             "companyPhone": {
                 "value": "04 74 96 27 34",
@@ -28,7 +28,7 @@
             {
                 "role": "commercial",
                 "reference" : "A123456789",
-                "civility": "monsieur",
+                "civility": "mister",
                 "lastName": "Durant",
                 "firstName": "Paul",
                 "phones": [
@@ -61,7 +61,7 @@
             "value": {
                 "reference" : "B123456789",
                 "name": "Monsieur Jean Dupont",
-                "personCategory": "natural person",
+                "personCategory": "naturalPerson",
                 "contacts": [
                     {
                         "value": {
@@ -91,7 +91,7 @@
                                     "street": "Rue de la paix",
                                     "city": "Paris",
                                     "postalCode": "75000",
-                                    "countryCode": "FR"
+                                    "countryCode": "fr"
                                 }
                             ],
                             "languageCode": "fra"
@@ -106,12 +106,12 @@
             "value": {
                 "reference" : "B123456789",
                 "name": "Jeanne Dupont",
-                "personCategory": "natural person",
+                "personCategory": "naturalPerson",
                 "contacts": [
                     {
                         "value": {
                             "reference" : "C123456789",
-                            "civility": "madame",
+                            "civility": "misses",
                             "lastName": "Dupont",
                             "firstName": "Jeanne",
                             "phones": [
@@ -135,7 +135,7 @@
                                     "street": "Rue de la paix",
                                     "city": "Paris",
                                     "postalCode": "75000",
-                                    "countryCode": "FR"
+                                    "countryCode": "fr"
                                 }
                             ],
                             "languageCode": "fra"
@@ -186,7 +186,7 @@
     "parties" : [{
         "reference" : "C123456789",
         "name": "GBA Avocats",
-        "personCategory": "legal person",
+        "personCategory": "legalPerson",
         "ability" : "attorney",
         "companyInfo": {
             "companyRegistrationNumber": "493675904",
@@ -194,7 +194,7 @@
                 "street": "24 MAIL FRANCOIS MITTERRAND",
                 "city": "RENNES",
                 "postalCode": "35000",
-                "countryCode": "FR"
+                "countryCode": "fr"
             },
             "companyPhone": {
                 "value": "02 99 35 12 12",
@@ -204,14 +204,14 @@
                 "value": "gba@gba-avocats.com",
                 "qualification": "professional"
             },
-            "companyForm": "SA",
+            "companyForm": "sa",
             "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/493675904"
         },
         "contacts": [
             {
                 "role": "avocat fiscaliste",
                 "reference" : "D123456789",
-                "civility": "madame",
+                "civility": "misses",
                 "lastName": "Duplessis",
                 "firstName": "Marie",
                 "phones": [
@@ -230,5 +230,5 @@
             }
         ]
     }],
-    "currencyCode": "EUR"
+    "currencyCode": "eur"
 }

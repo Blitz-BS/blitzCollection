@@ -15,7 +15,7 @@
         "subcategory": {
             "title": "Sous type d'accessoire'",
             "description" : "Il s'agit de frais accessoires définis dans le droit applicable de la législation",
-            "enum": ["intérêts de retard", "pénalité de retard", "indemnité forfaitaire", "dommages et intérêts", "dépens", "article 700", "frais répétibles"]
+            "enum": ["interetsDeRetard", "penaliteDeRetard", "indemniteForfaitaire", "dommagesEtIntérêts", "depens", "article700", "fraisRepetibles"]
         }
     }
 }

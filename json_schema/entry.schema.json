@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/MGP-421-modularisation-de-l-objet-json-schema-pour-l-integ/json_schema/entry.schema.json",
     "title": "Écriture",
     "description": "Écriture sur le compte client du créancier. Les écritures sont les créances, les règlements etc...",
-    "required": ["reference","label","entryDate","amount"],
+    "required": ["reference","entryDate","amount"],
     "type": "object",
     "properties" : {
         "$schema": {

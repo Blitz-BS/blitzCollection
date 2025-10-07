@@ -9,7 +9,7 @@
     "amount" : 1000,
     "vatAmount": 200,
     "interestRate" : 0.05,
-    "currencyCode": "EUR",
+    "currencyCode": "eur",
     "letterings": [
         {
             "entryReference" : "F123456789",

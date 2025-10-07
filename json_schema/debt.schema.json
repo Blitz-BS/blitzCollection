@@ -15,7 +15,7 @@
         "subcategory": {
             "title": "Sous type de créance",
             "description": "facture, avis d'échéance de loyer, avis d'échéance de crédit",
-            "enum": ["invoice", "rent due notice", "credit due notice"]
+            "enum": ["invoice", "rentDueNotice", "creditDueNotice"]
         },
         "dueDate": {
             "title": "Date d'échéance",
@@ -40,7 +40,7 @@
                     "maximum": 1
                 },
                 {
-                    "enum": ["legal rate", "legal rate x3", "ECB rate"]
+                    "enum": ["legalRate", "legalRateX3", "ecbRate"]
                 }
             ]
             

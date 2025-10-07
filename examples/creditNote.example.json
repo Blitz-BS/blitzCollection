@@ -5,7 +5,7 @@
     "label" : "Avoir 2021-01",
     "entryDate": "2021-01-01",
     "amount" : -200,
-    "currencyCode": "EUR",
+    "currencyCode": "eur",
     "letterings": [
         {
             "entryReference" : "F123456789",

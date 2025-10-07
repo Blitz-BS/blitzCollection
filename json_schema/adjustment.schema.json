@@ -15,7 +15,7 @@
         "subcategory": {
             "title": "Sous type d'opération diverse",
             "description" : "facture, ajustement de change",
-            "enum": ["error", "exchange rate adjustment"]
+            "enum": ["error", "exchangeRateAdjustment"]
         }
     }
 }

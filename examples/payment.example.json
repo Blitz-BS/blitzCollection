@@ -7,7 +7,7 @@
     "entryDate": "2021-03-02",
     "paymentDate" : "2021-03-01",
     "amount" : -50,
-    "currencyCode": "EUR",
+    "currencyCode": "eur",
     "method" : "creditCard",
     "issuingPersonReference" : "123456789",
     "recipientPersonReference" : "0011223344",

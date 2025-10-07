@@ -26,7 +26,7 @@
         "method": {
             "title": "Mode de paiement",
             "description": "Chèque, cash, carte de crédit, prélèvement, virement",
-            "enum" : ["check", "cash", "creditCard", "directDebit", "transfer"]
+            "enum" : ["check", "cash", "creditCard", "directDebit", "Transfer"]
         },
         "issuingPersonReference": {
             "title" : "Personne émettrice",

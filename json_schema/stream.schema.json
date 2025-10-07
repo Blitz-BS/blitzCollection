@@ -22,11 +22,11 @@
             "title": "Créancier",
             "$ref": "./person.schema.json"
         },
-        "folders": {
+        "cases": {
             "type": "array",
             "minItems": 1,
             "items": {
-                "$ref": "./folders.schema.json"
+                "$ref": "./cases.schema.json"
             }
         }
     }    

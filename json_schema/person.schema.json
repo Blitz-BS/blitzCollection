@@ -45,12 +45,12 @@
                 "personCategory" : {
                     "title" : "Catégorie de personne",
                     "description" : "Catégorie de personne : personne morale, personne physique ou administration",
-                    "enum" : ["legal person", "natural person", "administration"]
+                    "enum" : ["legalPerson", "naturalPerson", "administration"]
                 },
                 "ability" : {
                     "title" : "Compétence",
                     "description" : "Compétence du tiers à agir",
-                    "enum" : ["bailiff", "administrator", "attorney",  "investigator", "court", "collection company", "curator", "association", "none"],
+                    "enum" : ["bailiff", "administrator", "attorney", "investigator", "court", "collectionCompany", "curator", "association", "agent", "clientAgency", "none"],
                     "default" : "none"
                 },
                 "companyInfo" : {

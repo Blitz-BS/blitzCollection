@@ -10,8 +10,11 @@ for file in listdir('examples'):
     with open(f'examples/{file}', encoding='utf-8') as f:
         example = json.load(f)
     if '$schema' in example:
-        resp = requests.get(url=example['$schema'])
-        schema = resp.json()
+        #resp = requests.get(url=example['$schema'])
+        with open(f'json_schema/{file.split(".")[0]}.schema.json', encoding='utf-8') as f:
+            resp = json.load(f)
+            schema = resp
+        #schema = resp.json()
         validate(instance=example, schema=schema)
         print(f"le fichier {file} est valide")
     else:
