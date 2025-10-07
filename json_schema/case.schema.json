@@ -79,9 +79,17 @@
                 "$ref": "./person.schema.json"           
             }
         },
+        "incidentals" : {
+            "title": "Frais accessoires",
+            "description": "Frais accessoires liés au dossier et non directement aux créances",
+            "type": "array",
+            "items" : {
+                "$ref" : "./incidental.schema.json"
+            }
+        },
         "currencyCode" : {
             "title" : "Code devise",
-            "description" : "Code devise du dossier. Ce code est la devise par défaut du dossier",
+            "description" : "Code devise du dossier. Ce code devise est utilisé en particulier pour les frais accessoires",
             "$ref" : "./currencyCode.schema.json"
         },
         "legislation": {
