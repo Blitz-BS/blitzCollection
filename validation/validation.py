@@ -4,14 +4,12 @@ Ce script valide des fichiers JSON dans le répertoire "examples" en utilisant l
 import json
 import requests
 from jsonschema import validate
-from os import listdir  
+from os import listdir
 
 for file in listdir('examples'):
-    print(f'{file} is being validating ...')
     with open(f'examples/{file}', encoding='utf-8') as f:
         example = json.load(f)
     if '$schema' in example:
-        print(example['$schema'])
         resp = requests.get(url=example['$schema'])
         schema = resp.json()
         validate(instance=example, schema=schema)

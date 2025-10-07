@@ -6,7 +6,7 @@
     "label" : "Erreur d'affectation",
     "entryDate": "2021-01-01",
     "amount" : -300,
-    "currencyCode": "EUR",
+    "currencyCode": "eur",
     "letterings": [
         {
             "entryReference" : "F123456789",

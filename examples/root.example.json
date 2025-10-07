@@ -6,7 +6,7 @@
             "creditor" : {
                 "reference" : "123456789"
             },
-            "folders": [
+            "cases": [
                 {
                     "reference": "123456789",
                     "debtors" : [
@@ -147,7 +147,7 @@
                     "key": "89"
                 }
             },
-            "folders": [
+            "cases": [
                 {
                     "reference": "123456789",
                     "debtors" : [
@@ -280,7 +280,7 @@
                             ]
                         }
                     ],
-                    "currencyCode": "EUR"
+                    "currencyCode": "eur"
                 },
                 {
                     "reference": "1225",
