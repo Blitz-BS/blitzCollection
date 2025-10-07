@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/feat/BCC-479-Faire-evoluer-le-schema/json_schema/creditNote.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/creditNote.schema.json",
     "category" : "creditNote",
     "reference" : "A123456789",
     "label" : "Avoir 2021-01",

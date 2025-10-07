@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/feat/BCC-479-Faire-evoluer-le-schema/json_schema/debtor.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/debtor.schema.json",
     "title": "Debiteur",
     "description": "débiteur/co-débiteur et son engagement",
     "type": "object",
