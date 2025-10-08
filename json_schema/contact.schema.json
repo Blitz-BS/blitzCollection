@@ -7,7 +7,7 @@
         {
             "required": ["reference"],
             "type": "object",
-            "additionalProperties": false,
+            "unevaluatedProperties": false,
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
@@ -24,6 +24,7 @@
         },{
             "required": ["civility", "lastName"],
             "type": "object",
+            "unevaluatedProperties": false,
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
