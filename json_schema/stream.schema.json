@@ -29,5 +29,5 @@
                 "$ref": "./cases.schema.json"
             }
         }
-    }    
+    }
 }
