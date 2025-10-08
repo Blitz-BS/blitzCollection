@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/stream.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/stream.schema.json",
     "title": "Dossiers",
     "description": "Dossiers regroupés par contrat et par créancier",
     "required": ["contractId", "creditor","cases"],

@@ -1,23 +1,28 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/debtor.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/debtor.schema.json",
     "title": "Debiteur",
     "description": "débiteur/co-débiteur et son engagement",
     "type": "object",
-    "$ref": "./person.schema.json",
-    "properties": {
-        "undertakingAmount": {
-            "title": "Montant de l'engagement",
-            "description": "Montant maximal de l'engagement du débiteur/co-débiteur",
-            "type": "number",
-            "minimum": -999999999999.99,
-            "maximum": 999999999999.99
-        },
-        "undertakingDuration": {
-            "title": "Durée de l'engagement",
-            "description": "durée de l'engagement en nombre de jours pour les cautions",
-            "type": "number",
-            "minimum": 0
+    "allOf": [
+        { "$ref": "./person.schema.json" },
+        {
+            "type": "object",
+            "properties": {
+                "undertakingAmount": {
+                    "title": "Montant de l'engagement",
+                    "description": "Montant maximal de l'engagement du débiteur/co-débiteur",
+                    "type": "number",
+                    "minimum": -999999999999.99,
+                    "maximum": 999999999999.99
+                },
+                "undertakingDuration": {
+                    "title": "Durée de l'engagement",
+                    "description": "durée de l'engagement en nombre de jours pour les cautions",
+                    "type": "number",
+                    "minimum": 0
+                }
+            }
         }
-    }
+    ]    
 }
