@@ -36,7 +36,7 @@
                     "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
                     "type": "string"
                 },
-                "name" : {
+                "name" : {  
                     "title" : "Nom",
                     "description" : "Exemple : Jean Dupont ou Dupont & Cie",
                     "type": "string"
@@ -75,7 +75,8 @@
                                     }
                                 }
                             }
-                        ]
+                        ],
+                        "unevaluatedProperties": false
                     }
                 },
                 "bankAccount" : {
