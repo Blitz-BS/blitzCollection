@@ -12,6 +12,7 @@ for file in listdir('examples'):
     if '$schema' in example:
         resp = requests.get(url=example['$schema'])
         schema = resp.json()
+        print(f"{file} en cours de validation ...")
         validate(instance=example, schema=schema)
         print(f"le fichier {file} est valide")
     else:

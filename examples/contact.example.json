@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/contact.schema.json",
     "reference" : "123456789",
-    "civility": "monsieur",
+    "civility": "mister",
     "firstName": "Jean",
     "lastName": "Dupont",
     "phones": [

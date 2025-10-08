@@ -27,7 +27,7 @@
                                 {
                                     "role" : "acheteur",
                                     "reference" : "C123456789",
-                                    "civility": "monsieur",
+                                    "civility": "mister",
                                     "lastName": "Dupont",
                                     "firstName": "Jean",
                                     "phones": [
@@ -93,7 +93,7 @@
             "creditor" : {
                 "reference" : "123456789",
                 "name": "Blitz Business Service",
-                "personCategory": "legal person",
+                "personCategory": "legalPerson",
                 "companyInfo": {
                     "companyRegistrationNumber": "401694989",
                     "mainAddress": {
@@ -110,14 +110,14 @@
                         "value": "contact@blitzbs.com",
                         "qualification": "professional"
                     },
-                    "companyInfo": "gaec",
+                    "companyForm": "gaec",
                     "repository": "https://annuaire-entreprises.data.gouv.fr/entreprise/blitz-business-services-par-abreviation-blitz-bs-401694989"
                 },
                 "contacts": [
                     {
                         "role": "commercial",
                         "reference" : "A123456789",
-                        "civility": "monsieur",
+                        "civility": "mister",
                         "lastName": "Durant",
                         "firstName": "Paul",
                         "phones": [
@@ -156,7 +156,7 @@
                             "contacts": [
                                 {
                                     "reference" : "C123456789",
-                                    "civility": "monsieur",
+                                    "civility": "mister",
                                     "lastName": "Dupont",
                                     "firstName": "Jean",
                                     "phones": [
@@ -229,7 +229,7 @@
                         {
                             "reference" : "C123456789",
                             "name": "GBA Avocats",
-                            "personCategory": "legal person",
+                            "personCategory": "legalPerson",
                             "ability" : "attorney",
                             "companyInfo": {
                                 "companyRegistrationNumber": "493675904",
@@ -241,7 +241,6 @@
                                 },
                                 "companyPhone": {
                                     "value": "02 99 35 12 12",
-                                    "isMobile": false,
                                     "qualification": "professional"
                                 },
                                 "companyEmail": {
@@ -322,7 +321,7 @@
                             "contacts": [
                                 {
                                     "reference" : "C123654987",
-                                    "civility": "monsieur",
+                                    "civility": "mister",
                                     "lastName": "Roucher",
                                     "firstName": "Philippe",
                                     "phones": [

@@ -23,7 +23,6 @@
             }
         },{
             "required": ["reference", "name", "personCategory"],
-            "additionalProperties": false,
             "type": "object",
             "properties": {
                 "$schema": {

@@ -15,21 +15,16 @@
                     "phones": [
                         {
                             "value": "02 03 04 05 06",
-                            "isMobile": false,
-                            "description": "Ligne fixe du bureau",
                             "qualification": "professional"
                         },
                         {
                             "value": "06 01 02 03 04",
-                            "isMobile" :true,
-                            "description": "Mobile personnel",
                             "qualification": "personal"
                         }
                     ],
                     "emails": [
                         {
                             "value": "jdupont@monmail.com",
-                            "description": "Adresse peu utilisée",
                             "qualification": "professional"
                         }
                     ],
@@ -87,11 +82,11 @@
         {
             "reference" : "C123456789",
             "name": "GBA Avocats",
-            "personCategory": "legal person",
+            "personCategory": "legalPerson",
             "ability" : "attorney",
             "companyInfo": {
                 "companyRegistrationNumber": "493675904",
-                "fix/BCC-659-Corriger-les-fausses-validations-du-schemaAddress": {
+                "mainAddress": {
                     "street": "24 MAIL FRANCOIS MITTERRAND",
                     "city": "RENNES",
                     "postalCode": "35000",
