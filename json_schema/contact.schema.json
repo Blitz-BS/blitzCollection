@@ -7,7 +7,7 @@
         {
             "required": ["reference"],
             "type": "object",
-            "unevaluatedProperties": false,
+            "additionalProperties": false,
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
