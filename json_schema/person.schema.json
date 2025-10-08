@@ -62,7 +62,6 @@
                     "title" : "Contacts",
                     "description" : "Contacts de la personne",
                     "type": "array",
-                    "unevaluatedProperties": false,
                     "items": {
                         "allOf": [
                             { "$ref" : "./contact.schema.json" },

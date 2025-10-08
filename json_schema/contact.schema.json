@@ -24,7 +24,6 @@
         },{
             "required": ["civility", "lastName"],
             "type": "object",
-            "unevaluatedProperties": false,
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
