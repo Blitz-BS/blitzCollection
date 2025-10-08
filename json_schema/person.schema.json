@@ -77,8 +77,7 @@
                                     }
                                 }
                             }
-                        ],
-                        "unevaluatedProperties": false
+                        ]
                     }
                 },
                 "bankAccount" : {
