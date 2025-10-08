@@ -62,12 +62,12 @@
                     "title" : "Contacts",
                     "description" : "Contacts de la personne",
                     "type": "array",
+                    "unevaluatedProperties": false,
                     "items": {
                         "allOf": [
                             { "$ref" : "./contact.schema.json" },
                             {
                                 "type" : "object",
-                                "unevaluatedProperties": false,
                                 "properties": {
                                     "role" : {
                                         "title" : "Rôle du contact pour la personne physique ou morale",
@@ -77,7 +77,8 @@
                                     }
                                 }
                             }
-                        ]
+                        ],
+                        "unevaluatedProperties": false
                     }
                 },
                 "bankAccount" : {
