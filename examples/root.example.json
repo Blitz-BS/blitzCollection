@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/root.schema.json",
     "casesStreams": [
         {
             "contractId" : 123456,
@@ -11,42 +11,40 @@
                     "reference": "123456789",
                     "debtors" : [
                         {
-                            "value": {
-                                "reference" : "B123456789",
-                                "name": "Electricité de France",
-                                "personCategory": "legalPerson",
-                                "companyInfo": {
-                                    "companyRegistrationNumber": "552081317",
-                                    "mainAddress": {
-                                        "street": "22-30 22 AVENUE DE WAGRAM",
-                                        "city": "Paris",
-                                        "postalCode": "75008",
-                                        "countryCode": "fr"
-                                    }
-                                },
-                                "contacts": [
-                                    {
-                                        "role" : "acheteur",
-                                        "reference" : "C123456789",
-                                        "civility": "monsieur",
-                                        "lastName": "Dupont",
-                                        "firstName": "Jean",
-                                        "phones": [
-                                            {
-                                                "value": "02 03 04 05 06",
-                                                "qualification": "professional"
-                                            }
-                                        ],
-                                        "emails": [
-                                            {
-                                                "value": "jdupont@edf.fr",
-                                                "qualification": "professional"
-                                            }
-                                        ],
-                                        "languageCode": "fra"
-                                    }
-                                ]
-                            }
+                            "reference" : "B123456789",
+                            "name": "Electricité de France",
+                            "personCategory": "legalPerson",
+                            "companyInfo": {
+                                "companyRegistrationNumber": "552081317",
+                                "mainAddress": {
+                                    "street": "22-30 22 AVENUE DE WAGRAM",
+                                    "city": "Paris",
+                                    "postalCode": "75008",
+                                    "countryCode": "fr"
+                                }
+                            },
+                            "contacts": [
+                                {
+                                    "role" : "acheteur",
+                                    "reference" : "C123456789",
+                                    "civility": "monsieur",
+                                    "lastName": "Dupont",
+                                    "firstName": "Jean",
+                                    "phones": [
+                                        {
+                                            "value": "02 03 04 05 06",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "jdupont@edf.fr",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            ]
                         }
                     ],
                     "entries" : [
@@ -152,46 +150,42 @@
                     "reference": "123456789",
                     "debtors" : [
                         {
-                            "value": {
-                                "reference" : "B123456789",
-                                "name": "Monsieur Jean Dupont",
-                                "personCategory": "naturalPerson",
-                                "contacts": [
-                                    {
-                                        "value": {
-                                            "reference" : "C123456789",
-                                            "civility": "monsieur",
-                                            "lastName": "Dupont",
-                                            "firstName": "Jean",
-                                            "phones": [
-                                                {
-                                                    "value": "02 03 04 05 06",
-                                                    "qualification": "professional"
-                                                },
-                                                {
-                                                    "value": "06 01 02 03 04",
-                                                    "qualification": "personal"
-                                                }
-                                            ],
-                                            "emails": [
-                                                {
-                                                    "value": "jdupont@monmail.com",
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "addresses": [
-                                                {
-                                                    "street": "Rue de la paix",
-                                                    "city": "Paris",
-                                                    "postalCode": "75000",
-                                                    "countryCode": "fr"
-                                                }
-                                            ],
-                                            "languageCode": "fra"
+                            "reference" : "B123456789",
+                            "name": "Monsieur Jean Dupont",
+                            "personCategory": "naturalPerson",
+                            "contacts": [
+                                {
+                                    "reference" : "C123456789",
+                                    "civility": "monsieur",
+                                    "lastName": "Dupont",
+                                    "firstName": "Jean",
+                                    "phones": [
+                                        {
+                                            "value": "02 03 04 05 06",
+                                            "qualification": "professional"
+                                        },
+                                        {
+                                            "value": "06 01 02 03 04",
+                                            "qualification": "personal"
                                         }
-                                    }
-                                ]
-                            }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "jdupont@monmail.com",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "addresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "fr"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            ]
                         }
                     ],
                     "entries" : [
@@ -287,121 +281,109 @@
                     "debtors" : [
                         {
                             "undertaking": 1230,
-                            "value": {
-                                "reference" : "B123456789",
-                                "name": "Monsieur Pierre Rocher",
-                                "personCategory": "naturalPerson",
-                                "contacts": [
-                                    {
-                                        "value": {
-                                            "reference" : "C123456789",
-                                            "civility": "mister",
-                                            "lastName": "Rocher",
-                                            "firstName": "Pierre",
-                                            "phones": [
-                                                {
-                                                    "value": "06 10 20 30 40",
-                                                    "qualification": "personal"
-                                                }
-                                            ],
-                                            "emails": [
-                                                {
-                                                    "value": "pete.rock@gmail.com",
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "addresses": [
-                                                {
-                                                    "street": "Rue de la paix",
-                                                    "city": "Paris",
-                                                    "postalCode": "75000",
-                                                    "countryCode": "fr"
-                                                }
-                                            ],
-                                            "languageCode": "fra"
+                            "reference" : "B123456789",
+                            "name": "Monsieur Pierre Rocher",
+                            "personCategory": "naturalPerson",
+                            "contacts": [
+                                {
+                                    "reference" : "C123456789",
+                                    "civility": "mister",
+                                    "lastName": "Rocher",
+                                    "firstName": "Pierre",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "qualification": "personal"
                                         }
-                                    }
-                                ]
-                            }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "pete.rock@gmail.com",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "addresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "fr"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            ]
                         },
                         {
                             "undertaking": 470,
-                            "value": {
-                                "reference" : "B123456789",
-                                "name": "Monsieur Philippe Roucher",
-                                "personCategory": "naturalPerson",
-                                "contacts": [
-                                    {
-                                        "value": {
-                                            "reference" : "C123654987",
-                                            "civility": "monsieur",
-                                            "lastName": "Roucher",
-                                            "firstName": "Philippe",
-                                            "phones": [
-                                                {
-                                                    "value": "06 10 20 30 40",
-                                                    "qualification": "personal"
-                                                }
-                                            ],
-                                            "emails": [
-                                                {
-                                                    "value": "philgoodroucherk@gmail.com",
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "addresses": [
-                                                {
-                                                    "street": "Rue de la paix",
-                                                    "city": "Paris",
-                                                    "postalCode": "75000",
-                                                    "countryCode": "fr"
-                                                }
-                                            ],
-                                            "languageCode": "fra"
+                            "reference" : "B123456789",
+                            "name": "Monsieur Philippe Roucher",
+                            "personCategory": "naturalPerson",
+                            "contacts": [
+                                {
+                                    "reference" : "C123654987",
+                                    "civility": "monsieur",
+                                    "lastName": "Roucher",
+                                    "firstName": "Philippe",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "qualification": "personal"
                                         }
-                                    }
-                                ]
-                            }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "philgoodroucherk@gmail.com",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "addresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "fr"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            ]
                         }
                     ],
                     "guarantors": [
                         {
-                            "value": {
-                                "reference" : "C18",
-                                "name": "Madame Philippine Roucher",
-                                "personCategory": "naturalPerson",
-                                "contacts": [
-                                    {
-                                        "value": {
-                                            "reference" : "C123456789",
-                                            "civility": "mister",
-                                            "lastName": "Roucher",
-                                            "firstName": "Philippine",
-                                            "phones": [
-                                                {
-                                                    "value": "06 10 20 30 40",
-                                                    "qualification": "personal"
-                                                }
-                                            ],
-                                            "emails": [
-                                                {
-                                                    "value": "philippine.roucherk@gmail.com",
-                                                    "qualification": "professional"
-                                                }
-                                            ],
-                                            "addresses": [
-                                                {
-                                                    "street": "Rue de la paix",
-                                                    "city": "Paris",
-                                                    "postalCode": "75000",
-                                                    "countryCode": "fr"
-                                                }
-                                            ],
-                                            "languageCode": "fra"
+                            "reference" : "C18",
+                            "name": "Madame Philippine Roucher",
+                            "personCategory": "naturalPerson",
+                            "contacts": [
+                                {
+                                    "reference" : "C123456789",
+                                    "civility": "mister",
+                                    "lastName": "Roucher",
+                                    "firstName": "Philippine",
+                                    "phones": [
+                                        {
+                                            "value": "06 10 20 30 40",
+                                            "qualification": "personal"
                                         }
-                                    }
-                                ]
-                            }
+                                    ],
+                                    "emails": [
+                                        {
+                                            "value": "philippine.roucherk@gmail.com",
+                                            "qualification": "professional"
+                                        }
+                                    ],
+                                    "addresses": [
+                                        {
+                                            "street": "Rue de la paix",
+                                            "city": "Paris",
+                                            "postalCode": "75000",
+                                            "countryCode": "fr"
+                                        }
+                                    ],
+                                    "languageCode": "fra"
+                                }
+                            ]
                         }
                     ],
                     "entries" : [

@@ -63,17 +63,21 @@
                     "description" : "Contacts de la personne",
                     "type": "array",
                     "items": {
-                        "type" : "object",
-                        "unevaluatedProperties": false,
-                        "$ref" : "./contact.schema.json",
-                        "properties": {
-                            "role" : {
-                                "title" : "Rôle du contact pour la personne physique ou morale",
-                                "description" : "Exemple : commercial, responsable administratif, épouse, époux",
-                                "type": "string",
-                                "maxLength": 20
+                        "allOf": [
+                            { "$ref" : "./contact.schema.json" },
+                            {
+                                "type" : "object",
+                                "unevaluatedProperties": false,
+                                "properties": {
+                                    "role" : {
+                                        "title" : "Rôle du contact pour la personne physique ou morale",
+                                        "description" : "Exemple : commercial, responsable administratif, épouse, époux",
+                                        "type": "string",
+                                        "maxLength": 20
+                                    }
+                                }
                             }
-                        }  
+                        ]
                     }
                 },
                 "bankAccount" : {

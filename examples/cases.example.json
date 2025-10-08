@@ -1,53 +1,49 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/cases.schema.json",
+    "$schema": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/cases.schema.json",
     "reference": "123456789",
     "debtors" : [
         {
-            "value": {
-                "reference" : "B123456789",
-                "name": "Monsieur Jean Dupont",
-                "personCategory": "naturalPerson",
-                "contacts": [
-                    {
-                        "value": {
-                            "reference" : "C123456789",
-                            "civility": "mister",
-                            "lastName": "Dupont",
-                            "firstName": "Jean",
-                            "phones": [
-                                {
-                                    "value": "02 03 04 05 06",
-                                    "isMobile": false,
-                                    "description": "Ligne fixe du bureau",
-                                    "qualification": "professional"
-                                },
-                                {
-                                    "value": "06 01 02 03 04",
-                                    "isMobile" :true,
-                                    "description": "Mobile personnel",
-                                    "qualification": "personal"
-                                }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "jdupont@monmail.com",
-                                    "description": "Adresse peu utilisée",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "addresses": [
-                                {
-                                    "street": "Rue de la paix",
-                                    "city": "Paris",
-                                    "postalCode": "75000",
-                                    "countryCode": "fr"
-                                }
-                            ],
-                            "languageCode": "fra"
+            "reference" : "B123456789",
+            "name": "Monsieur Jean Dupont",
+            "personCategory": "naturalPerson",
+            "contacts": [
+                {
+                    "reference" : "C123456789",
+                    "civility": "mister",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
+                    "phones": [
+                        {
+                            "value": "02 03 04 05 06",
+                            "isMobile": false,
+                            "description": "Ligne fixe du bureau",
+                            "qualification": "professional"
+                        },
+                        {
+                            "value": "06 01 02 03 04",
+                            "isMobile" :true,
+                            "description": "Mobile personnel",
+                            "qualification": "personal"
                         }
-                    }
-                ]
-            }
+                    ],
+                    "emails": [
+                        {
+                            "value": "jdupont@monmail.com",
+                            "description": "Adresse peu utilisée",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "street": "Rue de la paix",
+                            "city": "Paris",
+                            "postalCode": "75000",
+                            "countryCode": "fr"
+                        }
+                    ],
+                    "languageCode": "fra"
+                }
+            ]
         }
     ],
     "entries" : [
@@ -95,7 +91,7 @@
             "ability" : "attorney",
             "companyInfo": {
                 "companyRegistrationNumber": "493675904",
-                "mainAddress": {
+                "fix/BCC-659-Corriger-les-fausses-validations-du-schemaAddress": {
                     "street": "24 MAIL FRANCOIS MITTERRAND",
                     "city": "RENNES",
                     "postalCode": "35000",

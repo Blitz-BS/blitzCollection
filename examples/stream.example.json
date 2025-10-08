@@ -233,42 +233,40 @@
                 },
                 {
                     "undertaking": 470,
-                    "value": {
-                        "reference" : "B123456789",
-                        "name": "Monsieur Philippe Roucher",
-                        "personCategory": "naturalPerson",
-                        "contacts": [
-                            {
-                                "value": {
-                                    "reference" : "C123654987",
-                                    "civility": "mister",
-                                    "lastName": "Roucher",
-                                    "firstName": "Philippe",
-                                    "phones": [
-                                        {
-                                            "value": "06 10 20 30 40",
-                                            "qualification": "personal"
-                                        }
-                                    ],
-                                    "emails": [
-                                        {
-                                            "value": "philgoodroucherk@gmail.com",
-                                            "qualification": "professional"
-                                        }
-                                    ],
-                                    "addresses": [
-                                        {
-                                            "street": "Rue de la paix",
-                                            "city": "Paris",
-                                            "postalCode": "75000",
-                                            "countryCode": "fr"
-                                        }
-                                    ],
-                                    "languageCode": "fra"
-                                }
+                    "reference" : "B123456789",
+                    "name": "Monsieur Philippe Roucher",
+                    "personCategory": "naturalPerson",
+                    "contacts": [
+                        {
+                            "value": {
+                                "reference" : "C123654987",
+                                "civility": "mister",
+                                "lastName": "Roucher",
+                                "firstName": "Philippe",
+                                "phones": [
+                                    {
+                                        "value": "06 10 20 30 40",
+                                        "qualification": "personal"
+                                    }
+                                ],
+                                "emails": [
+                                    {
+                                        "value": "philgoodroucherk@gmail.com",
+                                        "qualification": "professional"
+                                    }
+                                ],
+                                "addresses": [
+                                    {
+                                        "street": "Rue de la paix",
+                                        "city": "Paris",
+                                        "postalCode": "75000",
+                                        "countryCode": "fr"
+                                    }
+                                ],
+                                "languageCode": "fra"
                             }
-                        ]
-                    }
+                        }
+                    ]
                 }
             ],
             "guarantors": [
