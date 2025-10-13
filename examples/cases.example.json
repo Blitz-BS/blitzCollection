@@ -86,7 +86,7 @@
             "ability" : "attorney",
             "companyInfo": {
                 "companyRegistrationNumber": "493675904",
-                "fix/BCC-659-Corriger-les-fausses-validations-du-schemaAddress": {
+                "mainAddress": {
                     "street": "24 MAIL FRANCOIS MITTERRAND",
                     "city": "RENNES",
                     "postalCode": "35000",
