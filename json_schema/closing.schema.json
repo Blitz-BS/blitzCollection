@@ -1,21 +1,27 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/closing.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/closing.schema.json",
     "title": "Clôture",
     "description": "Clôture du dossier",
-    "required": ["category", "subcategory"],
     "unevaluatedProperties": false,
-    "$ref": "./entry.schema.json",
     "type": "object",
-    "properties": {
-        "category": {
-            "title" : "Type d'écriture comptable",
-            "const" : "closing"
+    "allOf": [
+        {
+            "$ref": "./entry.schema.json"
         },
-        "subcategory": {
-            "title": "Sous type de clôture",
-            "description" : "trop perçu, irrécouvrable",
-            "enum": ["overcharged", "irrecoverable"]
+        {
+            "required": ["category", "subcategory"],
+            "properties": {
+                "category": {
+                    "title" : "Type d'écriture comptable",
+                    "const" : "closing"
+                },
+                "subcategory": {
+                    "title": "Sous type de clôture",
+                    "description" : "trop perçu, irrécouvrable",
+                    "enum": ["overcharged", "irrecoverable"]
+                }
+            }
         }
-    }
+    ]
 }

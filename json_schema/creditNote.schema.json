@@ -1,16 +1,22 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/creditNote.schema.json",
+    "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/fix/BCC-659-Corriger-les-fausses-validations-du-schema/json_schema/creditNote.schema.json",
     "title": "Avoir",
     "description": "Avoir sur facture",
-    "required": ["category"],
-    "unevaluatedProperties": false,
-    "$ref": "./entry.schema.json",
     "type": "object",
-    "properties": {
-        "category": {
-            "title" : "Type d'écriture comptable",
-            "const" : "creditNote"
+    "unevaluatedProperties": false,
+    "allOf": [
+        {
+            "$ref": "./entry.schema.json"
+        },
+        {
+            "required": ["category"],
+            "properties": {
+                "category": {
+                    "title" : "Type d'écriture comptable",
+                    "const" : "creditNote"
+                }
+            }
         }
-    }
+    ]    
 }
