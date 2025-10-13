@@ -7,6 +7,7 @@
         {
             "required": ["reference"],
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "$schema": {
                     "title" : "Schéma JSON",
@@ -41,26 +42,26 @@
                     "enum": ["mister", "misses"]
                 },
                 "lastName": {
-                    "title" : "Nom de famille",
-                    "description" : "Exemple : Dupont",
+                    "title": "Nom de famille",
+                    "description": "Exemple : Dupont",
                     "type": "string",
                     "maxLength": 70
                 },
                 "firstName": {
-                    "title" : "Prénom",
-                    "description" : "Exemple : Jean",
+                    "title": "Prénom",
+                    "description": "Exemple : Jean",
                     "type": "string",
                     "maxLength": 70
                 },
                 "birthDate": {
-                    "title" : "Date de naissance",
-                    "description" : "Date de naissance du contact",
+                    "title": "Date de naissance",
+                    "description": "Date de naissance du contact",
                     "type": "string",
                     "format": "date"
                 },
                 "phones": {
-                    "title" : "Numéros de téléphone",
-                    "description" : "Numéros de téléphone par ordre décroissant de qualification",
+                    "title": "Numéros de téléphone",
+                    "description": "Numéros de téléphone par ordre décroissant de qualification",
                     "type": "array",
                     "items": {
                         "$ref": "./phone.schema.json"

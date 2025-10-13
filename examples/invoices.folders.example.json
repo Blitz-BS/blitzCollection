@@ -9,43 +9,40 @@
             "reference": "123456789",
             "debtors" : [
                 {
-                    "value": {
-                        "reference" : "B123456789",
-                        "name": "Electricité de France",
-                        "personCategory": "legalPerson",
-                        "companyInfo": {
-                            "companyRegistrationNumber": "552081317",
-                            "mainAddress": {
-                                "street": "22-30 22 AVENUE DE WAGRAM",
-                                "city": "Paris",
-                                "postalCode": "75008",
-                                "countryCode": "fr"
-                            }
-                        },
-                        "contacts": [
-                            {
-                                "role" : "acheteur",
-                                "reference" : "C123456789",
-                                "civility": "monsieur",
-                                "lastName": "Dupont",
-                                "firstName": "Jean",
-                                "phones": [
-                                    {
-                                        "value": "02 03 04 05 06",
-                                        "isMobile": false,
-                                        "qualification": "professional"
-                                    }
-                                ],
-                                "emails": [
-                                    {
-                                        "value": "jdupont@edf.fr",
-                                        "qualification": "professional"
-                                    }
-                                ],
-                                "languageCode": "fra"
-                            }
-                        ]
-                    }
+                    "reference" : "B123456789",
+                    "name": "Electricité de France",
+                    "personCategory": "legalPerson",
+                    "companyInfo": {
+                        "companyRegistrationNumber": "552081317",
+                        "mainAddress": {
+                            "street": "22-30 22 AVENUE DE WAGRAM",
+                            "city": "Paris",
+                            "postalCode": "75008",
+                            "countryCode": "fr"
+                        }
+                    },
+                    "contacts": [
+                        {
+                            "role" : "acheteur",
+                            "reference" : "C123456789",
+                            "civility": "mister",
+                            "lastName": "Dupont",
+                            "firstName": "Jean",
+                            "phones": [
+                                {
+                                    "value": "02 03 04 05 06",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "emails": [
+                                {
+                                    "value": "jdupont@edf.fr",
+                                    "qualification": "professional"
+                                }
+                            ],
+                            "languageCode": "fra"
+                        }
+                    ]
                 }
             ],
             "entries" : [

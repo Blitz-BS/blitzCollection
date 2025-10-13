@@ -3,7 +3,7 @@
     "$id": "https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/person.schema.json",
     "title": "Personne",
     "description": "Personne physique ou morale ou groupement",
-    "oneof" : [
+    "oneOf" : [
         {
             "required": ["reference"],
             "additionalProperties": false,
@@ -23,7 +23,6 @@
             }
         },{
             "required": ["reference", "name", "personCategory"],
-            "additionalProperties": false,
             "type": "object",
             "properties": {
                 "$schema": {
@@ -37,7 +36,7 @@
                     "description" : "Référence de la personne chez le client de la société de recouvrement. Cette référence doit être unique pour un client et un créancier donné.",
                     "type": "string"
                 },
-                "name" : {
+                "name" : {  
                     "title" : "Nom",
                     "description" : "Exemple : Jean Dupont ou Dupont & Cie",
                     "type": "string"
@@ -63,17 +62,21 @@
                     "description" : "Contacts de la personne",
                     "type": "array",
                     "items": {
-                        "type" : "object",
-                        "unevaluatedProperties": false,
-                        "$ref" : "./contact.schema.json",
-                        "properties": {
-                            "role" : {
-                                "title" : "Rôle du contact pour la personne physique ou morale",
-                                "description" : "Exemple : commercial, responsable administratif, épouse, époux",
-                                "type": "string",
-                                "maxLength": 20
+                        "allOf": [
+                            { "$ref" : "./contact.schema.json" },
+                            {
+                                "type" : "object",
+                                "properties": {
+                                    "role" : {
+                                        "title" : "Rôle du contact pour la personne physique ou morale",
+                                        "description" : "Exemple : commercial, responsable administratif, épouse, époux",
+                                        "type": "string",
+                                        "maxLength": 20
+                                    }
+                                }
                             }
-                        }  
+                        ],
+                        "unevaluatedProperties": false
                     }
                 },
                 "bankAccount" : {

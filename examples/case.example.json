@@ -58,91 +58,82 @@
     },
     "debtors" : [
         {
-            "value": {
-                "reference" : "B123456789",
-                "name": "Monsieur Jean Dupont",
-                "personCategory": "naturalPerson",
-                "contacts": [
-                    {
-                        "value": {
-                            "reference" : "C123456789",
-                            "civility": "monsieur",
-                            "lastName": "Dupont",
-                            "firstName": "Jean",
-                            "phones": [
-                                {
-                                    "value": "02 03 04 05 06",
-                                    "qualification": "professional"
-                                },
-                                {
-                                    "value": "06 01 02 03 04",
-                                    "qualification": "personal"
-                                }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "jdupont@monmail.com",
-                                    "description": "Adresse peu utilisée",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "addresses": [
-                                {
-                                    "street": "Rue de la paix",
-                                    "city": "Paris",
-                                    "postalCode": "75000",
-                                    "countryCode": "fr"
-                                }
-                            ],
-                            "languageCode": "fra"
+            "reference" : "B123456789",
+            "name": "Monsieur Jean Dupont",
+            "personCategory": "naturalPerson",
+            "contacts": [
+                {
+                    "reference" : "C123456789",
+                    "civility": "mister",
+                    "lastName": "Dupont",
+                    "firstName": "Jean",
+                    "phones": [
+                        {
+                            "value": "02 03 04 05 06",
+                            "qualification": "professional"
+                        },
+                        {
+                            "value": "06 01 02 03 04",
+                            "qualification": "personal"
                         }
-                    }
-                ]
-            }
+                    ],
+                    "emails": [
+                        {
+                            "value": "jdupont@monmail.com",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "street": "Rue de la paix",
+                            "city": "Paris",
+                            "postalCode": "75000",
+                            "countryCode": "fr"
+                        }
+                    ],
+                    "languageCode": "fra"
+                }
+            ]
         }
     ],
     "guarantors": [
         {
-            "value": {
-                "reference" : "B123456789",
-                "name": "Jeanne Dupont",
-                "personCategory": "naturalPerson",
-                "contacts": [
-                    {
-                        "value": {
-                            "reference" : "C123456789",
-                            "civility": "misses",
-                            "lastName": "Dupont",
-                            "firstName": "Jeanne",
-                            "phones": [
-                                {
-                                    "value": "02 03 04 05 06",
-                                    "qualification": "professional"
-                                },
-                                {
-                                    "value": "06 01 02 03 04",
-                                    "qualification": "personal"
-                                }
-                            ],
-                            "emails": [
-                                {
-                                    "value": "jdupont@monmail.com",
-                                    "qualification": "professional"
-                                }
-                            ],
-                            "addresses": [
-                                {
-                                    "street": "Rue de la paix",
-                                    "city": "Paris",
-                                    "postalCode": "75000",
-                                    "countryCode": "fr"
-                                }
-                            ],
-                            "languageCode": "fra"
+            "reference" : "B123456789",
+            "name": "Jeanne Dupont",
+            "personCategory": "naturalPerson",
+            "contacts": [
+                {
+                    "reference" : "C123456789",
+                    "civility": "misses",
+                    "lastName": "Dupont",
+                    "firstName": "Jeanne",
+                    "phones": [
+                        {
+                            "value": "02 03 04 05 06",
+                            "qualification": "professional"
+                        },
+                        {
+                            "value": "06 01 02 03 04",
+                            "qualification": "personal"
                         }
-                    }
-                ]
-            }
+                    ],
+                    "emails": [
+                        {
+                            "value": "jdupont@monmail.com",
+                            "qualification": "professional"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "street": "Rue de la paix",
+                            "city": "Paris",
+                            "postalCode": "75000",
+                            "countryCode": "fr"
+                        }
+                    ],
+                    "languageCode": "fra"
+                }
+            ]
         }
     ],
     "entries" : [
