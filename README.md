@@ -10,6 +10,13 @@ Le script `validation.py` permet de tester l'ensemble des JSON du dossier `examp
 
 La non validation d'une `$ref` avec un `unevaluatedProperties`, comme dans les objets héritant de [`entry`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/entry.schema.json), peut être signalée comme une erreur de `unevaluatedProperties`.
 
+# Executable
+
+Un executable est disponible pour valider un json contre le schéma directement. Pour cela, utilisez la commande `./Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin/vers/le/json`.
+
+Vous devez disposer d'une connexion internet car l'executable fait des requêtes à github pour récupérer le schéma.
+
+
 # Description des principaux objets
 
 ## Téléphone ([phone](https://github.com/Blitz-BS/blitzCollection/blob/main/json_schema/phone.schema.json))
@@ -174,4 +181,4 @@ Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitz
 
 # Exemples
 
-Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.folders.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.folders.example.json) est un exemple de création de dossiers de factures.
+Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.folders.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.cases.example.json) est un exemple de création de dossiers de factures.
