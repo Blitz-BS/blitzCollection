@@ -12,7 +12,7 @@ La non validation d'une `$ref` avec un `unevaluatedProperties`, comme dans les o
 
 # Executable
 
-Un executable est disponible pour valider un json contre le schéma directement. Pour cela, utilisez la commande `./Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin/vers/le/json`.
+Un executable est disponible pour valider un json contre le schéma d'import de dossier ([`root.schema.json`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json)) directement. Pour cela, utilisez la commande `./Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin/vers/le/json`.
 
 Vous devez disposer d'une connexion internet car l'executable fait des requêtes à github pour récupérer le schéma.
 
