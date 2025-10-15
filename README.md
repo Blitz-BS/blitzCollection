@@ -8,11 +8,11 @@ Blitz Collection permet l'intégration de dossiers selon un format pivot répond
 
 ## Script
 
-Le script `validation.py` permet de valider l'ensemble des JSON du dossier `examples` contre le schéma précisé dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
+Le script `validation.py` permet de valider l'ensemble des JSON du dossier `examples` avec le schéma précisé dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
 
 ## Exécutable
 
-Un exécutable est disponible pour valider un json contre le schéma d'import de dossier ([`root.schema.json`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json)) directement. Pour cela, utilisez la commande `.\Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin\vers\le\json`.
+Un exécutable est disponible pour valider un json avec le schéma d'import de dossier ([`root.schema.json`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json)) directement. Pour cela, utilisez la commande `.\Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin\vers\le\json`.
 
 Vous devez être sous `Windows 64-bits` et disposer d'une connexion internet car l'exécutable fait des requêtes à github pour récupérer le schéma.
 
