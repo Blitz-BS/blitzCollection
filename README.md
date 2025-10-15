@@ -6,6 +6,10 @@ Blitz Collection permet l'intégration de dossiers selon un format pivot répond
 
 Le script `validation.py` permet de tester l'ensemble des JSON du dossier `examples` contre le schéma préciser dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
 
+## Erreurs du schéma
+
+La non validation d'une `$ref` avec un `unevaluatedProperties`, comme dans les objets héritant de [`entry`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/entry.schema.json), peut être signalée comme une erreur de `unevaluatedProperties`.
+
 # Description des principaux objets
 
 ## Téléphone ([phone](https://github.com/Blitz-BS/blitzCollection/blob/main/json_schema/phone.schema.json))
