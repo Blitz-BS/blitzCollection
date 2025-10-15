@@ -181,4 +181,4 @@ Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitz
 
 # Exemples
 
-Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.folders.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.cases.example.json) est un exemple de création de dossiers de factures.
+Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.cases.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.cases.example.json) est un exemple de création de dossiers de factures.
