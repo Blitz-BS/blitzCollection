@@ -1,10 +1,20 @@
 # Formats d'échange Blitz Collection
 
-Blitz Collection permet l'intégration de dossiers selon un format pivot répondant à la norme [json schema](https://json-schema.org/). Ce format sera repris dans la future API Blitz Collection.
+Blitz Collection permet l'intégration de dossiers selon un format pivot répondant à la norme [json schema](https://json-schema.org/).
 
-# Test de JSON contre un schéma
+# Validation
 
-Le script `validation.py` permet de tester l'ensemble des JSON du dossier `examples` contre le schéma préciser dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
+2 outils sont à disposition pour valider un json contre un schéma : un script python à adapter et un exécutable.
+
+## Script
+
+Le script `validation.py` permet de valider l'ensemble des JSON du dossier `examples` avec le schéma précisé dans le champ `$schema` du JSON. Il est aussi possible d'utiliser les outils décrits dans la [documentation JSON schema](https://json-schema.org/tools?query=&sortBy=name&sortOrder=ascending&groupBy=toolingTypes&licenses=&languages=&drafts=&toolingTypes=&environments=&showObsolete=false#validator)
+
+## Exécutable
+
+Un exécutable est disponible pour valider un json avec le schéma d'import de dossier ([`root.schema.json`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/root.schema.json)) directement. Pour cela, utilisez la commande `.\Blitz.Collection.PortailClient.ValidationJsonSchema.exe --file chemin\vers\le\json`.
+
+Vous devez être sous `Windows 64-bits` et disposer d'une connexion internet car l'exécutable fait des requêtes à github pour récupérer le schéma.
 
 ## Erreurs du schéma
 
@@ -157,7 +167,7 @@ Les paiements comprennent :
 Les opérations diverses comprennent :
 * Une sous-catégorie : erreur, ajustement de change
 
-## Dossier ([`folder`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/folder.schema.json))
+## Dossier ([`case`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/case.schema.json))
 
 Un dossier correspond à un extrait de compte client dans la comptabilité du créancier. Le dossier comprend :
 
@@ -170,8 +180,8 @@ Un dossier correspond à un extrait de compte client dans la comptabilité du cr
 * Des tiers impliqués dans le dossier. Les tiers sont des personnes (`person`)
 * Une devise par défaut du dossier.
 
-Quand les dossiers ([`folders`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/folders.schema.json)) sont envoyés en masse, ils sont regroupés par contrat puis par créancier.
+Quand les dossiers ([`cases`](https://raw.githubusercontent.com/Blitz-BS/blitzCollection/refs/heads/main/json_schema/cases.schema.json)) sont envoyés en masse, ils sont regroupés par contrat puis par créancier.
 
 # Exemples
 
-Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.folders.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.folders.example.json) est un exemple de création de dossiers de factures.
+Les fichiers d'exemples permettent d'avoir une idée de la représentation des différents objets. En particulier le fichier [`invoices.cases.exemple.json`](https://github.com/Blitz-BS/blitzCollection/blob/main/examples/invoices.cases.example.json) est un exemple de création de dossiers de factures.
